@@ -1,0 +1,4102 @@
+[
+  {
+    "id": "F001",
+    "type": "c_test",
+    "difficulty": "Foundation",
+    "domain": "public",
+    "fullText": "Many students use public libraries when they need a quiet place to study. Libraries also provide books, computers, and online materials for people who cannot easily buy them. Some libraries offer free workshops that teach useful skills such as research, writing, and basic technology. For this reason, a local library can be an important learning space for the whole community.",
+    "promptText": "Many students use public libraries when they need a quiet place to study. Libraries al__ provide boo__, computers, and onl___ materials for peo___ who cannot eas___ buy them. Some libra____ offer fr__ workshops th__ teach use___ skills su__ as research, writ___, and basic techn_____. For this reason, a local library can be an important learning space for the whole community.",
+    "answers": [
+      {
+        "full": "also",
+        "shown": "al__",
+        "missing": "so",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "books",
+        "shown": "boo__",
+        "missing": "ks",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "online",
+        "shown": "onl___",
+        "missing": "ine",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "people",
+        "shown": "peo___",
+        "missing": "ple",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "easily",
+        "shown": "eas___",
+        "missing": "ily",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "libraries",
+        "shown": "libra____",
+        "missing": "ries",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "free",
+        "shown": "fr__",
+        "missing": "ee",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "that",
+        "shown": "th__",
+        "missing": "at",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "useful",
+        "shown": "use___",
+        "missing": "ful",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "such",
+        "shown": "su__",
+        "missing": "ch",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "writing",
+        "shown": "writ___",
+        "missing": "ing",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "technology",
+        "shown": "techn_____",
+        "missing": "ology",
+        "sentenceIndex": 2
+      }
+    ],
+    "source": "Original practice item; DET C-Test format modeled on Duolingo English Test public description; vocabulary calibrated for general/academic English using NGSL/NAWL.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v1"
+  },
+  {
+    "id": "F002",
+    "type": "c_test",
+    "difficulty": "Foundation",
+    "domain": "academic",
+    "fullText": "Good study habits can make learning more efficient. Students who review new information regularly are more likely to remember it for a longer period. Short daily sessions often work better than trying to learn everything the night before an exam. A simple routine can therefore reduce stress and improve academic performance.",
+    "promptText": "Good study habits can make learning more efficient. Students who rev___ new information regul____ are more lik___ to remember it for a lon___ period. Short dai__ sessions oft__ work bet___ than try___ to learn every_____ the night bef___ an exam. A simple routine can therefore reduce stress and improve academic performance.",
+    "answers": [
+      {
+        "full": "review",
+        "shown": "rev___",
+        "missing": "iew",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "regularly",
+        "shown": "regul____",
+        "missing": "arly",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "likely",
+        "shown": "lik___",
+        "missing": "ely",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "longer",
+        "shown": "lon___",
+        "missing": "ger",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "daily",
+        "shown": "dai__",
+        "missing": "ly",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "often",
+        "shown": "oft__",
+        "missing": "en",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "better",
+        "shown": "bet___",
+        "missing": "ter",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "trying",
+        "shown": "try___",
+        "missing": "ing",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "everything",
+        "shown": "every_____",
+        "missing": "thing",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "before",
+        "shown": "bef___",
+        "missing": "ore",
+        "sentenceIndex": 2
+      }
+    ],
+    "source": "Original practice item; DET C-Test format modeled on Duolingo English Test public description; vocabulary calibrated for general/academic English using NGSL/NAWL.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v1"
+  },
+  {
+    "id": "F003",
+    "type": "c_test",
+    "difficulty": "Foundation",
+    "domain": "professional",
+    "fullText": "Clear communication is important in almost every workplace. Employees need to explain ideas, ask questions, and share information with people from different backgrounds. When instructions are unclear, small misunderstandings can lead to wasted time or costly mistakes. Good communication helps teams work together more effectively.",
+    "promptText": "Clear communication is important in almost every workplace. Employees ne__ to explain ide__, ask questions, and sha__ information wi__ people fr__ different backgr_____. When instru______ are unclear, sma__ misunderstandings can le__ to wasted ti__ or costly mist____. Good communication helps teams work together more effectively.",
+    "answers": [
+      {
+        "full": "need",
+        "shown": "ne__",
+        "missing": "ed",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "ideas",
+        "shown": "ide__",
+        "missing": "as",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "share",
+        "shown": "sha__",
+        "missing": "re",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "with",
+        "shown": "wi__",
+        "missing": "th",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "from",
+        "shown": "fr__",
+        "missing": "om",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "backgrounds",
+        "shown": "backgr_____",
+        "missing": "ounds",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "instructions",
+        "shown": "instru______",
+        "missing": "ctions",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "small",
+        "shown": "sma__",
+        "missing": "ll",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "lead",
+        "shown": "le__",
+        "missing": "ad",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "time",
+        "shown": "ti__",
+        "missing": "me",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "mistakes",
+        "shown": "mist____",
+        "missing": "akes",
+        "sentenceIndex": 2
+      }
+    ],
+    "source": "Original practice item; DET C-Test format modeled on Duolingo English Test public description; vocabulary calibrated for general/academic English using NGSL/NAWL.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v1"
+  },
+  {
+    "id": "F004",
+    "type": "c_test",
+    "difficulty": "Foundation",
+    "domain": "public",
+    "fullText": "Cities around the world are trying to reduce traffic problems. Many local governments encourage people to use buses, trains, bicycles, or other forms of public transportation. These choices can reduce air pollution and make crowded streets safer for everyone. However, people are more likely to change their habits when public transportation is reliable and convenient.",
+    "promptText": "Cities around the world are trying to reduce traffic problems. Many loc__ governments encou____ people to use bus__, trains, bicy____, or other for__ of public transpo_______. These choi___ can reduce air pollu____ and make crow___ streets saf__ for everyone. However, people are more likely to change their habits when public transportation is reliable and convenient.",
+    "answers": [
+      {
+        "full": "local",
+        "shown": "loc__",
+        "missing": "al",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "encourage",
+        "shown": "encou____",
+        "missing": "rage",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "buses",
+        "shown": "bus__",
+        "missing": "es",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "bicycles",
+        "shown": "bicy____",
+        "missing": "cles",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "forms",
+        "shown": "for__",
+        "missing": "ms",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "transportation",
+        "shown": "transpo_______",
+        "missing": "rtation",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "choices",
+        "shown": "choi___",
+        "missing": "ces",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "pollution",
+        "shown": "pollu____",
+        "missing": "tion",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "crowded",
+        "shown": "crow___",
+        "missing": "ded",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "safer",
+        "shown": "saf__",
+        "missing": "er",
+        "sentenceIndex": 2
+      }
+    ],
+    "source": "Original practice item; DET C-Test format modeled on Duolingo English Test public description; vocabulary calibrated for general/academic English using NGSL/NAWL.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v1"
+  },
+  {
+    "id": "F005",
+    "type": "c_test",
+    "difficulty": "Foundation",
+    "domain": "academic",
+    "fullText": "Reading in a second language becomes easier with regular practice. At first, learners may stop often because they do not recognize many words or grammatical structures. Over time, familiar patterns become easier to process and readers can focus more attention on meaning. Consistent reading is one of the simplest ways to build this automaticity.",
+    "promptText": "Reading in a second language becomes easier with regular practice. At first, lear____ may stop oft__ because th__ do not recognize ma__ words or gramma_____ structures. Over ti__, familiar patt____ become eas___ to process and read___ can focus mo__ attention on mean___. Consistent reading is one of the simplest ways to build this automaticity.",
+    "answers": [
+      {
+        "full": "learners",
+        "shown": "lear____",
+        "missing": "ners",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "often",
+        "shown": "oft__",
+        "missing": "en",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "they",
+        "shown": "th__",
+        "missing": "ey",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "many",
+        "shown": "ma__",
+        "missing": "ny",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "grammatical",
+        "shown": "gramma_____",
+        "missing": "tical",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "time",
+        "shown": "ti__",
+        "missing": "me",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "patterns",
+        "shown": "patt____",
+        "missing": "erns",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "easier",
+        "shown": "eas___",
+        "missing": "ier",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "readers",
+        "shown": "read___",
+        "missing": "ers",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "more",
+        "shown": "mo__",
+        "missing": "re",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "meaning",
+        "shown": "mean___",
+        "missing": "ing",
+        "sentenceIndex": 2
+      }
+    ],
+    "source": "Original practice item; DET C-Test format modeled on Duolingo English Test public description; vocabulary calibrated for general/academic English using NGSL/NAWL.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v1"
+  },
+  {
+    "id": "F006",
+    "type": "c_test",
+    "difficulty": "Foundation",
+    "domain": "professional",
+    "fullText": "Working in a group requires more than dividing a task into several parts. Team members need to agree on goals, deadlines, and the responsibilities of each person. They also need to tell one another when a problem appears instead of waiting until the last minute. Good teamwork depends on both planning and communication.",
+    "promptText": "Working in a group requires more than dividing a task into several parts. Team memb___ need to agr__ on goals, deadl____, and the responsibilities of ea__ person. They al__ need to te__ one another wh__ a problem appe___ instead of wait___ until the la__ minute. Good teamwork depends on both planning and communication.",
+    "answers": [
+      {
+        "full": "members",
+        "shown": "memb___",
+        "missing": "ers",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "agree",
+        "shown": "agr__",
+        "missing": "ee",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "deadlines",
+        "shown": "deadl____",
+        "missing": "ines",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "each",
+        "shown": "ea__",
+        "missing": "ch",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "also",
+        "shown": "al__",
+        "missing": "so",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "tell",
+        "shown": "te__",
+        "missing": "ll",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "when",
+        "shown": "wh__",
+        "missing": "en",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "appears",
+        "shown": "appe___",
+        "missing": "ars",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "waiting",
+        "shown": "wait___",
+        "missing": "ing",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "last",
+        "shown": "la__",
+        "missing": "st",
+        "sentenceIndex": 2
+      }
+    ],
+    "source": "Original practice item; DET C-Test format modeled on Duolingo English Test public description; vocabulary calibrated for general/academic English using NGSL/NAWL.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v1"
+  },
+  {
+    "id": "F007",
+    "type": "c_test",
+    "difficulty": "Foundation",
+    "domain": "public",
+    "fullText": "Online shopping has changed the way many people buy everyday products. Customers can compare prices quickly and order items without traveling to a physical store. However, they cannot always examine a product carefully before paying for it. For that reason, reviews and clear return policies are important to online shoppers.",
+    "promptText": "Online shopping has changed the way many people buy everyday products. Customers can comp___ prices quic___ and order ite__ without trave____ to a physical sto__. However, th__ cannot alw___ examine a prod___ carefully bef___ paying for it. For that reason, reviews and clear return policies are important to online shoppers.",
+    "answers": [
+      {
+        "full": "compare",
+        "shown": "comp___",
+        "missing": "are",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "quickly",
+        "shown": "quic___",
+        "missing": "kly",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "items",
+        "shown": "ite__",
+        "missing": "ms",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "traveling",
+        "shown": "trave____",
+        "missing": "ling",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "store",
+        "shown": "sto__",
+        "missing": "re",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "they",
+        "shown": "th__",
+        "missing": "ey",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "always",
+        "shown": "alw___",
+        "missing": "ays",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "product",
+        "shown": "prod___",
+        "missing": "uct",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "before",
+        "shown": "bef___",
+        "missing": "ore",
+        "sentenceIndex": 2
+      }
+    ],
+    "source": "Original practice item; DET C-Test format modeled on Duolingo English Test public description; vocabulary calibrated for general/academic English using NGSL/NAWL.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v1"
+  },
+  {
+    "id": "F008",
+    "type": "c_test",
+    "difficulty": "Foundation",
+    "domain": "academic",
+    "fullText": "Taking notes can help students stay active during a lecture. Instead of writing every sentence, effective note takers usually record the main ideas and important examples. They may also leave space to add questions or explanations after class. Reviewing these notes soon after the lecture can strengthen memory.",
+    "promptText": "Taking notes can help students stay active during a lecture. Instead of writ___ every sent____, effective no__ takers usua___ record the ma__ ideas and impor____ examples. They may al__ leave spa__ to add questions or explan______ after cla__. Reviewing these notes soon after the lecture can strengthen memory.",
+    "answers": [
+      {
+        "full": "writing",
+        "shown": "writ___",
+        "missing": "ing",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "sentence",
+        "shown": "sent____",
+        "missing": "ence",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "note",
+        "shown": "no__",
+        "missing": "te",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "usually",
+        "shown": "usua___",
+        "missing": "lly",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "main",
+        "shown": "ma__",
+        "missing": "in",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "important",
+        "shown": "impor____",
+        "missing": "tant",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "also",
+        "shown": "al__",
+        "missing": "so",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "space",
+        "shown": "spa__",
+        "missing": "ce",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "explanations",
+        "shown": "explan______",
+        "missing": "ations",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "class",
+        "shown": "cla__",
+        "missing": "ss",
+        "sentenceIndex": 2
+      }
+    ],
+    "source": "Original practice item; DET C-Test format modeled on Duolingo English Test public description; vocabulary calibrated for general/academic English using NGSL/NAWL.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v1"
+  },
+  {
+    "id": "F009",
+    "type": "c_test",
+    "difficulty": "Foundation",
+    "domain": "professional",
+    "fullText": "A job interview gives both the employer and the applicant useful information. The employer can learn about the applicant's experience, skills, and reasons for wanting the position. At the same time, the applicant can ask questions about the team and daily responsibilities. A successful interview should help both sides decide whether the job is a good match.",
+    "promptText": "A job interview gives both the employer and the applicant useful information. The employer can lea__ about the applic_____ experience, ski___, and reasons for want___ the position. At the same ti__, the applicant can ask quest____ about the te__ and daily responsi________. A successful interview should help both sides decide whether the job is a good match.",
+    "answers": [
+      {
+        "full": "learn",
+        "shown": "lea__",
+        "missing": "rn",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "applicant's",
+        "shown": "applic_____",
+        "missing": "ant's",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "skills",
+        "shown": "ski___",
+        "missing": "lls",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "wanting",
+        "shown": "want___",
+        "missing": "ing",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "time",
+        "shown": "ti__",
+        "missing": "me",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "questions",
+        "shown": "quest____",
+        "missing": "ions",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "team",
+        "shown": "te__",
+        "missing": "am",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "responsibilities",
+        "shown": "responsi________",
+        "missing": "bilities",
+        "sentenceIndex": 2
+      }
+    ],
+    "source": "Original practice item; DET C-Test format modeled on Duolingo English Test public description; vocabulary calibrated for general/academic English using NGSL/NAWL.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v1"
+  },
+  {
+    "id": "F010",
+    "type": "c_test",
+    "difficulty": "Foundation",
+    "domain": "public",
+    "fullText": "Getting enough sleep is important for both physical and mental health. People who sleep poorly often find it harder to concentrate, remember information, and control their emotions. Regular sleep schedules can help the body prepare for rest at a similar time each night. Even small improvements in sleep habits can make daily activities feel easier.",
+    "promptText": "Getting enough sleep is important for both physical and mental health. People who sle__ poorly oft__ find it har___ to concentrate, reme____ information, and cont___ their emot____. Regular sle__ schedules can he__ the body prep___ for rest at a simi___ time ea__ night. Even small improvements in sleep habits can make daily activities feel easier.",
+    "answers": [
+      {
+        "full": "sleep",
+        "shown": "sle__",
+        "missing": "ep",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "often",
+        "shown": "oft__",
+        "missing": "en",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "harder",
+        "shown": "har___",
+        "missing": "der",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "remember",
+        "shown": "reme____",
+        "missing": "mber",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "control",
+        "shown": "cont___",
+        "missing": "rol",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "emotions",
+        "shown": "emot____",
+        "missing": "ions",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "sleep",
+        "shown": "sle__",
+        "missing": "ep",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "help",
+        "shown": "he__",
+        "missing": "lp",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "prepare",
+        "shown": "prep___",
+        "missing": "are",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "similar",
+        "shown": "simi___",
+        "missing": "lar",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "each",
+        "shown": "ea__",
+        "missing": "ch",
+        "sentenceIndex": 2
+      }
+    ],
+    "source": "Original practice item; DET C-Test format modeled on Duolingo English Test public description; vocabulary calibrated for general/academic English using NGSL/NAWL.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v1"
+  },
+  {
+    "id": "C001",
+    "type": "c_test",
+    "difficulty": "Current",
+    "domain": "academic",
+    "fullText": "University students are often expected to evaluate information rather than simply memorize it. When reading an article, they should consider the author's evidence, assumptions, and possible limitations. They should also compare the argument with information from other reliable sources before accepting a conclusion. Critical reading is therefore an active process rather than a passive one.",
+    "promptText": "University students are often expected to evaluate information rather than simply memorize it. When read___ an article, th__ should cons____ the author's evid____, assumptions, and poss____ limitations. They sho___ also comp___ the argument wi__ information fr__ other reli____ sources bef___ accepting a concl_____. Critical reading is therefore an active process rather than a passive one.",
+    "answers": [
+      {
+        "full": "reading",
+        "shown": "read___",
+        "missing": "ing",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "they",
+        "shown": "th__",
+        "missing": "ey",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "consider",
+        "shown": "cons____",
+        "missing": "ider",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "evidence",
+        "shown": "evid____",
+        "missing": "ence",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "possible",
+        "shown": "poss____",
+        "missing": "ible",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "should",
+        "shown": "sho___",
+        "missing": "uld",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "compare",
+        "shown": "comp___",
+        "missing": "are",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "with",
+        "shown": "wi__",
+        "missing": "th",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "from",
+        "shown": "fr__",
+        "missing": "om",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "reliable",
+        "shown": "reli____",
+        "missing": "able",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "before",
+        "shown": "bef___",
+        "missing": "ore",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "conclusion",
+        "shown": "concl_____",
+        "missing": "usion",
+        "sentenceIndex": 2
+      }
+    ],
+    "source": "Original practice item; DET C-Test format modeled on Duolingo English Test public description; vocabulary calibrated for general/academic English using NGSL/NAWL.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v1"
+  },
+  {
+    "id": "C002",
+    "type": "c_test",
+    "difficulty": "Current",
+    "domain": "professional",
+    "fullText": "Remote work has given many employees greater flexibility, but it has also created new challenges. Without regular face-to-face contact, team members may find it harder to notice confusion or solve small problems quickly. Managers therefore need clear communication routines and realistic expectations about when workers should be available. A successful remote team depends on structure as well as flexibility.",
+    "promptText": "Remote work has given many employees greater flexibility, but it has also created new challenges. Without regu___ face-to-fa__ contact, te__ members may fi__ it harder to not___ confusion or sol__ small prob____ quickly. Managers there____ need cle__ communication rout____ and realistic expect______ about wh__ workers sho___ be available. A successful remote team depends on structure as well as flexibility.",
+    "answers": [
+      {
+        "full": "regular",
+        "shown": "regu___",
+        "missing": "lar",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "face",
+        "shown": "fa__",
+        "missing": "ce",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "team",
+        "shown": "te__",
+        "missing": "am",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "find",
+        "shown": "fi__",
+        "missing": "nd",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "notice",
+        "shown": "not___",
+        "missing": "ice",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "solve",
+        "shown": "sol__",
+        "missing": "ve",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "problems",
+        "shown": "prob____",
+        "missing": "lems",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "therefore",
+        "shown": "there____",
+        "missing": "fore",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "clear",
+        "shown": "cle__",
+        "missing": "ar",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "routines",
+        "shown": "rout____",
+        "missing": "ines",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "expectations",
+        "shown": "expect______",
+        "missing": "ations",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "when",
+        "shown": "wh__",
+        "missing": "en",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "should",
+        "shown": "sho___",
+        "missing": "uld",
+        "sentenceIndex": 2
+      }
+    ],
+    "source": "Original practice item; DET C-Test format modeled on Duolingo English Test public description; vocabulary calibrated for general/academic English using NGSL/NAWL.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v1"
+  },
+  {
+    "id": "C003",
+    "type": "c_test",
+    "difficulty": "Current",
+    "domain": "public",
+    "fullText": "Recycling programs are common, but their effectiveness depends heavily on public participation. If people place the wrong materials in recycling bins, entire batches may become difficult or expensive to process. Clear labels and simple local rules can reduce this kind of contamination. Education is therefore an important part of an effective recycling system.",
+    "promptText": "Recycling programs are common, but their effectiveness depends heavily on public participation. If people pla__ the wrong mater____ in recycling bi__, entire batc___ may become diffi____ or expensive to proc___. Clear lab___ and simple loc__ rules can red___ this ki__ of contamination. Education is therefore an important part of an effective recycling system.",
+    "answers": [
+      {
+        "full": "place",
+        "shown": "pla__",
+        "missing": "ce",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "materials",
+        "shown": "mater____",
+        "missing": "ials",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "bins",
+        "shown": "bi__",
+        "missing": "ns",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "batches",
+        "shown": "batc___",
+        "missing": "hes",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "difficult",
+        "shown": "diffi____",
+        "missing": "cult",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "process",
+        "shown": "proc___",
+        "missing": "ess",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "labels",
+        "shown": "lab___",
+        "missing": "els",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "local",
+        "shown": "loc__",
+        "missing": "al",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "reduce",
+        "shown": "red___",
+        "missing": "uce",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "kind",
+        "shown": "ki__",
+        "missing": "nd",
+        "sentenceIndex": 2
+      }
+    ],
+    "source": "Original practice item; DET C-Test format modeled on Duolingo English Test public description; vocabulary calibrated for general/academic English using NGSL/NAWL.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v1"
+  },
+  {
+    "id": "C004",
+    "type": "c_test",
+    "difficulty": "Current",
+    "domain": "academic",
+    "fullText": "Researchers rarely rely on a single study when making a strong scientific claim. A result becomes more convincing when other researchers can repeat the study and obtain similar findings. Replication also helps identify weaknesses that may not have been obvious in the original work. Scientific knowledge becomes stronger when evidence can be independently examined.",
+    "promptText": "Researchers rarely rely on a single study when making a strong scientific claim. A result beco___ more convi_____ when oth__ researchers can rep___ the study and obt___ similar find____. Replication al__ helps iden____ weaknesses th__ may not have be__ obvious in the orig____ work. Scientific knowledge becomes stronger when evidence can be independently examined.",
+    "answers": [
+      {
+        "full": "becomes",
+        "shown": "beco___",
+        "missing": "mes",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "convincing",
+        "shown": "convi_____",
+        "missing": "ncing",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "other",
+        "shown": "oth__",
+        "missing": "er",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "repeat",
+        "shown": "rep___",
+        "missing": "eat",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "obtain",
+        "shown": "obt___",
+        "missing": "ain",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "findings",
+        "shown": "find____",
+        "missing": "ings",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "also",
+        "shown": "al__",
+        "missing": "so",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "identify",
+        "shown": "iden____",
+        "missing": "tify",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "that",
+        "shown": "th__",
+        "missing": "at",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "been",
+        "shown": "be__",
+        "missing": "en",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "original",
+        "shown": "orig____",
+        "missing": "inal",
+        "sentenceIndex": 2
+      }
+    ],
+    "source": "Original practice item; DET C-Test format modeled on Duolingo English Test public description; vocabulary calibrated for general/academic English using NGSL/NAWL.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v1"
+  },
+  {
+    "id": "C005",
+    "type": "c_test",
+    "difficulty": "Current",
+    "domain": "professional",
+    "fullText": "A realistic project plan needs more than a list of tasks. Managers must estimate how long each task will take and identify which activities depend on earlier work. They also need extra time for unexpected delays, technical problems, or changes in requirements. Careful planning cannot remove uncertainty, but it can make a project easier to control.",
+    "promptText": "A realistic project plan needs more than a list of tasks. Managers mu__ estimate how lo__ each ta__ will ta__ and identify whi__ activities dep___ on earlier wo__. They al__ need ext__ time for unexp_____ delays, techn____ problems, or chan___ in requirements. Careful planning cannot remove uncertainty, but it can make a project easier to control.",
+    "answers": [
+      {
+        "full": "must",
+        "shown": "mu__",
+        "missing": "st",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "long",
+        "shown": "lo__",
+        "missing": "ng",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "task",
+        "shown": "ta__",
+        "missing": "sk",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "take",
+        "shown": "ta__",
+        "missing": "ke",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "which",
+        "shown": "whi__",
+        "missing": "ch",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "depend",
+        "shown": "dep___",
+        "missing": "end",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "work",
+        "shown": "wo__",
+        "missing": "rk",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "also",
+        "shown": "al__",
+        "missing": "so",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "extra",
+        "shown": "ext__",
+        "missing": "ra",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "unexpected",
+        "shown": "unexp_____",
+        "missing": "ected",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "technical",
+        "shown": "techn____",
+        "missing": "ical",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "changes",
+        "shown": "chan___",
+        "missing": "ges",
+        "sentenceIndex": 2
+      }
+    ],
+    "source": "Original practice item; DET C-Test format modeled on Duolingo English Test public description; vocabulary calibrated for general/academic English using NGSL/NAWL.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v1"
+  },
+  {
+    "id": "C006",
+    "type": "c_test",
+    "difficulty": "Current",
+    "domain": "academic",
+    "fullText": "Learning vocabulary involves more than memorizing dictionary definitions. Strong vocabulary knowledge includes knowing how a word is pronounced, what words often appear with it, and how its meaning changes across contexts. Learners who meet the same word in several different situations usually develop a deeper understanding of it. Repeated exposure is therefore essential for long-term vocabulary growth.",
+    "promptText": "Learning vocabulary involves more than memorizing dictionary definitions. Strong vocab_____ knowledge incl____ knowing how a wo__ is pronounced, wh__ words oft__ appear wi__ it, and how its meaning chan___ across cont____. Learners who me__ the same wo__ in several diffe____ situations usua___ develop a dee___ understanding of it. Repeated exposure is therefore essential for long-term vocabulary growth.",
+    "answers": [
+      {
+        "full": "vocabulary",
+        "shown": "vocab_____",
+        "missing": "ulary",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "includes",
+        "shown": "incl____",
+        "missing": "udes",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "word",
+        "shown": "wo__",
+        "missing": "rd",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "what",
+        "shown": "wh__",
+        "missing": "at",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "often",
+        "shown": "oft__",
+        "missing": "en",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "with",
+        "shown": "wi__",
+        "missing": "th",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "changes",
+        "shown": "chan___",
+        "missing": "ges",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "contexts",
+        "shown": "cont____",
+        "missing": "exts",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "meet",
+        "shown": "me__",
+        "missing": "et",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "word",
+        "shown": "wo__",
+        "missing": "rd",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "different",
+        "shown": "diffe____",
+        "missing": "rent",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "usually",
+        "shown": "usua___",
+        "missing": "lly",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "deeper",
+        "shown": "dee___",
+        "missing": "per",
+        "sentenceIndex": 2
+      }
+    ],
+    "source": "Original practice item; DET C-Test format modeled on Duolingo English Test public description; vocabulary calibrated for general/academic English using NGSL/NAWL.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v1"
+  },
+  {
+    "id": "C007",
+    "type": "c_test",
+    "difficulty": "Current",
+    "domain": "public",
+    "fullText": "Many cities are planting more trees to improve urban environments. Trees can provide shade, reduce surface temperatures, absorb some air pollution, and create habitats for birds and insects. However, cities must select species that can survive local weather and limited growing space. Urban forestry requires long-term planning rather than simply planting as many trees as possible.",
+    "promptText": "Many cities are planting more trees to improve urban environments. Trees can prov___ shade, red___ surface temper______, absorb so__ air pollution, and cre___ habitats for bir__ and insects. However, cit___ must sel___ species th__ can survive loc__ weather and limi___ growing spa__. Urban forestry requires long-term planning rather than simply planting as many trees as possible.",
+    "answers": [
+      {
+        "full": "provide",
+        "shown": "prov___",
+        "missing": "ide",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "reduce",
+        "shown": "red___",
+        "missing": "uce",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "temperatures",
+        "shown": "temper______",
+        "missing": "atures",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "some",
+        "shown": "so__",
+        "missing": "me",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "create",
+        "shown": "cre___",
+        "missing": "ate",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "birds",
+        "shown": "bir__",
+        "missing": "ds",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "cities",
+        "shown": "cit___",
+        "missing": "ies",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "select",
+        "shown": "sel___",
+        "missing": "ect",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "that",
+        "shown": "th__",
+        "missing": "at",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "local",
+        "shown": "loc__",
+        "missing": "al",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "limited",
+        "shown": "limi___",
+        "missing": "ted",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "space",
+        "shown": "spa__",
+        "missing": "ce",
+        "sentenceIndex": 2
+      }
+    ],
+    "source": "Original practice item; DET C-Test format modeled on Duolingo English Test public description; vocabulary calibrated for general/academic English using NGSL/NAWL.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v1"
+  },
+  {
+    "id": "C008",
+    "type": "c_test",
+    "difficulty": "Current",
+    "domain": "professional",
+    "fullText": "Customer complaints can provide useful information when a company treats them seriously. A repeated complaint may reveal a problem in a product, service process, or communication system. Companies that record and analyze these patterns can often prevent the same problem from affecting future customers. Responding well to complaints can therefore support long-term improvement.",
+    "promptText": "Customer complaints can provide useful information when a company treats them seriously. A repeated compl____ may reveal a prob___ in a product, serv___ process, or communi______ system. Companies th__ record and anal___ these patt____ can often prev___ the same prob___ from affec____ future custo____. Responding well to complaints can therefore support long-term improvement.",
+    "answers": [
+      {
+        "full": "complaint",
+        "shown": "compl____",
+        "missing": "aint",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "problem",
+        "shown": "prob___",
+        "missing": "lem",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "service",
+        "shown": "serv___",
+        "missing": "ice",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "communication",
+        "shown": "communi______",
+        "missing": "cation",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "that",
+        "shown": "th__",
+        "missing": "at",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "analyze",
+        "shown": "anal___",
+        "missing": "yze",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "patterns",
+        "shown": "patt____",
+        "missing": "erns",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "prevent",
+        "shown": "prev___",
+        "missing": "ent",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "problem",
+        "shown": "prob___",
+        "missing": "lem",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "affecting",
+        "shown": "affec____",
+        "missing": "ting",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "customers",
+        "shown": "custo____",
+        "missing": "mers",
+        "sentenceIndex": 2
+      }
+    ],
+    "source": "Original practice item; DET C-Test format modeled on Duolingo English Test public description; vocabulary calibrated for general/academic English using NGSL/NAWL.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v1"
+  },
+  {
+    "id": "C009",
+    "type": "c_test",
+    "difficulty": "Current",
+    "domain": "academic",
+    "fullText": "People often believe that multitasking allows them to finish more work in less time. In reality, switching repeatedly between demanding tasks can reduce concentration and increase the number of mistakes. The brain must continually redirect attention, which creates a small mental cost each time. For complex work, sustained attention is usually more efficient than constant switching.",
+    "promptText": "People often believe that multitasking allows them to finish more work in less time. In reality, switc____ repeatedly betw___ demanding tas__ can reduce concent______ and increase the num___ of mistakes. The brain mu__ continually redi____ attention, whi__ creates a sma__ mental co__ each ti__. For complex work, sustained attention is usually more efficient than constant switching.",
+    "answers": [
+      {
+        "full": "switching",
+        "shown": "switc____",
+        "missing": "hing",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "between",
+        "shown": "betw___",
+        "missing": "een",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "tasks",
+        "shown": "tas__",
+        "missing": "ks",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "concentration",
+        "shown": "concent______",
+        "missing": "ration",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "number",
+        "shown": "num___",
+        "missing": "ber",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "must",
+        "shown": "mu__",
+        "missing": "st",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "redirect",
+        "shown": "redi____",
+        "missing": "rect",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "which",
+        "shown": "whi__",
+        "missing": "ch",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "small",
+        "shown": "sma__",
+        "missing": "ll",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "cost",
+        "shown": "co__",
+        "missing": "st",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "time",
+        "shown": "ti__",
+        "missing": "me",
+        "sentenceIndex": 2
+      }
+    ],
+    "source": "Original practice item; DET C-Test format modeled on Duolingo English Test public description; vocabulary calibrated for general/academic English using NGSL/NAWL.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v1"
+  },
+  {
+    "id": "C010",
+    "type": "c_test",
+    "difficulty": "Current",
+    "domain": "public",
+    "fullText": "Public parks serve several purposes in densely populated neighborhoods. They provide space for exercise, social interaction, children's play, and contact with nature. Well-designed parks can also make an area more attractive and encourage residents to spend time outdoors. Their value is difficult to measure using financial figures alone.",
+    "promptText": "Public parks serve several purposes in densely populated neighborhoods. They prov___ space for exer____, social intera_____, children's pl__, and contact wi__ nature. Well-desi____ parks can al__ make an ar__ more attra_____ and encourage resid____ to spend ti__ outdoors. Their value is difficult to measure using financial figures alone.",
+    "answers": [
+      {
+        "full": "provide",
+        "shown": "prov___",
+        "missing": "ide",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "exercise",
+        "shown": "exer____",
+        "missing": "cise",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "interaction",
+        "shown": "intera_____",
+        "missing": "ction",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "play",
+        "shown": "pl__",
+        "missing": "ay",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "with",
+        "shown": "wi__",
+        "missing": "th",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "designed",
+        "shown": "desi____",
+        "missing": "gned",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "also",
+        "shown": "al__",
+        "missing": "so",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "area",
+        "shown": "ar__",
+        "missing": "ea",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "attractive",
+        "shown": "attra_____",
+        "missing": "ctive",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "residents",
+        "shown": "resid____",
+        "missing": "ents",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "time",
+        "shown": "ti__",
+        "missing": "me",
+        "sentenceIndex": 2
+      }
+    ],
+    "source": "Original practice item; DET C-Test format modeled on Duolingo English Test public description; vocabulary calibrated for general/academic English using NGSL/NAWL.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v1"
+  },
+  {
+    "id": "C011",
+    "type": "c_test",
+    "difficulty": "Current",
+    "domain": "academic",
+    "fullText": "A useful academic summary should represent the original source accurately and concisely. The writer needs to identify the central argument and separate major points from minor examples or details. A summary should not simply copy sentences from the source or introduce unrelated personal opinions. Its purpose is to communicate the essential meaning in a shorter form.",
+    "promptText": "A useful academic summary should represent the original source accurately and concisely. The writer nee__ to identify the cent___ argument and sepa____ major poi___ from min__ examples or deta___. A summary sho___ not simply co__ sentences fr__ the source or intro____ unrelated pers____ opinions. Its purpose is to communicate the essential meaning in a shorter form.",
+    "answers": [
+      {
+        "full": "needs",
+        "shown": "nee__",
+        "missing": "ds",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "central",
+        "shown": "cent___",
+        "missing": "ral",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "separate",
+        "shown": "sepa____",
+        "missing": "rate",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "points",
+        "shown": "poi___",
+        "missing": "nts",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "minor",
+        "shown": "min__",
+        "missing": "or",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "details",
+        "shown": "deta___",
+        "missing": "ils",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "should",
+        "shown": "sho___",
+        "missing": "uld",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "copy",
+        "shown": "co__",
+        "missing": "py",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "from",
+        "shown": "fr__",
+        "missing": "om",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "introduce",
+        "shown": "intro____",
+        "missing": "duce",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "personal",
+        "shown": "pers____",
+        "missing": "onal",
+        "sentenceIndex": 2
+      }
+    ],
+    "source": "Original practice item; DET C-Test format modeled on Duolingo English Test public description; vocabulary calibrated for general/academic English using NGSL/NAWL.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v1"
+  },
+  {
+    "id": "C012",
+    "type": "c_test",
+    "difficulty": "Current",
+    "domain": "professional",
+    "fullText": "Organizations often collect large amounts of data before making important decisions. However, having more data does not automatically lead to a better decision if the information is inaccurate or irrelevant. Decision makers need to understand where the data came from and what limitations it may contain. The quality of evidence is often more important than its quantity.",
+    "promptText": "Organizations often collect large amounts of data before making important decisions. However, hav___ more da__ does not automat______ lead to a bet___ decision if the inform_____ is inaccurate or irrel_____. Decision mak___ need to under_____ where the da__ came fr__ and what limita_____ it may contain. The quality of evidence is often more important than its quantity.",
+    "answers": [
+      {
+        "full": "having",
+        "shown": "hav___",
+        "missing": "ing",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "data",
+        "shown": "da__",
+        "missing": "ta",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "automatically",
+        "shown": "automat______",
+        "missing": "ically",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "better",
+        "shown": "bet___",
+        "missing": "ter",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "information",
+        "shown": "inform_____",
+        "missing": "ation",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "irrelevant",
+        "shown": "irrel_____",
+        "missing": "evant",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "makers",
+        "shown": "mak___",
+        "missing": "ers",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "understand",
+        "shown": "under_____",
+        "missing": "stand",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "data",
+        "shown": "da__",
+        "missing": "ta",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "from",
+        "shown": "fr__",
+        "missing": "om",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "limitations",
+        "shown": "limita_____",
+        "missing": "tions",
+        "sentenceIndex": 2
+      }
+    ],
+    "source": "Original practice item; DET C-Test format modeled on Duolingo English Test public description; vocabulary calibrated for general/academic English using NGSL/NAWL.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v1"
+  },
+  {
+    "id": "C013",
+    "type": "c_test",
+    "difficulty": "Current",
+    "domain": "public",
+    "fullText": "Tourism can create jobs and support local businesses, but rapid growth can also place pressure on a destination. Large numbers of visitors may increase housing costs, waste, traffic, and demand for limited natural resources. Local authorities therefore need to balance economic benefits with the needs of residents and the environment. Sustainable tourism requires careful management over time.",
+    "promptText": "Tourism can create jobs and support local businesses, but rapid growth can also place pressure on a destination. Large numb___ of visitors may incr____ housing cos__, waste, traf___, and demand for limi___ natural resou____. Local author_____ therefore ne__ to balance econ____ benefits wi__ the needs of resid____ and the environment. Sustainable tourism requires careful management over time.",
+    "answers": [
+      {
+        "full": "numbers",
+        "shown": "numb___",
+        "missing": "ers",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "increase",
+        "shown": "incr____",
+        "missing": "ease",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "costs",
+        "shown": "cos__",
+        "missing": "ts",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "traffic",
+        "shown": "traf___",
+        "missing": "fic",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "limited",
+        "shown": "limi___",
+        "missing": "ted",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "resources",
+        "shown": "resou____",
+        "missing": "rces",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "authorities",
+        "shown": "author_____",
+        "missing": "ities",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "need",
+        "shown": "ne__",
+        "missing": "ed",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "economic",
+        "shown": "econ____",
+        "missing": "omic",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "with",
+        "shown": "wi__",
+        "missing": "th",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "residents",
+        "shown": "resid____",
+        "missing": "ents",
+        "sentenceIndex": 2
+      }
+    ],
+    "source": "Original practice item; DET C-Test format modeled on Duolingo English Test public description; vocabulary calibrated for general/academic English using NGSL/NAWL.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v1"
+  },
+  {
+    "id": "C014",
+    "type": "c_test",
+    "difficulty": "Current",
+    "domain": "academic",
+    "fullText": "Feedback is most useful when it gives learners specific information about how to improve. A simple statement such as 'good job' may feel encouraging, but it does not explain what was successful or what should change next. Detailed feedback helps students compare their current performance with a clear goal. It can turn mistakes into useful information for future learning.",
+    "promptText": "Feedback is most useful when it gives learners specific information about how to improve. A simple state____ such as 'go__ job' may feel encour_____, but it does not expl___ what was succe_____ or what sho___ change ne__. Detailed feed____ helps stud____ compare the__ current perfor_____ with a cle__ goal. It can turn mistakes into useful information for future learning.",
+    "answers": [
+      {
+        "full": "statement",
+        "shown": "state____",
+        "missing": "ment",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "good",
+        "shown": "go__",
+        "missing": "od",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "encouraging",
+        "shown": "encour_____",
+        "missing": "aging",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "explain",
+        "shown": "expl___",
+        "missing": "ain",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "successful",
+        "shown": "succe_____",
+        "missing": "ssful",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "should",
+        "shown": "sho___",
+        "missing": "uld",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "next",
+        "shown": "ne__",
+        "missing": "xt",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "feedback",
+        "shown": "feed____",
+        "missing": "back",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "students",
+        "shown": "stud____",
+        "missing": "ents",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "their",
+        "shown": "the__",
+        "missing": "ir",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "performance",
+        "shown": "perfor_____",
+        "missing": "mance",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "clear",
+        "shown": "cle__",
+        "missing": "ar",
+        "sentenceIndex": 2
+      }
+    ],
+    "source": "Original practice item; DET C-Test format modeled on Duolingo English Test public description; vocabulary calibrated for general/academic English using NGSL/NAWL.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v1"
+  },
+  {
+    "id": "C015",
+    "type": "c_test",
+    "difficulty": "Current",
+    "domain": "professional",
+    "fullText": "Employees sometimes resist a new system even when managers believe it will improve efficiency. Resistance may result from uncertainty, lack of training, previous negative experiences, or fear that responsibilities will change. Managers can reduce these concerns by explaining the reasons for the change and involving employees in the transition. Successful change usually requires communication as well as technology.",
+    "promptText": "Employees sometimes resist a new system even when managers believe it will improve efficiency. Resistance may res___ from uncert_____, lack of trai____, previous nega____ experiences, or fe__ that responsi________ will cha___. Managers can red___ these conc____ by explaining the reas___ for the change and invol____ employees in the trans_____. Successful change usually requires communication as well as technology.",
+    "answers": [
+      {
+        "full": "result",
+        "shown": "res___",
+        "missing": "ult",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "uncertainty",
+        "shown": "uncert_____",
+        "missing": "ainty",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "training",
+        "shown": "trai____",
+        "missing": "ning",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "negative",
+        "shown": "nega____",
+        "missing": "tive",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "fear",
+        "shown": "fe__",
+        "missing": "ar",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "responsibilities",
+        "shown": "responsi________",
+        "missing": "bilities",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "change",
+        "shown": "cha___",
+        "missing": "nge",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "reduce",
+        "shown": "red___",
+        "missing": "uce",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "concerns",
+        "shown": "conc____",
+        "missing": "erns",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "reasons",
+        "shown": "reas___",
+        "missing": "ons",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "involving",
+        "shown": "invol____",
+        "missing": "ving",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "transition",
+        "shown": "trans_____",
+        "missing": "ition",
+        "sentenceIndex": 2
+      }
+    ],
+    "source": "Original practice item; DET C-Test format modeled on Duolingo English Test public description; vocabulary calibrated for general/academic English using NGSL/NAWL.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v1"
+  },
+  {
+    "id": "C016",
+    "type": "c_test",
+    "difficulty": "Current",
+    "domain": "public",
+    "fullText": "Food labels can help consumers compare products, but the amount of information can also be confusing. People may focus on one number, such as calories, while ignoring serving size or other nutritional information. Simple front-of-package labels are designed to make important differences easier to notice quickly. Their usefulness depends on whether consumers understand what the labels mean.",
+    "promptText": "Food labels can help consumers compare products, but the amount of information can also be confusing. People may foc__ on one number, su__ as calories, whi__ ignoring serv___ size or oth__ nutritional inform_____. Simple fro__-of-package lab___ are designed to ma__ important differ_____ easier to not___ quickly. Their usefulness depends on whether consumers understand what the labels mean.",
+    "answers": [
+      {
+        "full": "focus",
+        "shown": "foc__",
+        "missing": "us",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "such",
+        "shown": "su__",
+        "missing": "ch",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "while",
+        "shown": "whi__",
+        "missing": "le",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "serving",
+        "shown": "serv___",
+        "missing": "ing",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "other",
+        "shown": "oth__",
+        "missing": "er",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "information",
+        "shown": "inform_____",
+        "missing": "ation",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "front",
+        "shown": "fro__",
+        "missing": "nt",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "labels",
+        "shown": "lab___",
+        "missing": "els",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "make",
+        "shown": "ma__",
+        "missing": "ke",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "differences",
+        "shown": "differ_____",
+        "missing": "ences",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "notice",
+        "shown": "not___",
+        "missing": "ice",
+        "sentenceIndex": 2
+      }
+    ],
+    "source": "Original practice item; DET C-Test format modeled on Duolingo English Test public description; vocabulary calibrated for general/academic English using NGSL/NAWL.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v1"
+  },
+  {
+    "id": "C017",
+    "type": "c_test",
+    "difficulty": "Current",
+    "domain": "academic",
+    "fullText": "Memory is influenced by the way information is organized during learning. New material is easier to remember when learners connect it with knowledge they already understand. Creating categories, examples, or meaningful associations can provide more ways to retrieve the information later. Effective learning therefore involves building connections rather than storing isolated facts.",
+    "promptText": "Memory is influenced by the way information is organized during learning. New material is eas___ to remember wh__ learners conn___ it with knowl____ they alre___ understand. Creating categ_____, examples, or meani_____ associations can prov___ more wa__ to retrieve the inform_____ later. Effective learning therefore involves building connections rather than storing isolated facts.",
+    "answers": [
+      {
+        "full": "easier",
+        "shown": "eas___",
+        "missing": "ier",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "when",
+        "shown": "wh__",
+        "missing": "en",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "connect",
+        "shown": "conn___",
+        "missing": "ect",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "knowledge",
+        "shown": "knowl____",
+        "missing": "edge",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "already",
+        "shown": "alre___",
+        "missing": "ady",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "categories",
+        "shown": "categ_____",
+        "missing": "ories",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "meaningful",
+        "shown": "meani_____",
+        "missing": "ngful",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "provide",
+        "shown": "prov___",
+        "missing": "ide",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "ways",
+        "shown": "wa__",
+        "missing": "ys",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "information",
+        "shown": "inform_____",
+        "missing": "ation",
+        "sentenceIndex": 2
+      }
+    ],
+    "source": "Original practice item; DET C-Test format modeled on Duolingo English Test public description; vocabulary calibrated for general/academic English using NGSL/NAWL.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v1"
+  },
+  {
+    "id": "C018",
+    "type": "c_test",
+    "difficulty": "Current",
+    "domain": "professional",
+    "fullText": "A meeting is not always the best way to solve a workplace problem. If the goal is simply to share information, a short written message may be faster and easier for everyone to review. Meetings are more useful when people need to discuss alternatives, make decisions, or coordinate complicated work. Choosing the right communication method can save both time and attention.",
+    "promptText": "A meeting is not always the best way to solve a workplace problem. If the goal is sim___ to share inform_____, a short writ___ message may be fas___ and easier for ever____ to review. Meetings are mo__ useful wh__ people ne__ to discuss altern______, make decis____, or coordinate compli_____ work. Choosing the right communication method can save both time and attention.",
+    "answers": [
+      {
+        "full": "simply",
+        "shown": "sim___",
+        "missing": "ply",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "information",
+        "shown": "inform_____",
+        "missing": "ation",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "written",
+        "shown": "writ___",
+        "missing": "ten",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "faster",
+        "shown": "fas___",
+        "missing": "ter",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "everyone",
+        "shown": "ever____",
+        "missing": "yone",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "more",
+        "shown": "mo__",
+        "missing": "re",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "when",
+        "shown": "wh__",
+        "missing": "en",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "need",
+        "shown": "ne__",
+        "missing": "ed",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "alternatives",
+        "shown": "altern______",
+        "missing": "atives",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "decisions",
+        "shown": "decis____",
+        "missing": "ions",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "complicated",
+        "shown": "compli_____",
+        "missing": "cated",
+        "sentenceIndex": 2
+      }
+    ],
+    "source": "Original practice item; DET C-Test format modeled on Duolingo English Test public description; vocabulary calibrated for general/academic English using NGSL/NAWL.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v1"
+  },
+  {
+    "id": "C019",
+    "type": "c_test",
+    "difficulty": "Current",
+    "domain": "public",
+    "fullText": "Digital payment systems are convenient, but they can exclude people who lack reliable internet access or suitable devices. Older adults and people with limited technical experience may also feel uncomfortable using unfamiliar payment applications. Businesses that remove all cash options can unintentionally create barriers for some customers. Convenience should therefore be considered together with accessibility.",
+    "promptText": "Digital payment systems are convenient, but they can exclude people who lack reliable internet access or suitable devices. Older adu___ and people wi__ limited techn____ experience may al__ feel uncomfo______ using unfam_____ payment applic______. Businesses th__ remove all ca__ options can unintent_______ create barr____ for some custo____. Convenience should therefore be considered together with accessibility.",
+    "answers": [
+      {
+        "full": "adults",
+        "shown": "adu___",
+        "missing": "lts",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "with",
+        "shown": "wi__",
+        "missing": "th",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "technical",
+        "shown": "techn____",
+        "missing": "ical",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "also",
+        "shown": "al__",
+        "missing": "so",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "uncomfortable",
+        "shown": "uncomfo______",
+        "missing": "rtable",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "unfamiliar",
+        "shown": "unfam_____",
+        "missing": "iliar",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "applications",
+        "shown": "applic______",
+        "missing": "ations",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "that",
+        "shown": "th__",
+        "missing": "at",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "cash",
+        "shown": "ca__",
+        "missing": "sh",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "unintentionally",
+        "shown": "unintent_______",
+        "missing": "ionally",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "barriers",
+        "shown": "barr____",
+        "missing": "iers",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "customers",
+        "shown": "custo____",
+        "missing": "mers",
+        "sentenceIndex": 2
+      }
+    ],
+    "source": "Original practice item; DET C-Test format modeled on Duolingo English Test public description; vocabulary calibrated for general/academic English using NGSL/NAWL.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v1"
+  },
+  {
+    "id": "C020",
+    "type": "c_test",
+    "difficulty": "Current",
+    "domain": "academic",
+    "fullText": "Graphs can communicate patterns quickly, but they can also create misleading impressions. Changing the scale of an axis may make a small difference appear dramatic or make a large difference seem insignificant. Readers should therefore examine labels, units, and starting points before interpreting a visual comparison. Critical reading skills are important for images as well as written text.",
+    "promptText": "Graphs can communicate patterns quickly, but they can also create misleading impressions. Changing the sca__ of an axis may ma__ a small diffe_____ appear dram____ or make a lar__ difference se__ insignificant. Readers sho___ therefore exam___ labels, uni__, and starting poi___ before interp______ a visual compa_____. Critical reading skills are important for images as well as written text.",
+    "answers": [
+      {
+        "full": "scale",
+        "shown": "sca__",
+        "missing": "le",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "make",
+        "shown": "ma__",
+        "missing": "ke",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "difference",
+        "shown": "diffe_____",
+        "missing": "rence",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "dramatic",
+        "shown": "dram____",
+        "missing": "atic",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "large",
+        "shown": "lar__",
+        "missing": "ge",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "seem",
+        "shown": "se__",
+        "missing": "em",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "should",
+        "shown": "sho___",
+        "missing": "uld",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "examine",
+        "shown": "exam___",
+        "missing": "ine",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "units",
+        "shown": "uni__",
+        "missing": "ts",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "points",
+        "shown": "poi___",
+        "missing": "nts",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "interpreting",
+        "shown": "interp______",
+        "missing": "reting",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "comparison",
+        "shown": "compa_____",
+        "missing": "rison",
+        "sentenceIndex": 2
+      }
+    ],
+    "source": "Original practice item; DET C-Test format modeled on Duolingo English Test public description; vocabulary calibrated for general/academic English using NGSL/NAWL.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v1"
+  },
+  {
+    "id": "T001",
+    "type": "c_test",
+    "difficulty": "Target",
+    "domain": "academic",
+    "fullText": "Correlation is often useful for identifying relationships between variables, but it does not by itself demonstrate causation. Two factors may change together because one influences the other, because the relationship works in both directions, or because a third factor affects them both. Researchers therefore use experimental designs and additional evidence when they want to make stronger causal claims. Confusing correlation with causation can lead to inaccurate conclusions.",
+    "promptText": "Correlation is often useful for identifying relationships between variables, but it does not by itself demonstrate causation. Two factors may cha___ together beca___ one influences the oth__, because the relati______ works in bo__ directions, or beca___ a third fac___ affects th__ both. Researchers there____ use experimental desi___ and additional evid____ when th__ want to ma__ stronger cau___ claims. Confusing correlation with causation can lead to inaccurate conclusions.",
+    "answers": [
+      {
+        "full": "change",
+        "shown": "cha___",
+        "missing": "nge",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "because",
+        "shown": "beca___",
+        "missing": "use",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "other",
+        "shown": "oth__",
+        "missing": "er",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "relationship",
+        "shown": "relati______",
+        "missing": "onship",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "both",
+        "shown": "bo__",
+        "missing": "th",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "because",
+        "shown": "beca___",
+        "missing": "use",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "factor",
+        "shown": "fac___",
+        "missing": "tor",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "them",
+        "shown": "th__",
+        "missing": "em",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "therefore",
+        "shown": "there____",
+        "missing": "fore",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "designs",
+        "shown": "desi___",
+        "missing": "gns",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "evidence",
+        "shown": "evid____",
+        "missing": "ence",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "they",
+        "shown": "th__",
+        "missing": "ey",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "make",
+        "shown": "ma__",
+        "missing": "ke",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "causal",
+        "shown": "cau___",
+        "missing": "sal",
+        "sentenceIndex": 2
+      }
+    ],
+    "source": "Original practice item; DET C-Test format modeled on Duolingo English Test public description; vocabulary calibrated for general/academic English using NGSL/NAWL.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v1"
+  },
+  {
+    "id": "T002",
+    "type": "c_test",
+    "difficulty": "Target",
+    "domain": "professional",
+    "fullText": "Organizations increasingly use automated systems to support decisions about hiring, credit, insurance, and other important services. Although automation can improve consistency, an algorithm may reproduce bias if it is trained on historical data that reflects earlier inequalities. Regular evaluation is necessary to determine whether a system performs differently for different groups. Efficiency should not be treated as a substitute for fairness.",
+    "promptText": "Organizations increasingly use automated systems to support decisions about hiring, credit, insurance, and other important services. Although autom_____ can improve consis_____, an algorithm may repro____ bias if it is trai___ on historical da__ that refl____ earlier inequa______. Regular evalu_____ is necessary to deter____ whether a sys___ performs differ_____ for different gro___. Efficiency should not be treated as a substitute for fairness.",
+    "answers": [
+      {
+        "full": "automation",
+        "shown": "autom_____",
+        "missing": "ation",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "consistency",
+        "shown": "consis_____",
+        "missing": "tency",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "reproduce",
+        "shown": "repro____",
+        "missing": "duce",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "trained",
+        "shown": "trai___",
+        "missing": "ned",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "data",
+        "shown": "da__",
+        "missing": "ta",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "reflects",
+        "shown": "refl____",
+        "missing": "ects",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "inequalities",
+        "shown": "inequa______",
+        "missing": "lities",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "evaluation",
+        "shown": "evalu_____",
+        "missing": "ation",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "determine",
+        "shown": "deter____",
+        "missing": "mine",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "system",
+        "shown": "sys___",
+        "missing": "tem",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "differently",
+        "shown": "differ_____",
+        "missing": "ently",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "groups",
+        "shown": "gro___",
+        "missing": "ups",
+        "sentenceIndex": 2
+      }
+    ],
+    "source": "Original practice item; DET C-Test format modeled on Duolingo English Test public description; vocabulary calibrated for general/academic English using NGSL/NAWL.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v1"
+  },
+  {
+    "id": "T003",
+    "type": "c_test",
+    "difficulty": "Target",
+    "domain": "academic",
+    "fullText": "A theory is valuable not because it explains every possible observation, but because it generates claims that can be tested against evidence. If a theory is defined so broadly that no conceivable result could challenge it, researchers have little way to evaluate its accuracy. Strong scientific explanations therefore make predictions that expose them to possible criticism. Testability is an important feature of scientific reasoning.",
+    "promptText": "A theory is valuable not because it explains every possible observation, but because it generates claims that can be tested against evidence. If a theory is defi___ so broadly th__ no conceivable res___ could chall____ it, researchers ha__ little way to eval____ its accuracy. Strong scien_____ explanations there____ make predic_____ that exp___ them to poss____ criticism. Testability is an important feature of scientific reasoning.",
+    "answers": [
+      {
+        "full": "defined",
+        "shown": "defi___",
+        "missing": "ned",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "that",
+        "shown": "th__",
+        "missing": "at",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "result",
+        "shown": "res___",
+        "missing": "ult",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "challenge",
+        "shown": "chall____",
+        "missing": "enge",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "have",
+        "shown": "ha__",
+        "missing": "ve",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "evaluate",
+        "shown": "eval____",
+        "missing": "uate",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "scientific",
+        "shown": "scien_____",
+        "missing": "tific",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "therefore",
+        "shown": "there____",
+        "missing": "fore",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "predictions",
+        "shown": "predic_____",
+        "missing": "tions",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "expose",
+        "shown": "exp___",
+        "missing": "ose",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "possible",
+        "shown": "poss____",
+        "missing": "ible",
+        "sentenceIndex": 2
+      }
+    ],
+    "source": "Original practice item; DET C-Test format modeled on Duolingo English Test public description; vocabulary calibrated for general/academic English using NGSL/NAWL.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v1"
+  },
+  {
+    "id": "T004",
+    "type": "c_test",
+    "difficulty": "Target",
+    "domain": "public",
+    "fullText": "Climate adaptation focuses on reducing the harm caused by environmental changes that are already occurring or expected in the future. Cities may redesign drainage systems, increase shaded public space, revise building standards, or protect areas that naturally absorb floodwater. The most effective strategy depends on local geography, infrastructure, population, and available resources. Adaptation therefore requires local planning as well as global climate action.",
+    "promptText": "Climate adaptation focuses on reducing the harm caused by environmental changes that are already occurring or expected in the future. Cities may rede____ drainage syst___, increase sha___ public spa__, revise buil____ standards, or prot___ areas th__ naturally abs___ floodwater. The most effec____ strategy depe___ on local geogr____, infrastructure, popul_____, and available resou____. Adaptation therefore requires local planning as well as global climate action.",
+    "answers": [
+      {
+        "full": "redesign",
+        "shown": "rede____",
+        "missing": "sign",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "systems",
+        "shown": "syst___",
+        "missing": "ems",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "shaded",
+        "shown": "sha___",
+        "missing": "ded",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "space",
+        "shown": "spa__",
+        "missing": "ce",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "building",
+        "shown": "buil____",
+        "missing": "ding",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "protect",
+        "shown": "prot___",
+        "missing": "ect",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "that",
+        "shown": "th__",
+        "missing": "at",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "absorb",
+        "shown": "abs___",
+        "missing": "orb",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "effective",
+        "shown": "effec____",
+        "missing": "tive",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "depends",
+        "shown": "depe___",
+        "missing": "nds",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "geography",
+        "shown": "geogr____",
+        "missing": "aphy",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "population",
+        "shown": "popul_____",
+        "missing": "ation",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "resources",
+        "shown": "resou____",
+        "missing": "rces",
+        "sentenceIndex": 2
+      }
+    ],
+    "source": "Original practice item; DET C-Test format modeled on Duolingo English Test public description; vocabulary calibrated for general/academic English using NGSL/NAWL.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v1"
+  },
+  {
+    "id": "T005",
+    "type": "c_test",
+    "difficulty": "Target",
+    "domain": "academic",
+    "fullText": "Sampling allows researchers to study a manageable group instead of collecting information from an entire population. However, conclusions may be unreliable if the sample systematically excludes people who differ from those who participate. Researchers therefore consider both sample size and the process used to select participants. A large sample is not automatically a representative sample.",
+    "promptText": "Sampling allows researchers to study a manageable group instead of collecting information from an entire population. However, conclu_____ may be unreliable if the sam___ systematically excl____ people who dif___ from tho__ who participate. Researchers there____ consider bo__ sample si__ and the process us__ to select partic______. A large sample is not automatically a representative sample.",
+    "answers": [
+      {
+        "full": "conclusions",
+        "shown": "conclu_____",
+        "missing": "sions",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "sample",
+        "shown": "sam___",
+        "missing": "ple",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "excludes",
+        "shown": "excl____",
+        "missing": "udes",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "differ",
+        "shown": "dif___",
+        "missing": "fer",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "those",
+        "shown": "tho__",
+        "missing": "se",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "therefore",
+        "shown": "there____",
+        "missing": "fore",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "both",
+        "shown": "bo__",
+        "missing": "th",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "size",
+        "shown": "si__",
+        "missing": "ze",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "used",
+        "shown": "us__",
+        "missing": "ed",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "participants",
+        "shown": "partic______",
+        "missing": "ipants",
+        "sentenceIndex": 2
+      }
+    ],
+    "source": "Original practice item; DET C-Test format modeled on Duolingo English Test public description; vocabulary calibrated for general/academic English using NGSL/NAWL.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v1"
+  },
+  {
+    "id": "T006",
+    "type": "c_test",
+    "difficulty": "Target",
+    "domain": "professional",
+    "fullText": "Innovation often involves uncertainty because organizations cannot know in advance whether a new product or process will succeed. Small experiments allow teams to test assumptions and collect evidence before committing large amounts of money or time. When an experiment fails, the result can still be valuable if it reveals why an idea did not work. Learning quickly can be more useful than avoiding every failure.",
+    "promptText": "Innovation often involves uncertainty because organizations cannot know in advance whether a new product or process will succeed. Small experi_____ allow tea__ to test assump_____ and collect evid____ before commi_____ large amou___ of money or ti__. When an exper_____ fails, the res___ can still be valu____ if it reveals why an id__ did not work. Learning quickly can be more useful than avoiding every failure.",
+    "answers": [
+      {
+        "full": "experiments",
+        "shown": "experi_____",
+        "missing": "ments",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "teams",
+        "shown": "tea__",
+        "missing": "ms",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "assumptions",
+        "shown": "assump_____",
+        "missing": "tions",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "evidence",
+        "shown": "evid____",
+        "missing": "ence",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "committing",
+        "shown": "commi_____",
+        "missing": "tting",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "amounts",
+        "shown": "amou___",
+        "missing": "nts",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "time",
+        "shown": "ti__",
+        "missing": "me",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "experiment",
+        "shown": "exper_____",
+        "missing": "iment",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "result",
+        "shown": "res___",
+        "missing": "ult",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "valuable",
+        "shown": "valu____",
+        "missing": "able",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "idea",
+        "shown": "id__",
+        "missing": "ea",
+        "sentenceIndex": 2
+      }
+    ],
+    "source": "Original practice item; DET C-Test format modeled on Duolingo English Test public description; vocabulary calibrated for general/academic English using NGSL/NAWL.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v1"
+  },
+  {
+    "id": "T007",
+    "type": "c_test",
+    "difficulty": "Target",
+    "domain": "academic",
+    "fullText": "Academic disciplines sometimes use familiar words in highly specialized ways. A term that has a broad meaning in everyday conversation may refer to a much narrower concept within economics, psychology, or biology. Students therefore need to pay attention to how authors define and use key terms inside a particular field. Understanding disciplinary vocabulary is essential for advanced reading.",
+    "promptText": "Academic disciplines sometimes use familiar words in highly specialized ways. A term th__ has a broad mean___ in everyday conver______ may refer to a mu__ narrower conc___ within econo____, psychology, or biol___. Students there____ need to pay atten____ to how authors def___ and use key terms ins___ a particular fie__. Understanding disciplinary vocabulary is essential for advanced reading.",
+    "answers": [
+      {
+        "full": "that",
+        "shown": "th__",
+        "missing": "at",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "meaning",
+        "shown": "mean___",
+        "missing": "ing",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "conversation",
+        "shown": "conver______",
+        "missing": "sation",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "much",
+        "shown": "mu__",
+        "missing": "ch",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "concept",
+        "shown": "conc___",
+        "missing": "ept",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "economics",
+        "shown": "econo____",
+        "missing": "mics",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "biology",
+        "shown": "biol___",
+        "missing": "ogy",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "therefore",
+        "shown": "there____",
+        "missing": "fore",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "attention",
+        "shown": "atten____",
+        "missing": "tion",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "define",
+        "shown": "def___",
+        "missing": "ine",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "inside",
+        "shown": "ins___",
+        "missing": "ide",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "field",
+        "shown": "fie__",
+        "missing": "ld",
+        "sentenceIndex": 2
+      }
+    ],
+    "source": "Original practice item; DET C-Test format modeled on Duolingo English Test public description; vocabulary calibrated for general/academic English using NGSL/NAWL.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v1"
+  },
+  {
+    "id": "T008",
+    "type": "c_test",
+    "difficulty": "Target",
+    "domain": "public",
+    "fullText": "Policies designed to change behavior can produce unexpected effects when people adapt to the new rules. For example, a financial incentive may encourage the desired action but may also reduce people's original personal motivation for doing it. Policy makers therefore need to observe actual responses rather than assuming that individuals will behave exactly as predicted. Human behavior can complicate even well-designed policies.",
+    "promptText": "Policies designed to change behavior can produce unexpected effects when people adapt to the new rules. For example, a finan____ incentive may encou____ the desired act___ but may also red___ people's orig____ personal motiv_____ for doing it. Policy mak___ therefore ne__ to observe act___ responses rat___ than assu____ that indivi_____ will beh___ exactly as predi____. Human behavior can complicate even well-designed policies.",
+    "answers": [
+      {
+        "full": "financial",
+        "shown": "finan____",
+        "missing": "cial",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "encourage",
+        "shown": "encou____",
+        "missing": "rage",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "action",
+        "shown": "act___",
+        "missing": "ion",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "reduce",
+        "shown": "red___",
+        "missing": "uce",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "original",
+        "shown": "orig____",
+        "missing": "inal",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "motivation",
+        "shown": "motiv_____",
+        "missing": "ation",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "makers",
+        "shown": "mak___",
+        "missing": "ers",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "need",
+        "shown": "ne__",
+        "missing": "ed",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "actual",
+        "shown": "act___",
+        "missing": "ual",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "rather",
+        "shown": "rat___",
+        "missing": "her",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "assuming",
+        "shown": "assu____",
+        "missing": "ming",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "individuals",
+        "shown": "indivi_____",
+        "missing": "duals",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "behave",
+        "shown": "beh___",
+        "missing": "ave",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "predicted",
+        "shown": "predi____",
+        "missing": "cted",
+        "sentenceIndex": 2
+      }
+    ],
+    "source": "Original practice item; DET C-Test format modeled on Duolingo English Test public description; vocabulary calibrated for general/academic English using NGSL/NAWL.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v1"
+  },
+  {
+    "id": "T009",
+    "type": "c_test",
+    "difficulty": "Target",
+    "domain": "academic",
+    "fullText": "Reliable measurement requires more than using the same procedure every time. A method can produce highly consistent results while still measuring the wrong characteristic or missing an important part of the concept. Researchers therefore distinguish reliability, which concerns consistency, from validity, which concerns whether an interpretation is justified. Good assessment requires evidence for both.",
+    "promptText": "Reliable measurement requires more than using the same procedure every time. A method can prod___ highly consi_____ results whi__ still measu____ the wrong charact_______ or missing an impor____ part of the conc___. Researchers there____ distinguish reliab_____, which conc____ consistency, fr__ validity, whi__ concerns whet___ an interpretation is justi____. Good assessment requires evidence for both.",
+    "answers": [
+      {
+        "full": "produce",
+        "shown": "prod___",
+        "missing": "uce",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "consistent",
+        "shown": "consi_____",
+        "missing": "stent",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "while",
+        "shown": "whi__",
+        "missing": "le",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "measuring",
+        "shown": "measu____",
+        "missing": "ring",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "characteristic",
+        "shown": "charact_______",
+        "missing": "eristic",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "important",
+        "shown": "impor____",
+        "missing": "tant",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "concept",
+        "shown": "conc___",
+        "missing": "ept",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "therefore",
+        "shown": "there____",
+        "missing": "fore",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "reliability",
+        "shown": "reliab_____",
+        "missing": "ility",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "concerns",
+        "shown": "conc____",
+        "missing": "erns",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "from",
+        "shown": "fr__",
+        "missing": "om",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "which",
+        "shown": "whi__",
+        "missing": "ch",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "whether",
+        "shown": "whet___",
+        "missing": "her",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "justified",
+        "shown": "justi____",
+        "missing": "fied",
+        "sentenceIndex": 2
+      }
+    ],
+    "source": "Original practice item; DET C-Test format modeled on Duolingo English Test public description; vocabulary calibrated for general/academic English using NGSL/NAWL.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v1"
+  },
+  {
+    "id": "T010",
+    "type": "c_test",
+    "difficulty": "Target",
+    "domain": "professional",
+    "fullText": "Negotiation is often described as a competition, but many agreements create value by identifying differences in what each side considers important. One party may care more about price while another places greater value on timing, flexibility, or future cooperation. Understanding these priorities can make mutually beneficial trade-offs possible. Effective negotiation therefore depends on information as well as persuasion.",
+    "promptText": "Negotiation is often described as a competition, but many agreements create value by identifying differences in what each side considers important. One party may ca__ more abo__ price whi__ another pla___ greater val__ on timing, flexib_____, or future cooper_____. Understanding the__ priorities can ma__ mutually benef_____ trade-of__ possible. Effective negotiation therefore depends on information as well as persuasion.",
+    "answers": [
+      {
+        "full": "care",
+        "shown": "ca__",
+        "missing": "re",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "about",
+        "shown": "abo__",
+        "missing": "ut",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "while",
+        "shown": "whi__",
+        "missing": "le",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "places",
+        "shown": "pla___",
+        "missing": "ces",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "value",
+        "shown": "val__",
+        "missing": "ue",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "flexibility",
+        "shown": "flexib_____",
+        "missing": "ility",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "cooperation",
+        "shown": "cooper_____",
+        "missing": "ation",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "these",
+        "shown": "the__",
+        "missing": "se",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "make",
+        "shown": "ma__",
+        "missing": "ke",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "beneficial",
+        "shown": "benef_____",
+        "missing": "icial",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "offs",
+        "shown": "of__",
+        "missing": "fs",
+        "sentenceIndex": 2
+      }
+    ],
+    "source": "Original practice item; DET C-Test format modeled on Duolingo English Test public description; vocabulary calibrated for general/academic English using NGSL/NAWL.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v1"
+  },
+  {
+    "id": "T011",
+    "type": "c_test",
+    "difficulty": "Target",
+    "domain": "academic",
+    "fullText": "An argument may appear convincing because its conclusion sounds reasonable even when the evidence supporting it is weak. Critical thinkers separate their agreement with a conclusion from their evaluation of the reasoning used to reach it. They ask whether the evidence is relevant, sufficient, and compatible with alternative explanations. Good reasoning must be evaluated independently of personal preference.",
+    "promptText": "An argument may appear convincing because its conclusion sounds reasonable even when the evidence supporting it is weak. Critical thin____ separate the__ agreement wi__ a conclusion fr__ their evalu_____ of the reasoning us__ to reach it. They ask whet___ the evidence is rele____, sufficient, and compa_____ with altern_____ explanations. Good reasoning must be evaluated independently of personal preference.",
+    "answers": [
+      {
+        "full": "thinkers",
+        "shown": "thin____",
+        "missing": "kers",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "their",
+        "shown": "the__",
+        "missing": "ir",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "with",
+        "shown": "wi__",
+        "missing": "th",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "from",
+        "shown": "fr__",
+        "missing": "om",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "evaluation",
+        "shown": "evalu_____",
+        "missing": "ation",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "used",
+        "shown": "us__",
+        "missing": "ed",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "whether",
+        "shown": "whet___",
+        "missing": "her",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "relevant",
+        "shown": "rele____",
+        "missing": "vant",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "compatible",
+        "shown": "compa_____",
+        "missing": "tible",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "alternative",
+        "shown": "altern_____",
+        "missing": "ative",
+        "sentenceIndex": 2
+      }
+    ],
+    "source": "Original practice item; DET C-Test format modeled on Duolingo English Test public description; vocabulary calibrated for general/academic English using NGSL/NAWL.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v1"
+  },
+  {
+    "id": "T012",
+    "type": "c_test",
+    "difficulty": "Target",
+    "domain": "public",
+    "fullText": "Introducing a new transportation service does not guarantee that people will immediately stop using private cars. Travel behavior is influenced by cost, reliability, convenience, safety, habit, and the availability of alternatives at both ends of a journey. Planners therefore need to understand the complete travel experience rather than focusing on a single part of it. Transportation choices are shaped by systems rather than isolated services.",
+    "promptText": "Introducing a new transportation service does not guarantee that people will immediately stop using private cars. Travel beha____ is influenced by co__, reliability, conven_____, safety, hab__, and the availability of altern______ at both en__ of a journey. Planners there____ need to under_____ the complete tra___ experience rat___ than focu____ on a single pa__ of it. Transportation choices are shaped by systems rather than isolated services.",
+    "answers": [
+      {
+        "full": "behavior",
+        "shown": "beha____",
+        "missing": "vior",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "cost",
+        "shown": "co__",
+        "missing": "st",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "convenience",
+        "shown": "conven_____",
+        "missing": "ience",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "habit",
+        "shown": "hab__",
+        "missing": "it",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "alternatives",
+        "shown": "altern______",
+        "missing": "atives",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "ends",
+        "shown": "en__",
+        "missing": "ds",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "therefore",
+        "shown": "there____",
+        "missing": "fore",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "understand",
+        "shown": "under_____",
+        "missing": "stand",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "travel",
+        "shown": "tra___",
+        "missing": "vel",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "rather",
+        "shown": "rat___",
+        "missing": "her",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "focusing",
+        "shown": "focu____",
+        "missing": "sing",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "part",
+        "shown": "pa__",
+        "missing": "rt",
+        "sentenceIndex": 2
+      }
+    ],
+    "source": "Original practice item; DET C-Test format modeled on Duolingo English Test public description; vocabulary calibrated for general/academic English using NGSL/NAWL.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v1"
+  },
+  {
+    "id": "T013",
+    "type": "c_test",
+    "difficulty": "Target",
+    "domain": "academic",
+    "fullText": "When researchers compare groups, an average can hide substantial variation among individual members. Two groups may have different average scores while still containing many people whose results overlap. Interpreting group differences therefore requires attention to the distribution of data as well as the mean. A single summary statistic rarely tells the whole story.",
+    "promptText": "When researchers compare groups, an average can hide substantial variation among individual members. Two groups may ha__ different aver___ scores whi__ still conta_____ many peo___ whose resu___ overlap. Interpreting gro__ differences there____ requires atten____ to the distribution of da__ as well as the me__. A single summary statistic rarely tells the whole story.",
+    "answers": [
+      {
+        "full": "have",
+        "shown": "ha__",
+        "missing": "ve",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "average",
+        "shown": "aver___",
+        "missing": "age",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "while",
+        "shown": "whi__",
+        "missing": "le",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "containing",
+        "shown": "conta_____",
+        "missing": "ining",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "people",
+        "shown": "peo___",
+        "missing": "ple",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "results",
+        "shown": "resu___",
+        "missing": "lts",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "group",
+        "shown": "gro__",
+        "missing": "up",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "therefore",
+        "shown": "there____",
+        "missing": "fore",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "attention",
+        "shown": "atten____",
+        "missing": "tion",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "data",
+        "shown": "da__",
+        "missing": "ta",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "mean",
+        "shown": "me__",
+        "missing": "an",
+        "sentenceIndex": 2
+      }
+    ],
+    "source": "Original practice item; DET C-Test format modeled on Duolingo English Test public description; vocabulary calibrated for general/academic English using NGSL/NAWL.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v1"
+  },
+  {
+    "id": "T014",
+    "type": "c_test",
+    "difficulty": "Target",
+    "domain": "professional",
+    "fullText": "Cybersecurity is partly a technical problem, but human behavior remains an important source of risk. Employees may use weak passwords, ignore software updates, or respond to convincing messages that appear to come from trusted colleagues. Organizations therefore combine technical protections with training and clear procedures for reporting suspicious activity. Security depends on both systems and people.",
+    "promptText": "Cybersecurity is partly a technical problem, but human behavior remains an important source of risk. Employees may use we__ passwords, ign___ software upda___, or respond to convi_____ messages th__ appear to co__ from trus___ colleagues. Organizations there____ combine techn____ protections wi__ training and cle__ procedures for repor____ suspicious acti____. Security depends on both systems and people.",
+    "answers": [
+      {
+        "full": "weak",
+        "shown": "we__",
+        "missing": "ak",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "ignore",
+        "shown": "ign___",
+        "missing": "ore",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "updates",
+        "shown": "upda___",
+        "missing": "tes",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "convincing",
+        "shown": "convi_____",
+        "missing": "ncing",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "that",
+        "shown": "th__",
+        "missing": "at",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "come",
+        "shown": "co__",
+        "missing": "me",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "trusted",
+        "shown": "trus___",
+        "missing": "ted",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "therefore",
+        "shown": "there____",
+        "missing": "fore",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "technical",
+        "shown": "techn____",
+        "missing": "ical",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "with",
+        "shown": "wi__",
+        "missing": "th",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "clear",
+        "shown": "cle__",
+        "missing": "ar",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "reporting",
+        "shown": "repor____",
+        "missing": "ting",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "activity",
+        "shown": "acti____",
+        "missing": "vity",
+        "sentenceIndex": 2
+      }
+    ],
+    "source": "Original practice item; DET C-Test format modeled on Duolingo English Test public description; vocabulary calibrated for general/academic English using NGSL/NAWL.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v1"
+  },
+  {
+    "id": "T015",
+    "type": "c_test",
+    "difficulty": "Target",
+    "domain": "academic",
+    "fullText": "Models simplify reality so that researchers can focus on relationships that matter for a particular question. Every model leaves out some details, which means its usefulness depends on the purpose for which it is being used. A simplified model may be extremely informative in one context and misleading in another. The limitations of a model are therefore part of understanding its value.",
+    "promptText": "Models simplify reality so that researchers can focus on relationships that matter for a particular question. Every mod__ leaves out so__ details, whi__ means its usefu_____ depends on the purp___ for which it is bei__ used. A simplified mod__ may be extremely inform_____ in one context and misle_____ in another. The limitations of a model are therefore part of understanding its value.",
+    "answers": [
+      {
+        "full": "model",
+        "shown": "mod__",
+        "missing": "el",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "some",
+        "shown": "so__",
+        "missing": "me",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "which",
+        "shown": "whi__",
+        "missing": "ch",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "usefulness",
+        "shown": "usefu_____",
+        "missing": "lness",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "purpose",
+        "shown": "purp___",
+        "missing": "ose",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "being",
+        "shown": "bei__",
+        "missing": "ng",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "model",
+        "shown": "mod__",
+        "missing": "el",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "informative",
+        "shown": "inform_____",
+        "missing": "ative",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "misleading",
+        "shown": "misle_____",
+        "missing": "ading",
+        "sentenceIndex": 2
+      }
+    ],
+    "source": "Original practice item; DET C-Test format modeled on Duolingo English Test public description; vocabulary calibrated for general/academic English using NGSL/NAWL.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v1"
+  },
+  {
+    "id": "H001",
+    "type": "c_test",
+    "difficulty": "Challenge",
+    "domain": "academic",
+    "fullText": "Cognitive biases are systematic tendencies that can influence judgment even when people believe they are reasoning objectively. Because these tendencies often operate automatically, simply knowing that a bias exists does not guarantee that a person can avoid it. Researchers therefore investigate decision procedures and environmental changes that may reduce opportunities for biased judgment. Improving decisions may require redesigning the context in which choices are made.",
+    "promptText": "Cognitive biases are systematic tendencies that can influence judgment even when people believe they are reasoning objectively. Because the__ tendencies oft__ operate automat______, simply know___ that a bi__ exists do__ not guarantee th__ a person can avo__ it. Researchers there____ investigate deci____ procedures and environ______ changes th__ may reduce opportu______ for biased judg____. Improving decisions may require redesigning the context in which choices are made.",
+    "answers": [
+      {
+        "full": "these",
+        "shown": "the__",
+        "missing": "se",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "often",
+        "shown": "oft__",
+        "missing": "en",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "automatically",
+        "shown": "automat______",
+        "missing": "ically",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "knowing",
+        "shown": "know___",
+        "missing": "ing",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "bias",
+        "shown": "bi__",
+        "missing": "as",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "does",
+        "shown": "do__",
+        "missing": "es",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "that",
+        "shown": "th__",
+        "missing": "at",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "avoid",
+        "shown": "avo__",
+        "missing": "id",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "therefore",
+        "shown": "there____",
+        "missing": "fore",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "decision",
+        "shown": "deci____",
+        "missing": "sion",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "environmental",
+        "shown": "environ______",
+        "missing": "mental",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "that",
+        "shown": "th__",
+        "missing": "at",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "opportunities",
+        "shown": "opportu______",
+        "missing": "nities",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "judgment",
+        "shown": "judg____",
+        "missing": "ment",
+        "sentenceIndex": 2
+      }
+    ],
+    "source": "Original practice item; DET C-Test format modeled on Duolingo English Test public description; vocabulary calibrated for general/academic English using NGSL/NAWL.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v1"
+  },
+  {
+    "id": "H002",
+    "type": "c_test",
+    "difficulty": "Challenge",
+    "domain": "professional",
+    "fullText": "Organizations sometimes optimize a measurable target so aggressively that the measurement gradually stops representing the broader goal it was intended to capture. Employees may learn how to improve the reported indicator without producing an equivalent improvement in the underlying outcome. Managers therefore need multiple sources of evidence and periodic checks on whether incentives are changing behavior in undesirable ways. A useful metric should inform judgment rather than replace it.",
+    "promptText": "Organizations sometimes optimize a measurable target so aggressively that the measurement gradually stops representing the broader goal it was intended to capture. Employees may lea__ how to improve the repo____ indicator with___ producing an equiv_____ improvement in the under_____ outcome. Managers there____ need mult____ sources of evid____ and periodic che___ on whether incen_____ are changing beha____ in undesirable wa__. A useful metric should inform judgment rather than replace it.",
+    "answers": [
+      {
+        "full": "learn",
+        "shown": "lea__",
+        "missing": "rn",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "reported",
+        "shown": "repo____",
+        "missing": "rted",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "without",
+        "shown": "with___",
+        "missing": "out",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "equivalent",
+        "shown": "equiv_____",
+        "missing": "alent",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "underlying",
+        "shown": "under_____",
+        "missing": "lying",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "therefore",
+        "shown": "there____",
+        "missing": "fore",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "multiple",
+        "shown": "mult____",
+        "missing": "iple",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "evidence",
+        "shown": "evid____",
+        "missing": "ence",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "checks",
+        "shown": "che___",
+        "missing": "cks",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "incentives",
+        "shown": "incen_____",
+        "missing": "tives",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "behavior",
+        "shown": "beha____",
+        "missing": "vior",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "ways",
+        "shown": "wa__",
+        "missing": "ys",
+        "sentenceIndex": 2
+      }
+    ],
+    "source": "Original practice item; DET C-Test format modeled on Duolingo English Test public description; vocabulary calibrated for general/academic English using NGSL/NAWL.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v1"
+  },
+  {
+    "id": "H003",
+    "type": "c_test",
+    "difficulty": "Challenge",
+    "domain": "academic",
+    "fullText": "Interdisciplinary research can generate new insights because different fields bring distinct theories, methods, and assumptions to the same problem. However, collaboration can also be difficult when researchers use the same terminology differently or disagree about what counts as convincing evidence. Successful interdisciplinary teams spend time developing shared definitions and expectations before attempting to integrate their findings. Combining perspectives requires translation as well as expertise.",
+    "promptText": "Interdisciplinary research can generate new insights because different fields bring distinct theories, methods, and assumptions to the same problem. However, collabo______ can also be diffi____ when resear_____ use the same termin_____ differently or disa____ about wh__ counts as convi_____ evidence. Successful interdisc________ teams spe__ time devel_____ shared defini_____ and expectations bef___ attempting to integ____ their find____. Combining perspectives requires translation as well as expertise.",
+    "answers": [
+      {
+        "full": "collaboration",
+        "shown": "collabo______",
+        "missing": "ration",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "difficult",
+        "shown": "diffi____",
+        "missing": "cult",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "researchers",
+        "shown": "resear_____",
+        "missing": "chers",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "terminology",
+        "shown": "termin_____",
+        "missing": "ology",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "disagree",
+        "shown": "disa____",
+        "missing": "gree",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "what",
+        "shown": "wh__",
+        "missing": "at",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "convincing",
+        "shown": "convi_____",
+        "missing": "ncing",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "interdisciplinary",
+        "shown": "interdisc________",
+        "missing": "iplinary",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "spend",
+        "shown": "spe__",
+        "missing": "nd",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "developing",
+        "shown": "devel_____",
+        "missing": "oping",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "definitions",
+        "shown": "defini_____",
+        "missing": "tions",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "before",
+        "shown": "bef___",
+        "missing": "ore",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "integrate",
+        "shown": "integ____",
+        "missing": "rate",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "findings",
+        "shown": "find____",
+        "missing": "ings",
+        "sentenceIndex": 2
+      }
+    ],
+    "source": "Original practice item; DET C-Test format modeled on Duolingo English Test public description; vocabulary calibrated for general/academic English using NGSL/NAWL.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v1"
+  },
+  {
+    "id": "H004",
+    "type": "c_test",
+    "difficulty": "Challenge",
+    "domain": "public",
+    "fullText": "Public debates often frame complex policy choices as if decision makers must choose between two completely opposing goals. In practice, policies frequently involve trade-offs among several values, uncertain evidence, and consequences that affect groups differently. Recognizing this complexity does not prevent a decision, but it makes simplistic claims less persuasive. Responsible public reasoning requires attention to both benefits and costs.",
+    "promptText": "Public debates often frame complex policy choices as if decision makers must choose between two completely opposing goals. In practice, poli____ frequently invo___ trade-of__ among seve___ values, uncer____ evidence, and conseq______ that aff___ groups differ_____. Recognizing th__ complexity do__ not prevent a deci____, but it makes simpl_____ claims le__ persuasive. Responsible public reasoning requires attention to both benefits and costs.",
+    "answers": [
+      {
+        "full": "policies",
+        "shown": "poli____",
+        "missing": "cies",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "involve",
+        "shown": "invo___",
+        "missing": "lve",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "offs",
+        "shown": "of__",
+        "missing": "fs",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "several",
+        "shown": "seve___",
+        "missing": "ral",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "uncertain",
+        "shown": "uncer____",
+        "missing": "tain",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "consequences",
+        "shown": "conseq______",
+        "missing": "uences",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "affect",
+        "shown": "aff___",
+        "missing": "ect",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "differently",
+        "shown": "differ_____",
+        "missing": "ently",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "this",
+        "shown": "th__",
+        "missing": "is",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "does",
+        "shown": "do__",
+        "missing": "es",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "decision",
+        "shown": "deci____",
+        "missing": "sion",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "simplistic",
+        "shown": "simpl_____",
+        "missing": "istic",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "less",
+        "shown": "le__",
+        "missing": "ss",
+        "sentenceIndex": 2
+      }
+    ],
+    "source": "Original practice item; DET C-Test format modeled on Duolingo English Test public description; vocabulary calibrated for general/academic English using NGSL/NAWL.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v1"
+  },
+  {
+    "id": "H005",
+    "type": "c_test",
+    "difficulty": "Challenge",
+    "domain": "academic",
+    "fullText": "Statistical significance indicates how surprising an observed result would be under a particular mathematical assumption, but it does not automatically show that the result is important in practice. A very small effect can become statistically significant in a sufficiently large sample, while a meaningful effect may remain uncertain in a small study. Researchers therefore interpret significance together with effect size, uncertainty, and the substantive context of the question. Statistical evidence must be connected to practical meaning.",
+    "promptText": "Statistical significance indicates how surprising an observed result would be under a particular mathematical assumption, but it does not automatically show that the result is important in practice. A very sma__ effect can bec___ statistically signif_____ in a sufficiently lar__ sample, whi__ a meaningful eff___ may remain uncer____ in a small stu__. Researchers there____ interpret signif______ together wi__ effect si__, uncertainty, and the substa_____ context of the ques____. Statistical evidence must be connected to practical meaning.",
+    "answers": [
+      {
+        "full": "small",
+        "shown": "sma__",
+        "missing": "ll",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "become",
+        "shown": "bec___",
+        "missing": "ome",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "significant",
+        "shown": "signif_____",
+        "missing": "icant",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "large",
+        "shown": "lar__",
+        "missing": "ge",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "while",
+        "shown": "whi__",
+        "missing": "le",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "effect",
+        "shown": "eff___",
+        "missing": "ect",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "uncertain",
+        "shown": "uncer____",
+        "missing": "tain",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "study",
+        "shown": "stu__",
+        "missing": "dy",
+        "sentenceIndex": 1
+      },
+      {
+        "full": "therefore",
+        "shown": "there____",
+        "missing": "fore",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "significance",
+        "shown": "signif______",
+        "missing": "icance",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "with",
+        "shown": "wi__",
+        "missing": "th",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "size",
+        "shown": "si__",
+        "missing": "ze",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "substantive",
+        "shown": "substa_____",
+        "missing": "ntive",
+        "sentenceIndex": 2
+      },
+      {
+        "full": "question",
+        "shown": "ques____",
+        "missing": "tion",
+        "sentenceIndex": 2
+      }
+    ],
+    "source": "Original practice item; DET C-Test format modeled on Duolingo English Test public description; vocabulary calibrated for general/academic English using NGSL/NAWL.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v1"
+  }
+]
