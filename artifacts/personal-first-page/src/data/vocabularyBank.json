@@ -1,0 +1,496 @@
+[
+  {
+    "word": "adaptable",
+    "real": true,
+    "difficulty": "Foundation",
+    "chineseMeaning": "适应性强的；能适应变化的",
+    "simpleDefinition": "An adaptable person or thing can adjust when circumstances change.",
+    "partOfSpeech": "adjective",
+    "exampleSentence": "Her adaptable approach helped the team work through the change.",
+    "source": "Merriam-Webster Dictionary",
+    "verified": true
+  },
+  {
+    "word": "adjacent",
+    "real": true,
+    "difficulty": "Foundation",
+    "chineseMeaning": "邻近的；相邻的",
+    "simpleDefinition": "Adjacent things are beside each other.",
+    "partOfSpeech": "adjective",
+    "exampleSentence": "The library is in the adjacent building.",
+    "source": "Merriam-Webster Dictionary",
+    "verified": true
+  },
+  {
+    "word": "beneficial",
+    "real": true,
+    "difficulty": "Foundation",
+    "chineseMeaning": "有益的；有帮助的",
+    "simpleDefinition": "Something beneficial gives a good result or advantage.",
+    "partOfSpeech": "adjective",
+    "exampleSentence": "A short walk can be beneficial for your concentration.",
+    "source": "Merriam-Webster Dictionary",
+    "verified": true
+  },
+  {
+    "word": "coherent",
+    "real": true,
+    "difficulty": "Foundation",
+    "chineseMeaning": "连贯的；有条理的",
+    "simpleDefinition": "A coherent idea is easy to understand because its parts fit together.",
+    "partOfSpeech": "adjective",
+    "exampleSentence": "She gave a coherent explanation of the experiment.",
+    "source": "Merriam-Webster Dictionary",
+    "verified": true
+  },
+  {
+    "word": "appraize",
+    "real": false,
+    "difficulty": "Foundation",
+    "confusedWith": {
+      "word": "appraise",
+      "chineseMeaning": "评估；评价价值或质量"
+    },
+    "source": "Manual spelling review against standard English dictionaries",
+    "verified": true
+  },
+  {
+    "word": "hinderance",
+    "real": false,
+    "difficulty": "Foundation",
+    "confusedWith": {
+      "word": "hindrance",
+      "chineseMeaning": "妨碍进步的事物；障碍"
+    },
+    "source": "Manual spelling review against standard English dictionaries",
+    "verified": true
+  },
+  {
+    "word": "reliable",
+    "real": true,
+    "difficulty": "Foundation",
+    "chineseMeaning": "可靠的；值得信赖的",
+    "simpleDefinition": "A reliable person or thing can be depended on.",
+    "partOfSpeech": "adjective",
+    "exampleSentence": "We need a reliable source before making a decision.",
+    "source": "Merriam-Webster Dictionary",
+    "verified": true
+  },
+  {
+    "word": "convenient",
+    "real": true,
+    "difficulty": "Foundation",
+    "chineseMeaning": "方便的；便利的",
+    "simpleDefinition": "Convenient things save time or effort.",
+    "partOfSpeech": "adjective",
+    "exampleSentence": "The evening class is convenient for my schedule.",
+    "source": "Merriam-Webster Dictionary",
+    "verified": true
+  },
+  {
+    "word": "benefitial",
+    "real": false,
+    "difficulty": "Foundation",
+    "confusedWith": {
+      "word": "beneficial",
+      "chineseMeaning": "有益的；有帮助的"
+    },
+    "source": "Manual spelling review against standard English dictionaries",
+    "verified": true
+  },
+  {
+    "word": "alleviate",
+    "real": true,
+    "difficulty": "Current",
+    "chineseMeaning": "减轻；缓解",
+    "simpleDefinition": "To alleviate a problem is to reduce how serious or uncomfortable it is.",
+    "partOfSpeech": "verb",
+    "exampleSentence": "The new schedule may alleviate some pressure on staff.",
+    "source": "Merriam-Webster Dictionary",
+    "verified": true
+  },
+  {
+    "word": "ambiguous",
+    "real": true,
+    "difficulty": "Current",
+    "chineseMeaning": "模棱两可的；有歧义的",
+    "simpleDefinition": "An ambiguous statement is not completely clear about what it means.",
+    "partOfSpeech": "adjective",
+    "exampleSentence": "The ambiguous instruction confused the new students.",
+    "source": "Merriam-Webster Dictionary",
+    "verified": true
+  },
+  {
+    "word": "anticipate",
+    "real": true,
+    "difficulty": "Current",
+    "chineseMeaning": "预期；预料并准备",
+    "simpleDefinition": "To anticipate something is to think it will happen before it does.",
+    "partOfSpeech": "verb",
+    "exampleSentence": "We anticipate a busy week before the holiday.",
+    "source": "Merriam-Webster Dictionary",
+    "verified": true
+  },
+  {
+    "word": "articulate",
+    "real": true,
+    "difficulty": "Current",
+    "chineseMeaning": "清楚表达；善于表达的",
+    "simpleDefinition": "To articulate an idea is to explain it in clear words.",
+    "partOfSpeech": "verb",
+    "exampleSentence": "He can articulate complex ideas in a simple way.",
+    "source": "Merriam-Webster Dictionary",
+    "verified": true
+  },
+  {
+    "word": "circumvent",
+    "real": true,
+    "difficulty": "Current",
+    "chineseMeaning": "规避；绕过",
+    "simpleDefinition": "To circumvent something is to find a way around it instead of facing it directly.",
+    "partOfSpeech": "verb",
+    "exampleSentence": "The team found a legal way to circumvent the delay.",
+    "source": "Merriam-Webster Dictionary",
+    "verified": true
+  },
+  {
+    "word": "comprehend",
+    "real": true,
+    "difficulty": "Current",
+    "chineseMeaning": "理解；领会",
+    "simpleDefinition": "To comprehend is to understand the meaning of something.",
+    "partOfSpeech": "verb",
+    "exampleSentence": "It took time to comprehend the full report.",
+    "source": "Merriam-Webster Dictionary",
+    "verified": true
+  },
+  {
+    "word": "constrain",
+    "real": true,
+    "difficulty": "Current",
+    "chineseMeaning": "限制；约束",
+    "simpleDefinition": "To constrain something is to keep it within certain limits.",
+    "partOfSpeech": "verb",
+    "exampleSentence": "A small budget can constrain the project.",
+    "source": "Merriam-Webster Dictionary",
+    "verified": true
+  },
+  {
+    "word": "discrepancy",
+    "real": true,
+    "difficulty": "Current",
+    "chineseMeaning": "差异；不一致",
+    "simpleDefinition": "A discrepancy is a mismatch or inconsistency.",
+    "partOfSpeech": "noun",
+    "exampleSentence": "The accountant noticed a discrepancy in the totals.",
+    "source": "Merriam-Webster Dictionary",
+    "verified": true
+  },
+  {
+    "word": "equatible",
+    "real": false,
+    "difficulty": "Current",
+    "confusedWith": {
+      "word": "equitable",
+      "chineseMeaning": "公平的；公正合理的"
+    },
+    "source": "Manual spelling review against standard English dictionaries",
+    "verified": true
+  },
+  {
+    "word": "feasible",
+    "real": true,
+    "difficulty": "Current",
+    "chineseMeaning": "可行的；切实可行的",
+    "simpleDefinition": "A feasible plan can realistically be completed.",
+    "partOfSpeech": "adjective",
+    "exampleSentence": "The group discussed a feasible way to reduce waste.",
+    "source": "Merriam-Webster Dictionary",
+    "verified": true
+  },
+  {
+    "word": "inadvertent",
+    "real": true,
+    "difficulty": "Current",
+    "chineseMeaning": "无意的；非故意的",
+    "simpleDefinition": "An inadvertent action happens by accident.",
+    "partOfSpeech": "adjective",
+    "exampleSentence": "The email caused an inadvertent misunderstanding.",
+    "source": "Merriam-Webster Dictionary",
+    "verified": true
+  },
+  {
+    "word": "mitigate",
+    "real": true,
+    "difficulty": "Current",
+    "chineseMeaning": "减轻；缓和不良影响",
+    "simpleDefinition": "To mitigate a risk is to reduce its possible damage.",
+    "partOfSpeech": "verb",
+    "exampleSentence": "Trees can help mitigate the effects of extreme heat.",
+    "source": "Merriam-Webster Dictionary",
+    "verified": true
+  },
+  {
+    "word": "plausible",
+    "real": true,
+    "difficulty": "Current",
+    "chineseMeaning": "貌似合理的；可信的",
+    "simpleDefinition": "A plausible idea could be true because it makes sense.",
+    "partOfSpeech": "adjective",
+    "exampleSentence": "Her explanation was plausible but needed more evidence.",
+    "source": "Merriam-Webster Dictionary",
+    "verified": true
+  },
+  {
+    "word": "proficient",
+    "real": true,
+    "difficulty": "Current",
+    "chineseMeaning": "熟练的；精通的",
+    "simpleDefinition": "A proficient person can do something well.",
+    "partOfSpeech": "adjective",
+    "exampleSentence": "After practice, he became proficient at presenting data.",
+    "source": "Merriam-Webster Dictionary",
+    "verified": true
+  },
+  {
+    "word": "subtle",
+    "real": true,
+    "difficulty": "Current",
+    "chineseMeaning": "细微的；不明显的",
+    "simpleDefinition": "A subtle difference is small and may need careful attention.",
+    "partOfSpeech": "adjective",
+    "exampleSentence": "There was a subtle change in her tone.",
+    "source": "Merriam-Webster Dictionary",
+    "verified": true
+  },
+  {
+    "word": "sufficive",
+    "real": false,
+    "difficulty": "Current",
+    "source": "Manual spelling review against standard English dictionaries",
+    "verified": true
+  },
+  {
+    "word": "versatile",
+    "real": true,
+    "difficulty": "Current",
+    "chineseMeaning": "多才多艺的；用途广泛的",
+    "simpleDefinition": "A versatile person or thing is useful in varied situations.",
+    "partOfSpeech": "adjective",
+    "exampleSentence": "A versatile notebook works for planning and sketching.",
+    "source": "Merriam-Webster Dictionary",
+    "verified": true
+  },
+  {
+    "word": "seperated",
+    "real": false,
+    "difficulty": "Current",
+    "confusedWith": {
+      "word": "separated",
+      "chineseMeaning": "分开的；分离的"
+    },
+    "source": "Manual spelling review against standard English dictionaries",
+    "verified": true
+  },
+  {
+    "word": "occurrance",
+    "real": false,
+    "difficulty": "Current",
+    "confusedWith": {
+      "word": "occurrence",
+      "chineseMeaning": "发生的事情；事件"
+    },
+    "source": "Manual spelling review against standard English dictionaries",
+    "verified": true
+  },
+  {
+    "word": "competative",
+    "real": false,
+    "difficulty": "Current",
+    "confusedWith": {
+      "word": "competitive",
+      "chineseMeaning": "有竞争力的；竞争性的"
+    },
+    "source": "Manual spelling review against standard English dictionaries",
+    "verified": true
+  },
+  {
+    "word": "consistant",
+    "real": false,
+    "difficulty": "Current",
+    "confusedWith": {
+      "word": "consistent",
+      "chineseMeaning": "一致的；始终如一的"
+    },
+    "source": "Manual spelling review against standard English dictionaries",
+    "verified": true
+  },
+  {
+    "word": "conclusive",
+    "real": true,
+    "difficulty": "Target",
+    "chineseMeaning": "决定性的；确凿的",
+    "simpleDefinition": "Conclusive evidence gives a final and convincing answer.",
+    "partOfSpeech": "adjective",
+    "exampleSentence": "The test did not provide conclusive evidence.",
+    "source": "Merriam-Webster Dictionary",
+    "verified": true
+  },
+  {
+    "word": "empirical",
+    "real": true,
+    "difficulty": "Target",
+    "chineseMeaning": "以观察或实验为依据的",
+    "simpleDefinition": "Empirical knowledge comes from what can be observed or tested.",
+    "partOfSpeech": "adjective",
+    "exampleSentence": "The paper presents empirical evidence from three studies.",
+    "source": "Merriam-Webster Dictionary",
+    "verified": true
+  },
+  {
+    "word": "exacerbate",
+    "real": true,
+    "difficulty": "Target",
+    "chineseMeaning": "加剧；使恶化",
+    "simpleDefinition": "To exacerbate a situation is to increase its difficulty or harm.",
+    "partOfSpeech": "verb",
+    "exampleSentence": "Poor communication can exacerbate a small disagreement.",
+    "source": "Merriam-Webster Dictionary",
+    "verified": true
+  },
+  {
+    "word": "juxtapose",
+    "real": true,
+    "difficulty": "Target",
+    "chineseMeaning": "并置；把不同事物放在一起比较",
+    "simpleDefinition": "To juxtapose things is to place them side by side so their contrast is clear.",
+    "partOfSpeech": "verb",
+    "exampleSentence": "The exhibit juxtaposes old photographs with new ones.",
+    "source": "Merriam-Webster Dictionary",
+    "verified": true
+  },
+  {
+    "word": "meticulous",
+    "real": true,
+    "difficulty": "Target",
+    "chineseMeaning": "一丝不苟的；非常细心的",
+    "simpleDefinition": "A meticulous person works with great care and precision.",
+    "partOfSpeech": "adjective",
+    "exampleSentence": "Her meticulous notes made the research easy to review.",
+    "source": "Merriam-Webster Dictionary",
+    "verified": true
+  },
+  {
+    "word": "pervasive",
+    "real": true,
+    "difficulty": "Target",
+    "chineseMeaning": "普遍存在的；遍及各处的",
+    "simpleDefinition": "A pervasive influence is present in many places or parts of a situation.",
+    "partOfSpeech": "adjective",
+    "exampleSentence": "Digital tools have a pervasive role in modern work.",
+    "source": "Merriam-Webster Dictionary",
+    "verified": true
+  },
+  {
+    "word": "substantiate",
+    "real": true,
+    "difficulty": "Target",
+    "chineseMeaning": "用证据证实；支持说法",
+    "simpleDefinition": "To substantiate an idea is to show that it is likely true.",
+    "partOfSpeech": "verb",
+    "exampleSentence": "The researcher used records to substantiate the claim.",
+    "source": "Merriam-Webster Dictionary",
+    "verified": true
+  },
+  {
+    "word": "obscurative",
+    "real": false,
+    "difficulty": "Target",
+    "source": "Manual spelling review against standard English dictionaries",
+    "verified": true
+  },
+  {
+    "word": "proliferate",
+    "real": true,
+    "difficulty": "Target",
+    "chineseMeaning": "迅速增加；激增",
+    "simpleDefinition": "Things proliferate when they grow in number very rapidly.",
+    "partOfSpeech": "verb",
+    "exampleSentence": "Small cafés began to proliferate across the neighborhood.",
+    "source": "Merriam-Webster Dictionary",
+    "verified": true
+  },
+  {
+    "word": "comprehencive",
+    "real": false,
+    "difficulty": "Target",
+    "confusedWith": {
+      "word": "comprehensive",
+      "chineseMeaning": "全面的；综合的"
+    },
+    "source": "Manual spelling review against standard English dictionaries",
+    "verified": true
+  },
+  {
+    "word": "intransigent",
+    "real": true,
+    "difficulty": "Challenge",
+    "chineseMeaning": "不妥协的；不愿改变立场的",
+    "simpleDefinition": "An intransigent person refuses to compromise.",
+    "partOfSpeech": "adjective",
+    "exampleSentence": "The intransigent negotiator rejected every revision.",
+    "source": "Merriam-Webster Dictionary",
+    "verified": true
+  },
+  {
+    "word": "ephemeral",
+    "real": true,
+    "difficulty": "Challenge",
+    "chineseMeaning": "短暂的；转瞬即逝的",
+    "simpleDefinition": "Something ephemeral disappears or ends quickly.",
+    "partOfSpeech": "adjective",
+    "exampleSentence": "The artist captured the ephemeral colors of the sunset.",
+    "source": "Merriam-Webster Dictionary",
+    "verified": true
+  },
+  {
+    "word": "anachronistic",
+    "real": true,
+    "difficulty": "Challenge",
+    "chineseMeaning": "时代错误的；不合时代的",
+    "simpleDefinition": "An anachronistic thing seems out of place in its historical period.",
+    "partOfSpeech": "adjective",
+    "exampleSentence": "The modern phrase sounded anachronistic in the historical novel.",
+    "source": "Merriam-Webster Dictionary",
+    "verified": true
+  },
+  {
+    "word": "contentious",
+    "real": true,
+    "difficulty": "Challenge",
+    "chineseMeaning": "有争议的；容易引起争论的",
+    "simpleDefinition": "A contentious topic often creates strong opposing opinions.",
+    "partOfSpeech": "adjective",
+    "exampleSentence": "The committee postponed the contentious discussion.",
+    "source": "Merriam-Webster Dictionary",
+    "verified": true
+  },
+  {
+    "word": "circumscriptive",
+    "real": false,
+    "difficulty": "Challenge",
+    "source": "Manual spelling review against standard English dictionaries",
+    "verified": true
+  },
+  {
+    "word": "prevaricate",
+    "real": true,
+    "difficulty": "Challenge",
+    "chineseMeaning": "含糊其辞；回避直接回答",
+    "simpleDefinition": "To prevaricate is to speak vaguely instead of telling the truth clearly.",
+    "partOfSpeech": "verb",
+    "exampleSentence": "When asked about the error, the spokesperson began to prevaricate.",
+    "source": "Merriam-Webster Dictionary",
+    "verified": true
+  }
+]

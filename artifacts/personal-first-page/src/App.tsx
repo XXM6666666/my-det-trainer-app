@@ -1,20 +1,23 @@
 import { useState } from 'react';
 import { Route, Router as WouterRouter } from 'wouter';
+import rawVocabularyBank from './data/vocabularyBank.json';
 
 type Difficulty = 'Foundation' | 'Current' | 'Target' | 'Challenge';
 
 type VocabularyItem = {
   word: string;
   real: boolean;
-  meaning?: string;
-  explanation?: string;
+  chineseMeaning?: string;
+  simpleDefinition?: string;
   partOfSpeech?: string;
-  example?: string;
+  exampleSentence?: string;
   difficulty: Difficulty;
   confusedWith?: {
     word: string;
-    meaning: string;
+    chineseMeaning: string;
   };
+  source: string;
+  verified: boolean;
 };
 
 type AnswerRecord = {
@@ -48,57 +51,8 @@ const INITIAL_PERFORMANCE_PROFILE: PerformanceProfile = {
   Challenge: { answered: 0, correct: 0, streak: 0 },
 };
 
-const VOCABULARY_BANK: VocabularyItem[] = [
-  { word: 'adaptable', real: true, meaning: '适应性强的；能适应变化的', explanation: 'An adaptable person or thing can adjust when circumstances change.', partOfSpeech: 'adjective', example: 'Her adaptable approach helped the team work through the change.', difficulty: 'Foundation' },
-  { word: 'adjacent', real: true, meaning: '邻近的；相邻的', explanation: 'Adjacent things are beside each other.', partOfSpeech: 'adjective', example: 'The library is in the adjacent building.', difficulty: 'Foundation' },
-  { word: 'beneficial', real: true, meaning: '有益的；有帮助的', explanation: 'Something beneficial gives a good result or advantage.', partOfSpeech: 'adjective', example: 'A short walk can be beneficial for your concentration.', difficulty: 'Foundation' },
-  { word: 'coherent', real: true, meaning: '连贯的；有条理的', explanation: 'A coherent idea is easy to understand because its parts fit together.', partOfSpeech: 'adjective', example: 'She gave a coherent explanation of the experiment.', difficulty: 'Foundation' },
-  { word: 'appraize', real: false, difficulty: 'Foundation', confusedWith: { word: 'appraise', meaning: '评估；评价价值或质量' } },
-  { word: 'hinderance', real: false, difficulty: 'Foundation', confusedWith: { word: 'hindrance', meaning: '妨碍进步的事物；障碍' } },
-  { word: 'reliable', real: true, meaning: '可靠的；值得信赖的', explanation: 'A reliable person or thing can be depended on.', partOfSpeech: 'adjective', example: 'We need a reliable source before making a decision.', difficulty: 'Foundation' },
-  { word: 'convenient', real: true, meaning: '方便的；便利的', explanation: 'Convenient things save time or effort.', partOfSpeech: 'adjective', example: 'The evening class is convenient for my schedule.', difficulty: 'Foundation' },
-  { word: 'benefitial', real: false, difficulty: 'Foundation', confusedWith: { word: 'beneficial', meaning: '有益的；有帮助的' } },
-
-  { word: 'alleviate', real: true, meaning: '减轻；缓解', explanation: 'To alleviate a problem is to reduce how serious or uncomfortable it is.', partOfSpeech: 'verb', example: 'The new schedule may alleviate some pressure on staff.', difficulty: 'Current' },
-  { word: 'ambiguous', real: true, meaning: '模棱两可的；有歧义的', explanation: 'An ambiguous statement is not completely clear about what it means.', partOfSpeech: 'adjective', example: 'The ambiguous instruction confused the new students.', difficulty: 'Current' },
-  { word: 'anticipate', real: true, meaning: '预期；预料并准备', explanation: 'To anticipate something is to think it will happen before it does.', partOfSpeech: 'verb', example: 'We anticipate a busy week before the holiday.', difficulty: 'Current' },
-  { word: 'articulate', real: true, meaning: '清楚表达；善于表达的', explanation: 'To articulate an idea is to explain it in clear words.', partOfSpeech: 'verb', example: 'He can articulate complex ideas in a simple way.', difficulty: 'Current' },
-  { word: 'circumvent', real: true, meaning: '规避；绕过', explanation: 'To circumvent something is to find a way around it instead of facing it directly.', partOfSpeech: 'verb', example: 'The team found a legal way to circumvent the delay.', difficulty: 'Current' },
-  { word: 'comprehend', real: true, meaning: '理解；领会', explanation: 'To comprehend is to understand the meaning of something.', partOfSpeech: 'verb', example: 'It took time to comprehend the full report.', difficulty: 'Current' },
-  { word: 'constrain', real: true, meaning: '限制；约束', explanation: 'To constrain something is to keep it within certain limits.', partOfSpeech: 'verb', example: 'A small budget can constrain the project.', difficulty: 'Current' },
-  { word: 'discrepancy', real: true, meaning: '差异；不一致', explanation: 'A discrepancy is a mismatch or inconsistency.', partOfSpeech: 'noun', example: 'The accountant noticed a discrepancy in the totals.', difficulty: 'Current' },
-  { word: 'equatible', real: false, difficulty: 'Current', confusedWith: { word: 'equitable', meaning: '公平的；公正合理的' } },
-  { word: 'feasible', real: true, meaning: '可行的；切实可行的', explanation: 'A feasible plan can realistically be completed.', partOfSpeech: 'adjective', example: 'The group discussed a feasible way to reduce waste.', difficulty: 'Current' },
-  { word: 'inadvertent', real: true, meaning: '无意的；非故意的', explanation: 'An inadvertent action happens by accident.', partOfSpeech: 'adjective', example: 'The email caused an inadvertent misunderstanding.', difficulty: 'Current' },
-  { word: 'mitigate', real: true, meaning: '减轻；缓和不良影响', explanation: 'To mitigate a risk is to reduce its possible damage.', partOfSpeech: 'verb', example: 'Trees can help mitigate the effects of extreme heat.', difficulty: 'Current' },
-  { word: 'plausible', real: true, meaning: '貌似合理的；可信的', explanation: 'A plausible idea could be true because it makes sense.', partOfSpeech: 'adjective', example: 'Her explanation was plausible but needed more evidence.', difficulty: 'Current' },
-  { word: 'proficient', real: true, meaning: '熟练的；精通的', explanation: 'A proficient person can do something well.', partOfSpeech: 'adjective', example: 'After practice, he became proficient at presenting data.', difficulty: 'Current' },
-  { word: 'subtle', real: true, meaning: '细微的；不明显的', explanation: 'A subtle difference is small and may need careful attention.', partOfSpeech: 'adjective', example: 'There was a subtle change in her tone.', difficulty: 'Current' },
-  { word: 'sufficive', real: false, difficulty: 'Current' },
-  { word: 'versatile', real: true, meaning: '多才多艺的；用途广泛的', explanation: 'A versatile person or thing is useful in varied situations.', partOfSpeech: 'adjective', example: 'A versatile notebook works for planning and sketching.', difficulty: 'Current' },
-  { word: 'seperated', real: false, difficulty: 'Current', confusedWith: { word: 'separated', meaning: '分开的；分离的' } },
-  { word: 'occurrance', real: false, difficulty: 'Current', confusedWith: { word: 'occurrence', meaning: '发生的事情；事件' } },
-  { word: 'competative', real: false, difficulty: 'Current', confusedWith: { word: 'competitive', meaning: '有竞争力的；竞争性的' } },
-  { word: 'consistant', real: false, difficulty: 'Current', confusedWith: { word: 'consistent', meaning: '一致的；始终如一的' } },
-
-  { word: 'conclusive', real: true, meaning: '决定性的；确凿的', explanation: 'Conclusive evidence gives a final and convincing answer.', partOfSpeech: 'adjective', example: 'The test did not provide conclusive evidence.', difficulty: 'Target' },
-  { word: 'empirical', real: true, meaning: '以观察或实验为依据的', explanation: 'Empirical knowledge comes from what can be observed or tested.', partOfSpeech: 'adjective', example: 'The paper presents empirical evidence from three studies.', difficulty: 'Target' },
-  { word: 'exacerbate', real: true, meaning: '加剧；使恶化', explanation: 'To exacerbate a situation is to increase its difficulty or harm.', partOfSpeech: 'verb', example: 'Poor communication can exacerbate a small disagreement.', difficulty: 'Target' },
-  { word: 'juxtapose', real: true, meaning: '并置；把不同事物放在一起比较', explanation: 'To juxtapose things is to place them side by side so their contrast is clear.', partOfSpeech: 'verb', example: 'The exhibit juxtaposes old photographs with new ones.', difficulty: 'Target' },
-  { word: 'meticulous', real: true, meaning: '一丝不苟的；非常细心的', explanation: 'A meticulous person works with great care and precision.', partOfSpeech: 'adjective', example: 'Her meticulous notes made the research easy to review.', difficulty: 'Target' },
-  { word: 'pervasive', real: true, meaning: '普遍存在的；遍及各处的', explanation: 'A pervasive influence is present in many places or parts of a situation.', partOfSpeech: 'adjective', example: 'Digital tools have a pervasive role in modern work.', difficulty: 'Target' },
-  { word: 'substantiate', real: true, meaning: '用证据证实；支持说法', explanation: 'To substantiate an idea is to show that it is likely true.', partOfSpeech: 'verb', example: 'The researcher used records to substantiate the claim.', difficulty: 'Target' },
-  { word: 'obscurative', real: false, difficulty: 'Target' },
-  { word: 'proliferate', real: true, meaning: '迅速增加；激增', explanation: 'Things proliferate when they grow in number very rapidly.', partOfSpeech: 'verb', example: 'Small cafés began to proliferate across the neighborhood.', difficulty: 'Target' },
-  { word: 'comprehencive', real: false, difficulty: 'Target', confusedWith: { word: 'comprehensive', meaning: '全面的；综合的' } },
-
-  { word: 'intransigent', real: true, meaning: '不妥协的；不愿改变立场的', explanation: 'An intransigent person refuses to compromise.', partOfSpeech: 'adjective', example: 'The intransigent negotiator rejected every revision.', difficulty: 'Challenge' },
-  { word: 'ephemeral', real: true, meaning: '短暂的；转瞬即逝的', explanation: 'Something ephemeral disappears or ends quickly.', partOfSpeech: 'adjective', example: 'The artist captured the ephemeral colors of the sunset.', difficulty: 'Challenge' },
-  { word: 'anachronistic', real: true, meaning: '时代错误的；不合时代的', explanation: 'An anachronistic thing seems out of place in its historical period.', partOfSpeech: 'adjective', example: 'The modern phrase sounded anachronistic in the historical novel.', difficulty: 'Challenge' },
-  { word: 'contentious', real: true, meaning: '有争议的；容易引起争论的', explanation: 'A contentious topic often creates strong opposing opinions.', partOfSpeech: 'adjective', example: 'The committee postponed the contentious discussion.', difficulty: 'Challenge' },
-  { word: 'circumscriptive', real: false, difficulty: 'Challenge' },
-  { word: 'prevaricate', real: true, meaning: '含糊其辞；回避直接回答', explanation: 'To prevaricate is to speak vaguely instead of telling the truth clearly.', partOfSpeech: 'verb', example: 'When asked about the error, the spokesperson began to prevaricate.', difficulty: 'Challenge' },
-];
+const VOCABULARY_BANK = rawVocabularyBank as VocabularyItem[];
+const VERIFIED_VOCABULARY_BANK = VOCABULARY_BANK.filter((item) => item.verified);
 
 function shuffle<T>(items: T[]): T[] {
   const shuffled = [...items];
@@ -113,7 +67,7 @@ function createNewRound(): VocabularyItem[] {
   const difficulties = Object.keys(DEFAULT_ROUND_QUOTAS) as Difficulty[];
   const targetRealCount = 8 + Math.floor(Math.random() * 5);
   const availableRealCounts = difficulties.map((difficulty) => {
-    const items = VOCABULARY_BANK.filter((item) => item.difficulty === difficulty);
+    const items = VERIFIED_VOCABULARY_BANK.filter((item) => item.difficulty === difficulty);
     const realCount = items.filter((item) => item.real).length;
     const fakeCount = items.length - realCount;
     const quota = DEFAULT_ROUND_QUOTAS[difficulty];
@@ -150,9 +104,9 @@ function createNewRound(): VocabularyItem[] {
   const realCounts = possibleCounts[Math.floor(Math.random() * possibleCounts.length)];
   const round = difficulties.flatMap((difficulty) => {
     const quota = DEFAULT_ROUND_QUOTAS[difficulty];
-    const realItems = shuffle(VOCABULARY_BANK.filter((item) => item.difficulty === difficulty && item.real))
+    const realItems = shuffle(VERIFIED_VOCABULARY_BANK.filter((item) => item.difficulty === difficulty && item.real))
       .slice(0, realCounts[difficulty]);
-    const fakeItems = shuffle(VOCABULARY_BANK.filter((item) => item.difficulty === difficulty && !item.real))
+    const fakeItems = shuffle(VERIFIED_VOCABULARY_BANK.filter((item) => item.difficulty === difficulty && !item.real))
       .slice(0, quota - realCounts[difficulty]);
 
     return [...realItems, ...fakeItems];
@@ -200,7 +154,7 @@ function LearningFeedback({ item }: { item: VocabularyItem }) {
         {item.confusedWith && (
           <div className="confusion-note">
             <p><span className="detail-label">Real word</span><strong>{item.confusedWith.word}</strong></p>
-            <p><span className="detail-label">Meaning</span>{item.confusedWith.meaning}</p>
+            <p><span className="detail-label">Meaning</span>{item.confusedWith.chineseMeaning}</p>
             <p><span className="detail-label">Correct spelling</span>{item.confusedWith.word}</p>
           </div>
         )}
@@ -215,10 +169,10 @@ function LearningFeedback({ item }: { item: VocabularyItem }) {
         <strong>{item.word}</strong>
       </div>
       <dl className="learning-details">
-        <div><dt>Chinese meaning</dt><dd>{item.meaning}</dd></div>
-        <div><dt>Simple explanation</dt><dd>{item.explanation}</dd></div>
+        <div><dt>Chinese meaning</dt><dd>{item.chineseMeaning}</dd></div>
+        <div><dt>Simple explanation</dt><dd>{item.simpleDefinition}</dd></div>
         <div><dt>Part of speech</dt><dd>{item.partOfSpeech}</dd></div>
-        <div><dt>Example</dt><dd className="example-text">“{item.example}”</dd></div>
+        <div><dt>Example</dt><dd className="example-text">“{item.exampleSentence}”</dd></div>
       </dl>
     </div>
   );
