@@ -134,4 +134,57 @@ export function difficultyAccuracy(stats: DifficultyStats): number {
   return stats.total ? Math.round((stats.correct / stats.total) * 100) : 0;
 }
 
+export type MistakeWordEntry = {
+  word: string;
+  real: boolean;
+  chineseMeaning?: string;
+};
+
+const MISTAKE_WORDS_STORAGE_KEY = 'det-trainer-mistake-words-v1';
+
+function normalizeWord(word: string): string {
+  return word.trim().toLowerCase();
+}
+
+function isMistakeWordEntry(value: unknown): value is MistakeWordEntry {
+  if (!value || typeof value !== 'object') return false;
+  const entry = value as Record<string, unknown>;
+  return typeof entry.word === 'string' && typeof entry.real === 'boolean';
+}
+
+export function loadMistakeWords(): MistakeWordEntry[] {
+  try {
+    const raw = window.localStorage.getItem(MISTAKE_WORDS_STORAGE_KEY);
+    if (!raw) return [];
+    const parsed = JSON.parse(raw) as unknown;
+    if (!Array.isArray(parsed)) return [];
+    return parsed.filter(isMistakeWordEntry);
+  } catch {
+    return [];
+  }
+}
+
+export function recordMistakeWords(mistakes: HistoryMistake[]): MistakeWordEntry[] {
+  const existing = loadMistakeWords();
+  const known = new Set(existing.map((entry) => normalizeWord(entry.word)));
+  const additions: MistakeWordEntry[] = [];
+
+  for (const mistake of mistakes) {
+    const key = normalizeWord(mistake.word);
+    if (known.has(key)) continue;
+    known.add(key);
+    additions.push({ word: mistake.word, real: mistake.real, chineseMeaning: mistake.chineseMeaning });
+  }
+
+  if (additions.length === 0) return existing;
+
+  const next = [...existing, ...additions];
+  try {
+    window.localStorage.setItem(MISTAKE_WORDS_STORAGE_KEY, JSON.stringify(next));
+  } catch {
+    // Storage unavailable — keep training usable without the mistake registry.
+  }
+  return next;
+}
+
 export { HISTORY_DIFFICULTIES };
