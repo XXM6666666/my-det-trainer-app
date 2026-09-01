@@ -148,6 +148,9 @@ button:focus-visible {
 }
 
 .practice-header, .results-header { display: flex; width: min(100% - 2.5rem, 58rem); align-items: center; justify-content: space-between; margin: 0 auto; padding: 2rem 0 1.45rem; }
+.practice-header-actions { display: flex; align-items: center; gap: 0.85rem; }
+.exit-round-button { min-height: 2.1rem; padding: 0 0.75rem; border: 1px solid var(--line-dark); border-radius: 0.55rem; background: transparent; color: var(--ink-soft); font-size: 0.7rem; font-weight: 700; letter-spacing: 0.02em; cursor: pointer; transition: transform 180ms ease, background-color 180ms ease, border-color 180ms ease, color 180ms ease; }
+.exit-round-button:hover { border-color: var(--coral); background: var(--coral-pale); color: #914d41; transform: translateY(-1px); }
 .question-count { color: var(--ink-soft); font-size: 0.78rem; font-weight: 700; letter-spacing: 0.06em; }
 .question-count span { margin: 0 0.18rem; color: var(--line-dark); font-weight: 400; }
 .progress-track { width: min(100% - 2.5rem, 58rem); height: 0.3rem; margin: 0 auto; overflow: hidden; border-radius: 99px; background: var(--paper-deep); }
@@ -230,6 +233,21 @@ button:focus-visible {
 .pronounce-button { min-height: 2.35rem; padding: 0 0.85rem; border: 1px solid var(--line-dark); border-radius: 0.6rem; background: rgba(251, 250, 246, 0.7); color: var(--teal-deep); font-size: 0.76rem; font-weight: 700; cursor: pointer; transition: transform 180ms ease, background-color 180ms ease, border-color 180ms ease; }
 .pronounce-button:hover { border-color: var(--teal); background: var(--teal-pale); transform: translateY(-1px); }
 
+.score-grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+.ctest-content { width: min(100% - 2.5rem, 46rem); }
+.ctest-passage-card { width: 100%; padding: 1.9rem 1.6rem 2.1rem; border: 1px solid var(--line); border-radius: 1.15rem; background: var(--card); box-shadow: var(--shadow-soft); }
+.ctest-passage-text { margin: 0; color: var(--ink); font-size: 1.02rem; line-height: 2.1; }
+.ctest-blank { display: inline-flex; align-items: center; gap: 0.35rem; margin: 0 0.1rem; }
+.ctest-input { min-width: 2.4rem; padding: 0.1rem 0.35rem; border: 0; border-bottom: 2px solid var(--line-dark); border-radius: 0.2rem; background: rgba(226, 169, 78, 0.12); color: var(--ink); font: inherit; font-weight: 700; text-align: center; }
+.ctest-input:focus-visible { outline: none; border-bottom-color: var(--teal); background: var(--teal-pale); }
+.ctest-input:disabled { color: var(--ink-soft); background: transparent; }
+.ctest-input.is-correct { border-bottom-color: var(--teal); background: var(--teal-pale); color: var(--teal-deep); }
+.ctest-input.is-incorrect { border-bottom-color: var(--coral); background: var(--coral-pale); color: #914d41; }
+.ctest-mark { font-size: 0.78rem; font-weight: 700; white-space: nowrap; }
+.ctest-mark-correct { color: var(--teal-deep); }
+.ctest-mark-incorrect { color: #914d41; }
+
 @keyframes rise-in { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes feedback-in { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
 
@@ -247,6 +265,7 @@ button:focus-visible {
   .answer-button { min-height: 3.5rem; }
   .score-card { padding: 0.8rem; }
   .score-card strong { font-size: 2rem; }
+  .score-grid-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .learning-details div, .confusion-note p { grid-template-columns: 1fr; gap: 0.18rem; }
 }
 

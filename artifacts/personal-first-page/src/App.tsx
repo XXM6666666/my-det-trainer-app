@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Route, Router as WouterRouter } from 'wouter';
 import rawVocabularyBank from './data/vocabularyBank.json';
+import rawCTestBank from './data/ctestBank.json';
 import {
   buildHistoryRecord,
   difficultyAccuracy,
@@ -14,6 +15,12 @@ import {
   type MistakeWordEntry,
 } from './lib/history';
 import { speakWord } from './lib/speech';
+import {
+  checkCTestAnswer,
+  parseCTestPromptSegments,
+  type CTestBlankResult,
+  type CTestItem,
+} from './lib/ctest';
 
 type Difficulty = 'Foundation' | 'Current' | 'Target' | 'Challenge';
 
@@ -39,7 +46,7 @@ type AnswerRecord = {
   correct: boolean;
 };
 
-type Screen = 'home' | 'practice' | 'results' | 'history';
+type Screen = 'home' | 'practice' | 'results' | 'history' | 'ctestPractice' | 'ctestResults';
 type RoundMode = 'new' | 'mistakes';
 
 const DEFAULT_ROUND_QUOTAS: Record<Difficulty, number> = {
@@ -50,6 +57,9 @@ const DEFAULT_ROUND_QUOTAS: Record<Difficulty, number> = {
 };
 
 const HISTORICAL_MISTAKES_ROUND_SIZE = 20;
+const CTEST_ROUND_SIZE = 5;
+const CTEST_BANK = rawCTestBank as CTestItem[];
+const EXIT_ROUND_CONFIRMATION = '确定退出本轮训练吗？未完成的训练不会计入成绩。';
 
 // Prepared for a future review algorithm. The current round always uses
 // DEFAULT_ROUND_QUOTAS; these counters do not alter selection yet.
@@ -141,12 +151,14 @@ function Brand() {
 
 function Home({
   onStart,
+  onStartCTest,
   onViewHistory,
   onPracticeMistakes,
   hasVerifiedQuestions,
   hasMistakeWords,
 }: {
   onStart: () => void;
+  onStartCTest: () => void;
   onViewHistory: () => void;
   onPracticeMistakes: () => void;
   hasVerifiedQuestions: boolean;
@@ -165,6 +177,9 @@ function Home({
         </div>
         <button className="primary-button start-button" type="button" onClick={onStart} data-testid="button-start-training">
           开始单词训练
+        </button>
+        <button className="secondary-button history-entry-button" type="button" onClick={onStartCTest} data-testid="button-start-ctest">
+          C-Test / 单词补全
         </button>
         <button className="secondary-button history-entry-button" type="button" onClick={onViewHistory} data-testid="button-view-history">
           训练记录 / History
@@ -258,6 +273,7 @@ function Practice({
   selectedAnswer,
   onAnswer,
   onNext,
+  onExit,
   mode,
 }: {
   round: VocabularyItem[];
@@ -265,6 +281,7 @@ function Practice({
   selectedAnswer: boolean | null;
   onAnswer: (answer: boolean) => void;
   onNext: () => void;
+  onExit: () => void;
   mode: RoundMode;
 }) {
   const item = round[currentIndex];
@@ -276,8 +293,13 @@ function Practice({
     <main className="page-shell practice-page">
       <header className="practice-header">
         <Brand />
-        <div className="question-count" aria-live="polite" data-testid="text-question-count">
-          {currentIndex + 1} <span>/</span> {round.length}
+        <div className="practice-header-actions">
+          <button className="exit-round-button" type="button" onClick={onExit} data-testid="button-exit-round">
+            返回主页
+          </button>
+          <div className="question-count" aria-live="polite" data-testid="text-question-count">
+            {currentIndex + 1} <span>/</span> {round.length}
+          </div>
         </div>
       </header>
       <div className="progress-track" aria-label={`${currentIndex + 1} of ${round.length} questions`} role="progressbar" aria-valuemin={1} aria-valuemax={round.length} aria-valuenow={currentIndex + 1}>
@@ -473,6 +495,193 @@ function History({ records, onBack }: { records: HistoryRecord[]; onBack: () => 
   );
 }
 
+function CTestPassage({
+  item,
+  passageNumber,
+  totalPassages,
+  onSubmit,
+  onNext,
+  onExit,
+}: {
+  item: CTestItem;
+  passageNumber: number;
+  totalPassages: number;
+  onSubmit: (results: CTestBlankResult[]) => void;
+  onNext: () => void;
+  onExit: () => void;
+}) {
+  const [inputs, setInputs] = useState<string[]>(() => item.answers.map(() => ''));
+  const [results, setResults] = useState<CTestBlankResult[] | null>(null);
+  const segments = parseCTestPromptSegments(item.promptText);
+  const submitted = results !== null;
+  const allFilled = inputs.every((value) => value.trim().length > 0);
+
+  const handleChange = (blankIndex: number, value: string) => {
+    setInputs((previous) => previous.map((existing, index) => (index === blankIndex ? value : existing)));
+  };
+
+  const handleSubmit = () => {
+    if (submitted || !allFilled) return;
+    const nextResults: CTestBlankResult[] = item.answers.map((answer, index) => ({
+      passageId: item.id,
+      full: answer.full,
+      missing: answer.missing,
+      userInput: inputs[index],
+      correct: checkCTestAnswer(inputs[index], answer.missing),
+    }));
+    setResults(nextResults);
+    onSubmit(nextResults);
+  };
+
+  return (
+    <main className="page-shell practice-page ctest-page">
+      <header className="practice-header">
+        <Brand />
+        <div className="practice-header-actions">
+          <button className="exit-round-button" type="button" onClick={onExit} data-testid="button-exit-ctest">
+            返回主页
+          </button>
+          <div className="question-count" aria-live="polite" data-testid="text-ctest-passage-count">
+            {passageNumber} <span>/</span> {totalPassages}
+          </div>
+        </div>
+      </header>
+      <section className="practice-content ctest-content" aria-labelledby="ctest-heading">
+        <p className="eyebrow practice-eyebrow" id="ctest-heading">C-Test 单词补全</p>
+        <div className="ctest-passage-card" data-testid="text-ctest-passage">
+          <p className="ctest-passage-text">
+            {segments.map((segment, segmentIndex) => {
+              if (segment.type === 'text') {
+                return <span key={segmentIndex}>{segment.value}</span>;
+              }
+              const blankIndex = segment.blankIndex;
+              const result = results ? results[blankIndex] : null;
+              return (
+                <span className="ctest-blank" key={segmentIndex}>
+                  <input
+                    type="text"
+                    className={`ctest-input ${result ? (result.correct ? 'is-correct' : 'is-incorrect') : ''}`}
+                    style={{ width: `${segment.length + 2}ch` }}
+                    value={inputs[blankIndex]}
+                    onChange={(event) => handleChange(blankIndex, event.target.value)}
+                    disabled={submitted}
+                    autoComplete="off"
+                    autoCapitalize="none"
+                    autoCorrect="off"
+                    spellCheck={false}
+                    aria-label={`Blank ${blankIndex + 1}`}
+                    data-testid={`input-ctest-blank-${item.id}-${blankIndex}`}
+                  />
+                  {result && (
+                    <span
+                      className={`ctest-mark ${result.correct ? 'ctest-mark-correct' : 'ctest-mark-incorrect'}`}
+                      data-testid={`mark-ctest-blank-${item.id}-${blankIndex}`}
+                    >
+                      {result.correct ? '✅' : `❌ ${result.full}`}
+                    </span>
+                  )}
+                </span>
+              );
+            })}
+          </p>
+        </div>
+        <div className="answer-area">
+          {!submitted && (
+            <button
+              className="next-button visible"
+              type="button"
+              onClick={handleSubmit}
+              disabled={!allFilled}
+              data-testid="button-submit-ctest"
+            >
+              提交答案
+            </button>
+          )}
+          {submitted && (
+            <button className="next-button visible" type="button" onClick={onNext} data-testid="button-next-ctest">
+              {passageNumber === totalPassages ? '查看结果' : '下一篇'}
+            </button>
+          )}
+        </div>
+      </section>
+    </main>
+  );
+}
+
+function CTestResults({
+  results,
+  onNewRound,
+  onHome,
+}: {
+  results: CTestBlankResult[];
+  onNewRound: () => void;
+  onHome: () => void;
+}) {
+  const correctCount = results.filter((result) => result.correct).length;
+  const incorrectResults = results.filter((result) => !result.correct);
+  const accuracy = results.length ? Math.round((correctCount / results.length) * 100) : 0;
+
+  return (
+    <main className="page-shell results-page">
+      <header className="practice-header results-header">
+        <Brand />
+        <span className="results-label">C-TEST COMPLETE</span>
+      </header>
+      <section className="results-content" aria-labelledby="ctest-results-heading">
+        <div className="results-intro">
+          <p className="eyebrow">Your practice, in view</p>
+          <h1 id="ctest-results-heading">C-Test 结果</h1>
+          <p>{incorrectResults.length === 0 ? '全部正确，非常好！' : '回顾本轮做错的单词。'}</p>
+        </div>
+        <div className="score-grid score-grid-4" aria-label="C-Test round score">
+          <div className="score-card">
+            <span className="score-label">总空数</span>
+            <strong data-testid="text-ctest-total">{results.length}</strong>
+          </div>
+          <div className="score-card score-card-primary">
+            <span className="score-label">正确率</span>
+            <strong data-testid="text-ctest-accuracy">{accuracy}%</strong>
+          </div>
+          <div className="score-card">
+            <span className="score-label">答对</span>
+            <strong data-testid="text-ctest-correct-count">{correctCount}</strong>
+          </div>
+          <div className="score-card">
+            <span className="score-label">答错</span>
+            <strong data-testid="text-ctest-incorrect-count">{incorrectResults.length}</strong>
+          </div>
+        </div>
+        <section className="mistakes-section" aria-labelledby="ctest-mistakes-heading">
+          <div className="section-heading">
+            <h2 id="ctest-mistakes-heading">本轮做错的单词</h2>
+            <span>{incorrectResults.length}</span>
+          </div>
+          {incorrectResults.length > 0 ? (
+            <div className="mistake-review-list" data-testid="list-ctest-mistakes">
+              {incorrectResults.map((result, index) => (
+                <article className="mistake-review" key={`${result.full}-${index}`} data-testid={`text-ctest-mistake-${index}`}>
+                  <div className="mistake-review-heading">
+                    <span className="mistake-number">{String(index + 1).padStart(2, '0')}</span>
+                    <h3>{result.full}</h3>
+                    <span className="missed-label">Missed</span>
+                  </div>
+                </article>
+              ))}
+            </div>
+          ) : (
+            <p className="empty-mistakes" data-testid="text-no-ctest-mistakes">本轮没有错词。</p>
+          )}
+        </section>
+        <div className="results-actions">
+          <button className="primary-button" type="button" onClick={onNewRound} data-testid="button-ctest-new-round">再来一轮</button>
+          <button className="secondary-button" type="button" onClick={onHome} data-testid="button-ctest-home">返回主页</button>
+        </div>
+        <p className="material-note results-note">Original practice material, not official DET questions.</p>
+      </section>
+    </main>
+  );
+}
+
 function HomeRoute() {
   const [screen, setScreen] = useState<Screen>('home');
   const [round, setRound] = useState<VocabularyItem[]>([]);
@@ -483,6 +692,9 @@ function HomeRoute() {
   const [, setPerformanceProfile] = useState<PerformanceProfile>(INITIAL_PERFORMANCE_PROFILE);
   const [historyRecords, setHistoryRecords] = useState<HistoryRecord[]>(() => loadHistory());
   const [mistakeWords, setMistakeWords] = useState<MistakeWordEntry[]>(() => loadMistakeWords());
+  const [ctestRound, setCtestRound] = useState<CTestItem[]>([]);
+  const [ctestIndex, setCtestIndex] = useState(0);
+  const [ctestResults, setCtestResults] = useState<CTestBlankResult[]>([]);
 
   const beginRound = (questions: VocabularyItem[], mode: RoundMode) => {
     setRound(questions);
@@ -548,8 +760,33 @@ function HomeRoute() {
     setScreen('history');
   };
 
+  const exitToHome = () => {
+    if (window.confirm(EXIT_ROUND_CONFIRMATION)) {
+      setScreen('home');
+    }
+  };
+
+  const startCTestRound = () => {
+    setCtestRound(shuffle(CTEST_BANK).slice(0, CTEST_ROUND_SIZE));
+    setCtestIndex(0);
+    setCtestResults([]);
+    setScreen('ctestPractice');
+  };
+
+  const handleCTestPassageSubmit = (passageResults: CTestBlankResult[]) => {
+    setCtestResults((previous) => [...previous, ...passageResults]);
+  };
+
+  const handleCTestNext = () => {
+    if (ctestIndex === ctestRound.length - 1) {
+      setScreen('ctestResults');
+      return;
+    }
+    setCtestIndex((previous) => previous + 1);
+  };
+
   if (screen === 'practice') {
-    return <Practice round={round} currentIndex={currentIndex} selectedAnswer={selectedAnswer} onAnswer={handleAnswer} onNext={handleNext} mode={roundMode} />;
+    return <Practice round={round} currentIndex={currentIndex} selectedAnswer={selectedAnswer} onAnswer={handleAnswer} onNext={handleNext} onExit={exitToHome} mode={roundMode} />;
   }
   if (screen === 'results') {
     return <Results answers={answers} onMistakes={startMistakes} onNewRound={startNewRound} />;
@@ -557,9 +794,27 @@ function HomeRoute() {
   if (screen === 'history') {
     return <History records={historyRecords} onBack={goHome} />;
   }
+  if (screen === 'ctestPractice') {
+    const currentPassage = ctestRound[ctestIndex];
+    return (
+      <CTestPassage
+        key={currentPassage.id}
+        item={currentPassage}
+        passageNumber={ctestIndex + 1}
+        totalPassages={ctestRound.length}
+        onSubmit={handleCTestPassageSubmit}
+        onNext={handleCTestNext}
+        onExit={exitToHome}
+      />
+    );
+  }
+  if (screen === 'ctestResults') {
+    return <CTestResults results={ctestResults} onNewRound={startCTestRound} onHome={goHome} />;
+  }
   return (
     <Home
       onStart={startNewRound}
+      onStartCTest={startCTestRound}
       onViewHistory={viewHistory}
       onPracticeMistakes={startHistoricalMistakesPractice}
       hasVerifiedQuestions={VERIFIED_VOCABULARY_BANK.length > 0}
