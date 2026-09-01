@@ -277,10 +277,10 @@
   min-width: 7.25rem;
   min-height: 3.25rem;
   margin-top: clamp(2rem, 6vw, 3.25rem);
-  border: 1px solid hsl(12 73% 49%);
+  border: 1px solid hsl(338 70% 55%);
   border-radius: 999px;
-  background: hsl(var(--primary));
-  box-shadow: 0 4px 0 hsl(12 73% 44%);
+  background: hsl(338 78% 68%);
+  box-shadow: 0 4px 0 hsl(338 70% 55%);
   color: hsl(var(--primary-foreground));
   cursor: pointer;
   font-family: var(--app-font-sans);
@@ -291,14 +291,14 @@
 }
 
 .hello-button:hover {
-  background: hsl(12 73% 61%);
+  background: hsl(338 82% 73%);
   transform: translateY(-2px);
-  box-shadow: 0 6px 0 hsl(12 73% 44%);
+  box-shadow: 0 6px 0 hsl(338 70% 55%);
 }
 
 .hello-button:active {
   transform: translateY(2px);
-  box-shadow: 0 1px 0 hsl(12 73% 44%);
+  box-shadow: 0 1px 0 hsl(338 70% 55%);
 }
 
 .hello-button:focus-visible {
