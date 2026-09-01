@@ -57,6 +57,7 @@ const VOCABULARY_BANK: VocabularyItem[] = [
   { word: 'hinderance', real: false, difficulty: 'Foundation', confusedWith: { word: 'hindrance', meaning: '妨碍进步的事物；障碍' } },
   { word: 'reliable', real: true, meaning: '可靠的；值得信赖的', explanation: 'A reliable person or thing can be depended on.', partOfSpeech: 'adjective', example: 'We need a reliable source before making a decision.', difficulty: 'Foundation' },
   { word: 'convenient', real: true, meaning: '方便的；便利的', explanation: 'Convenient things save time or effort.', partOfSpeech: 'adjective', example: 'The evening class is convenient for my schedule.', difficulty: 'Foundation' },
+  { word: 'benefitial', real: false, difficulty: 'Foundation', confusedWith: { word: 'beneficial', meaning: '有益的；有帮助的' } },
 
   { word: 'alleviate', real: true, meaning: '减轻；缓解', explanation: 'To alleviate a problem is to reduce how serious or uncomfortable it is.', partOfSpeech: 'verb', example: 'The new schedule may alleviate some pressure on staff.', difficulty: 'Current' },
   { word: 'ambiguous', real: true, meaning: '模棱两可的；有歧义的', explanation: 'An ambiguous statement is not completely clear about what it means.', partOfSpeech: 'adjective', example: 'The ambiguous instruction confused the new students.', difficulty: 'Current' },
@@ -75,6 +76,10 @@ const VOCABULARY_BANK: VocabularyItem[] = [
   { word: 'subtle', real: true, meaning: '细微的；不明显的', explanation: 'A subtle difference is small and may need careful attention.', partOfSpeech: 'adjective', example: 'There was a subtle change in her tone.', difficulty: 'Current' },
   { word: 'sufficive', real: false, difficulty: 'Current' },
   { word: 'versatile', real: true, meaning: '多才多艺的；用途广泛的', explanation: 'A versatile person or thing is useful in varied situations.', partOfSpeech: 'adjective', example: 'A versatile notebook works for planning and sketching.', difficulty: 'Current' },
+  { word: 'seperated', real: false, difficulty: 'Current', confusedWith: { word: 'separated', meaning: '分开的；分离的' } },
+  { word: 'occurrance', real: false, difficulty: 'Current', confusedWith: { word: 'occurrence', meaning: '发生的事情；事件' } },
+  { word: 'competative', real: false, difficulty: 'Current', confusedWith: { word: 'competitive', meaning: '有竞争力的；竞争性的' } },
+  { word: 'consistant', real: false, difficulty: 'Current', confusedWith: { word: 'consistent', meaning: '一致的；始终如一的' } },
 
   { word: 'conclusive', real: true, meaning: '决定性的；确凿的', explanation: 'Conclusive evidence gives a final and convincing answer.', partOfSpeech: 'adjective', example: 'The test did not provide conclusive evidence.', difficulty: 'Target' },
   { word: 'empirical', real: true, meaning: '以观察或实验为依据的', explanation: 'Empirical knowledge comes from what can be observed or tested.', partOfSpeech: 'adjective', example: 'The paper presents empirical evidence from three studies.', difficulty: 'Target' },
@@ -85,6 +90,7 @@ const VOCABULARY_BANK: VocabularyItem[] = [
   { word: 'substantiate', real: true, meaning: '用证据证实；支持说法', explanation: 'To substantiate an idea is to show that it is likely true.', partOfSpeech: 'verb', example: 'The researcher used records to substantiate the claim.', difficulty: 'Target' },
   { word: 'obscurative', real: false, difficulty: 'Target' },
   { word: 'proliferate', real: true, meaning: '迅速增加；激增', explanation: 'Things proliferate when they grow in number very rapidly.', partOfSpeech: 'verb', example: 'Small cafés began to proliferate across the neighborhood.', difficulty: 'Target' },
+  { word: 'comprehencive', real: false, difficulty: 'Target', confusedWith: { word: 'comprehensive', meaning: '全面的；综合的' } },
 
   { word: 'intransigent', real: true, meaning: '不妥协的；不愿改变立场的', explanation: 'An intransigent person refuses to compromise.', partOfSpeech: 'adjective', example: 'The intransigent negotiator rejected every revision.', difficulty: 'Challenge' },
   { word: 'ephemeral', real: true, meaning: '短暂的；转瞬即逝的', explanation: 'Something ephemeral disappears or ends quickly.', partOfSpeech: 'adjective', example: 'The artist captured the ephemeral colors of the sunset.', difficulty: 'Challenge' },
@@ -104,9 +110,55 @@ function shuffle<T>(items: T[]): T[] {
 }
 
 function createNewRound(): VocabularyItem[] {
-  return shuffle((Object.keys(DEFAULT_ROUND_QUOTAS) as Difficulty[]).flatMap((difficulty) =>
-    shuffle(VOCABULARY_BANK.filter((item) => item.difficulty === difficulty)).slice(0, DEFAULT_ROUND_QUOTAS[difficulty]),
-  ));
+  const difficulties = Object.keys(DEFAULT_ROUND_QUOTAS) as Difficulty[];
+  const targetRealCount = 8 + Math.floor(Math.random() * 5);
+  const availableRealCounts = difficulties.map((difficulty) => {
+    const items = VOCABULARY_BANK.filter((item) => item.difficulty === difficulty);
+    const realCount = items.filter((item) => item.real).length;
+    const fakeCount = items.length - realCount;
+    const quota = DEFAULT_ROUND_QUOTAS[difficulty];
+
+    return {
+      difficulty,
+      min: Math.max(0, quota - fakeCount),
+      max: Math.min(quota, realCount),
+    };
+  });
+
+  const possibleCounts: Record<Difficulty, number>[] = [];
+  const findCounts = (index: number, counts: Partial<Record<Difficulty, number>>, total: number) => {
+    if (index === availableRealCounts.length) {
+      if (total === targetRealCount) {
+        possibleCounts.push(counts as Record<Difficulty, number>);
+      }
+      return;
+    }
+
+    const { difficulty, min, max } = availableRealCounts[index];
+    for (let count = min; count <= max; count += 1) {
+      if (total + count <= targetRealCount) {
+        findCounts(index + 1, { ...counts, [difficulty]: count }, total + count);
+      }
+    }
+  };
+
+  findCounts(0, {}, 0);
+  if (possibleCounts.length === 0) {
+    throw new Error('The vocabulary bank cannot support an 8–12 real-word round.');
+  }
+
+  const realCounts = possibleCounts[Math.floor(Math.random() * possibleCounts.length)];
+  const round = difficulties.flatMap((difficulty) => {
+    const quota = DEFAULT_ROUND_QUOTAS[difficulty];
+    const realItems = shuffle(VOCABULARY_BANK.filter((item) => item.difficulty === difficulty && item.real))
+      .slice(0, realCounts[difficulty]);
+    const fakeItems = shuffle(VOCABULARY_BANK.filter((item) => item.difficulty === difficulty && !item.real))
+      .slice(0, quota - realCounts[difficulty]);
+
+    return [...realItems, ...fakeItems];
+  });
+
+  return shuffle(round);
 }
 
 function Brand() {
