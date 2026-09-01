@@ -1,0 +1,10 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "installCommand": "pnpm install --frozen-lockfile --filter \"@workspace/personal-first-page...\"",
+  "buildCommand": "PORT=3000 BASE_PATH=/ pnpm --filter @workspace/personal-first-page run build",
+  "outputDirectory": "artifacts/personal-first-page/dist/public",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
