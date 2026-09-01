@@ -6,10 +6,14 @@ import {
   difficultyAccuracy,
   getOverallStats,
   loadHistory,
+  loadMistakeWords,
+  recordMistakeWords,
   saveHistoryRecord,
   HISTORY_DIFFICULTIES,
   type HistoryRecord,
+  type MistakeWordEntry,
 } from './lib/history';
+import { speakWord } from './lib/speech';
 
 type Difficulty = 'Foundation' | 'Current' | 'Target' | 'Challenge';
 
@@ -44,6 +48,8 @@ const DEFAULT_ROUND_QUOTAS: Record<Difficulty, number> = {
   Target: 6,
   Challenge: 2,
 };
+
+const HISTORICAL_MISTAKES_ROUND_SIZE = 20;
 
 // Prepared for a future review algorithm. The current round always uses
 // DEFAULT_ROUND_QUOTAS; these counters do not alter selection yet.
@@ -136,11 +142,15 @@ function Brand() {
 function Home({
   onStart,
   onViewHistory,
+  onPracticeMistakes,
   hasVerifiedQuestions,
+  hasMistakeWords,
 }: {
   onStart: () => void;
   onViewHistory: () => void;
+  onPracticeMistakes: () => void;
   hasVerifiedQuestions: boolean;
+  hasMistakeWords: boolean;
 }) {
   return (
     <main className="page-shell home-page">
@@ -159,6 +169,15 @@ function Home({
         <button className="secondary-button history-entry-button" type="button" onClick={onViewHistory} data-testid="button-view-history">
           训练记录 / History
         </button>
+        <button
+          className="secondary-button history-entry-button"
+          type="button"
+          onClick={onPracticeMistakes}
+          disabled={!hasMistakeWords}
+          data-testid="button-practice-my-mistakes"
+        >
+          Practice My Mistakes
+        </button>
         {!hasVerifiedQuestions && (
           <p className="bank-status" role="status">正式题库正在建设中</p>
         )}
@@ -166,6 +185,29 @@ function Home({
       </section>
       <p className="home-footer">One round at a time.</p>
     </main>
+  );
+}
+
+function PronunciationButtons({ word }: { word: string }) {
+  return (
+    <div className="pronunciation-buttons" role="group" aria-label={`Pronounce ${word}`}>
+      <button
+        type="button"
+        className="pronounce-button"
+        onClick={() => speakWord(word, 'en-US')}
+        data-testid={`button-pronounce-us-${word}`}
+      >
+        🇺🇸 美式发音
+      </button>
+      <button
+        type="button"
+        className="pronounce-button"
+        onClick={() => speakWord(word, 'en-GB')}
+        data-testid={`button-pronounce-gb-${word}`}
+      >
+        🇬🇧 英式发音
+      </button>
+    </div>
   );
 }
 
@@ -186,6 +228,7 @@ function LearningFeedback({ item }: { item: VocabularyItem }) {
             <p><span className="detail-label">Real word</span><strong>{confusedWord}</strong></p>
             {confusedMeaning && <p><span className="detail-label">Meaning</span>{confusedMeaning}</p>}
             <p><span className="detail-label">Correct spelling</span>{confusedWord}</p>
+            {confusedWord && <PronunciationButtons word={confusedWord} />}
           </div>
         )}
       </div>
@@ -198,6 +241,7 @@ function LearningFeedback({ item }: { item: VocabularyItem }) {
         <span className="detail-label">Word</span>
         <strong>{item.word}</strong>
       </div>
+      <PronunciationButtons word={item.word} />
       <dl className="learning-details">
         <div><dt>Chinese meaning</dt><dd>{item.chineseMeaning}</dd></div>
         <div><dt>Simple explanation</dt><dd>{item.simpleDefinition}</dd></div>
@@ -438,6 +482,7 @@ function HomeRoute() {
   const [roundMode, setRoundMode] = useState<RoundMode>('new');
   const [, setPerformanceProfile] = useState<PerformanceProfile>(INITIAL_PERFORMANCE_PROFILE);
   const [historyRecords, setHistoryRecords] = useState<HistoryRecord[]>(() => loadHistory());
+  const [mistakeWords, setMistakeWords] = useState<MistakeWordEntry[]>(() => loadMistakeWords());
 
   const beginRound = (questions: VocabularyItem[], mode: RoundMode) => {
     setRound(questions);
@@ -453,6 +498,17 @@ function HomeRoute() {
   const startMistakes = () => {
     const mistakes = answers.filter((answer) => !answer.correct).map((answer) => answer.item);
     if (mistakes.length > 0) beginRound(shuffle(mistakes), 'mistakes');
+  };
+
+  const startHistoricalMistakesPractice = () => {
+    const pool = loadMistakeWords()
+      .map((entry) => VOCABULARY_BANK.find((item) => item.word.toLowerCase() === entry.word.toLowerCase()))
+      .filter((item): item is VocabularyItem => Boolean(item));
+    if (pool.length === 0) return;
+    const selection = pool.length > HISTORICAL_MISTAKES_ROUND_SIZE
+      ? shuffle(pool).slice(0, HISTORICAL_MISTAKES_ROUND_SIZE)
+      : shuffle(pool);
+    beginRound(selection, 'mistakes');
   };
 
   const handleAnswer = (answer: boolean) => {
@@ -477,6 +533,7 @@ function HomeRoute() {
       if (roundMode === 'new') {
         const record = buildHistoryRecord(answers);
         setHistoryRecords(saveHistoryRecord(record));
+        setMistakeWords(recordMistakeWords(record.mistakes));
       }
       setScreen('results');
       return;
@@ -500,7 +557,15 @@ function HomeRoute() {
   if (screen === 'history') {
     return <History records={historyRecords} onBack={goHome} />;
   }
-  return <Home onStart={startNewRound} onViewHistory={viewHistory} hasVerifiedQuestions={VERIFIED_VOCABULARY_BANK.length > 0} />;
+  return (
+    <Home
+      onStart={startNewRound}
+      onViewHistory={viewHistory}
+      onPracticeMistakes={startHistoricalMistakesPractice}
+      hasVerifiedQuestions={VERIFIED_VOCABULARY_BANK.length > 0}
+      hasMistakeWords={mistakeWords.length > 0}
+    />
+  );
 }
 
 function Router() {
