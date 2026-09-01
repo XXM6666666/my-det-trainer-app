@@ -137,6 +137,7 @@ button:focus-visible {
 .primary-button:active { box-shadow: 0 1px 0 var(--teal-deep); transform: translateY(2px); }
 .primary-button:disabled { cursor: not-allowed; opacity: 0.62; transform: none; }
 .start-button { width: 100%; margin-top: 2.45rem; }
+.history-entry-button { width: 100%; margin-top: 0.75rem; }
 .bank-status { margin: 1rem 0 0; color: var(--teal-deep); font-size: 0.8rem; font-weight: 700; }
 .material-note { margin: 2.2rem 0 0; color: var(--muted); font-size: 0.68rem; letter-spacing: 0.01em; }
 .home-footer { position: relative; z-index: 1; margin: 1.75rem 0 0; color: var(--ink-soft); font-size: 0.74rem; letter-spacing: 0.08em; }
@@ -221,6 +222,9 @@ button:focus-visible {
 .secondary-button:hover:not(:disabled) { border-color: var(--teal); background: var(--teal-pale); transform: translateY(-2px); }
 .secondary-button:disabled { cursor: not-allowed; opacity: 0.42; }
 .results-note { margin-top: 2rem; text-align: center; }
+
+.history-accuracy { color: var(--teal-deep); }
+.history-record-detail { margin-top: 0.8rem; }
 
 @keyframes rise-in { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes feedback-in { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }

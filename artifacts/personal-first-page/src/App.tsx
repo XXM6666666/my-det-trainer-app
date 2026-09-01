@@ -1,6 +1,15 @@
 import { useState } from 'react';
 import { Route, Router as WouterRouter } from 'wouter';
 import rawVocabularyBank from './data/vocabularyBank.json';
+import {
+  buildHistoryRecord,
+  difficultyAccuracy,
+  getOverallStats,
+  loadHistory,
+  saveHistoryRecord,
+  HISTORY_DIFFICULTIES,
+  type HistoryRecord,
+} from './lib/history';
 
 type Difficulty = 'Foundation' | 'Current' | 'Target' | 'Challenge';
 
@@ -26,7 +35,7 @@ type AnswerRecord = {
   correct: boolean;
 };
 
-type Screen = 'home' | 'practice' | 'results';
+type Screen = 'home' | 'practice' | 'results' | 'history';
 type RoundMode = 'new' | 'mistakes';
 
 const DEFAULT_ROUND_QUOTAS: Record<Difficulty, number> = {
@@ -124,7 +133,15 @@ function Brand() {
   );
 }
 
-function Home({ onStart, hasVerifiedQuestions }: { onStart: () => void; hasVerifiedQuestions: boolean }) {
+function Home({
+  onStart,
+  onViewHistory,
+  hasVerifiedQuestions,
+}: {
+  onStart: () => void;
+  onViewHistory: () => void;
+  hasVerifiedQuestions: boolean;
+}) {
   return (
     <main className="page-shell home-page">
       <div className="ambient-mark ambient-mark-left" aria-hidden="true" />
@@ -138,6 +155,9 @@ function Home({ onStart, hasVerifiedQuestions }: { onStart: () => void; hasVerif
         </div>
         <button className="primary-button start-button" type="button" onClick={onStart} data-testid="button-start-training">
           开始单词训练
+        </button>
+        <button className="secondary-button history-entry-button" type="button" onClick={onViewHistory} data-testid="button-view-history">
+          训练记录 / History
         </button>
         {!hasVerifiedQuestions && (
           <p className="bank-status" role="status">正式题库正在建设中</p>
@@ -333,6 +353,82 @@ function Results({
   );
 }
 
+function History({ records, onBack }: { records: HistoryRecord[]; onBack: () => void }) {
+  const stats = getOverallStats(records);
+
+  return (
+    <main className="page-shell results-page history-page">
+      <header className="practice-header results-header">
+        <Brand />
+        <span className="results-label">TRAINING HISTORY</span>
+      </header>
+      <section className="results-content history-content" aria-labelledby="history-heading">
+        <div className="results-intro">
+          <p className="eyebrow">Your practice, over time</p>
+          <h1 id="history-heading">训练记录</h1>
+          <p>{records.length === 0 ? '还没有完成任何一轮训练。' : '最新一轮在最上面。'}</p>
+        </div>
+        <div className="score-grid" aria-label="Overall history stats">
+          <div className="score-card score-card-primary">
+            <span className="score-label">总轮数</span>
+            <strong data-testid="text-history-total-rounds">{stats.totalRounds}</strong>
+          </div>
+          <div className="score-card">
+            <span className="score-label">总题数</span>
+            <strong data-testid="text-history-total-questions">{stats.totalQuestions}</strong>
+          </div>
+          <div className="score-card">
+            <span className="score-label">近期平均正确率</span>
+            <strong data-testid="text-history-recent-accuracy">{stats.recentAverageAccuracy}%</strong>
+          </div>
+        </div>
+        <section className="mistakes-section history-list-section" aria-labelledby="history-list-heading">
+          <div className="section-heading">
+            <h2 id="history-list-heading">历史轮次</h2>
+            <span>{records.length}</span>
+          </div>
+          {records.length > 0 ? (
+            <div className="mistake-review-list" data-testid="list-history">
+              {records.map((record, index) => {
+                const dateLabel = new Date(record.completedAt).toLocaleString();
+                return (
+                  <article className="mistake-review history-record" key={record.id} data-testid={`text-history-record-${index}`}>
+                    <div className="mistake-review-heading">
+                      <span className="mistake-number">{String(records.length - index).padStart(2, '0')}</span>
+                      <h3>{dateLabel}</h3>
+                      <span className="missed-label history-accuracy">{record.accuracy}%</span>
+                    </div>
+                    <div className="learning-feedback real-feedback history-record-detail">
+                      <dl className="learning-details">
+                        <div><dt>Correct / Incorrect</dt><dd>{record.correctCount} / {record.incorrectCount}</dd></div>
+                        {HISTORY_DIFFICULTIES.map((difficulty) => (
+                          <div key={difficulty}>
+                            <dt>{difficulty}</dt>
+                            <dd>{difficultyAccuracy(record.byDifficulty[difficulty])}% ({record.byDifficulty[difficulty].correct}/{record.byDifficulty[difficulty].total})</dd>
+                          </div>
+                        ))}
+                        <div>
+                          <dt>Mistakes</dt>
+                          <dd>{record.mistakes.length === 0 ? '无' : record.mistakes.map((mistake) => mistake.word).join(', ')}</dd>
+                        </div>
+                      </dl>
+                    </div>
+                  </article>
+                );
+              })}
+            </div>
+          ) : (
+            <p className="empty-mistakes">完成一轮训练后，记录会显示在这里。</p>
+          )}
+        </section>
+        <div className="results-actions">
+          <button className="primary-button" type="button" onClick={onBack} data-testid="button-history-back">返回首页</button>
+        </div>
+      </section>
+    </main>
+  );
+}
+
 function HomeRoute() {
   const [screen, setScreen] = useState<Screen>('home');
   const [round, setRound] = useState<VocabularyItem[]>([]);
@@ -341,6 +437,7 @@ function HomeRoute() {
   const [selectedAnswer, setSelectedAnswer] = useState<boolean | null>(null);
   const [roundMode, setRoundMode] = useState<RoundMode>('new');
   const [, setPerformanceProfile] = useState<PerformanceProfile>(INITIAL_PERFORMANCE_PROFILE);
+  const [historyRecords, setHistoryRecords] = useState<HistoryRecord[]>(() => loadHistory());
 
   const beginRound = (questions: VocabularyItem[], mode: RoundMode) => {
     setRound(questions);
@@ -377,11 +474,21 @@ function HomeRoute() {
   const handleNext = () => {
     if (selectedAnswer === null) return;
     if (currentIndex === round.length - 1) {
+      if (roundMode === 'new') {
+        const record = buildHistoryRecord(answers);
+        setHistoryRecords(saveHistoryRecord(record));
+      }
       setScreen('results');
       return;
     }
     setCurrentIndex((previous) => previous + 1);
     setSelectedAnswer(null);
+  };
+
+  const goHome = () => setScreen('home');
+  const viewHistory = () => {
+    setHistoryRecords(loadHistory());
+    setScreen('history');
   };
 
   if (screen === 'practice') {
@@ -390,7 +497,10 @@ function HomeRoute() {
   if (screen === 'results') {
     return <Results answers={answers} onMistakes={startMistakes} onNewRound={startNewRound} />;
   }
-  return <Home onStart={startNewRound} hasVerifiedQuestions={VERIFIED_VOCABULARY_BANK.length > 0} />;
+  if (screen === 'history') {
+    return <History records={historyRecords} onBack={goHome} />;
+  }
+  return <Home onStart={startNewRound} onViewHistory={viewHistory} hasVerifiedQuestions={VERIFIED_VOCABULARY_BANK.length > 0} />;
 }
 
 function Router() {
