@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Route, Router as WouterRouter } from 'wouter';
 import rawVocabularyBank from './data/vocabularyBank.json';
 import rawCTestBank from './data/ctestBank.json';
+import rawVICBank from './data/vocabInContextBank.json';
 import {
   buildHistoryRecord,
   difficultyAccuracy,
@@ -21,6 +22,12 @@ import {
   type CTestBlankResult,
   type CTestItem,
 } from './lib/ctest';
+import {
+  checkVICAnswer,
+  splitSentenceAtBlank,
+  type VICAnswerResult,
+  type VICItem,
+} from './lib/vocabInContext';
 
 type Difficulty = 'Foundation' | 'Current' | 'Target' | 'Challenge';
 
@@ -46,7 +53,15 @@ type AnswerRecord = {
   correct: boolean;
 };
 
-type Screen = 'home' | 'practice' | 'results' | 'history' | 'ctestPractice' | 'ctestResults';
+type Screen =
+  | 'home'
+  | 'practice'
+  | 'results'
+  | 'history'
+  | 'ctestPractice'
+  | 'ctestResults'
+  | 'vicPractice'
+  | 'vicResults';
 type RoundMode = 'new' | 'mistakes';
 
 const DEFAULT_ROUND_QUOTAS: Record<Difficulty, number> = {
@@ -59,6 +74,8 @@ const DEFAULT_ROUND_QUOTAS: Record<Difficulty, number> = {
 const HISTORICAL_MISTAKES_ROUND_SIZE = 20;
 const CTEST_ROUND_SIZE = 5;
 const CTEST_BANK = rawCTestBank as CTestItem[];
+const VIC_ROUND_SIZE = 10;
+const VIC_BANK = rawVICBank as VICItem[];
 const EXIT_ROUND_CONFIRMATION = '确定退出本轮训练吗？未完成的训练不会计入成绩。';
 
 // Prepared for a future review algorithm. The current round always uses
@@ -152,6 +169,7 @@ function Brand() {
 function Home({
   onStart,
   onStartCTest,
+  onStartVIC,
   onViewHistory,
   onPracticeMistakes,
   hasVerifiedQuestions,
@@ -159,6 +177,7 @@ function Home({
 }: {
   onStart: () => void;
   onStartCTest: () => void;
+  onStartVIC: () => void;
   onViewHistory: () => void;
   onPracticeMistakes: () => void;
   hasVerifiedQuestions: boolean;
@@ -180,6 +199,9 @@ function Home({
         </button>
         <button className="secondary-button history-entry-button" type="button" onClick={onStartCTest} data-testid="button-start-ctest">
           C-Test / 单词补全
+        </button>
+        <button className="secondary-button history-entry-button" type="button" onClick={onStartVIC} data-testid="button-start-vic">
+          Vocabulary in Context / 上下文词汇
         </button>
         <button className="secondary-button history-entry-button" type="button" onClick={onViewHistory} data-testid="button-view-history">
           训练记录 / History
@@ -682,6 +704,186 @@ function CTestResults({
   );
 }
 
+function VICPractice({
+  item,
+  questionNumber,
+  totalQuestions,
+  onSubmit,
+  onNext,
+  onExit,
+}: {
+  item: VICItem;
+  questionNumber: number;
+  totalQuestions: number;
+  onSubmit: (result: VICAnswerResult) => void;
+  onNext: () => void;
+  onExit: () => void;
+}) {
+  const [input, setInput] = useState('');
+  const [result, setResult] = useState<VICAnswerResult | null>(null);
+  const submitted = result !== null;
+  const [before, after] = splitSentenceAtBlank(item.sentence);
+
+  const handleSubmit = () => {
+    if (submitted || input.trim().length === 0) return;
+    const correct = checkVICAnswer(input, item.acceptedAnswers);
+    const nextResult: VICAnswerResult = { itemId: item.id, userInput: input, correct };
+    setResult(nextResult);
+    onSubmit(nextResult);
+  };
+
+  return (
+    <main className="page-shell practice-page vic-page">
+      <header className="practice-header">
+        <Brand />
+        <div className="practice-header-actions">
+          <button className="exit-round-button" type="button" onClick={onExit} data-testid="button-exit-vic">
+            返回主页
+          </button>
+          <div className="question-count" aria-live="polite" data-testid="text-vic-question-count">
+            {questionNumber} <span>/</span> {totalQuestions}
+          </div>
+        </div>
+      </header>
+      <section className="practice-content vic-content" aria-labelledby="vic-heading">
+        <p className="eyebrow practice-eyebrow" id="vic-heading">Vocabulary in Context</p>
+        <div className="vic-sentence-card" data-testid="text-vic-sentence">
+          <p className="vic-sentence-text">
+            {before}
+            <input
+              type="text"
+              className={`vic-input ${result ? (result.correct ? 'is-correct' : 'is-incorrect') : ''}`}
+              value={input}
+              onChange={(event) => setInput(event.target.value)}
+              disabled={submitted}
+              autoComplete="off"
+              autoCapitalize="none"
+              autoCorrect="off"
+              spellCheck={false}
+              aria-label="Missing word"
+              data-testid={`input-vic-${item.id}`}
+            />
+            {after}
+          </p>
+        </div>
+        {submitted && (
+          <div className={`submitted-feedback ${result.correct ? 'feedback-correct' : 'feedback-incorrect'}`} aria-live="polite" data-testid="status-vic-feedback">
+            <strong>{result.correct ? '✅ 正确' : '❌ 错误'}</strong>
+            {!result.correct && (
+              <div className="learning-feedback real-feedback">
+                <div className="feedback-word-row">
+                  <span className="detail-label">Correct answer</span>
+                  <strong>{item.answer}</strong>
+                </div>
+                <p className="vic-explanation">{item.explanation}</p>
+              </div>
+            )}
+          </div>
+        )}
+        <div className="answer-area">
+          {!submitted && (
+            <button
+              className="next-button visible"
+              type="button"
+              onClick={handleSubmit}
+              disabled={input.trim().length === 0}
+              data-testid="button-submit-vic"
+            >
+              提交答案
+            </button>
+          )}
+          {submitted && (
+            <button className="next-button visible" type="button" onClick={onNext} data-testid="button-next-vic">
+              {questionNumber === totalQuestions ? '查看结果' : '下一题'}
+            </button>
+          )}
+        </div>
+      </section>
+    </main>
+  );
+}
+
+function VICResults({
+  results,
+  items,
+  onNewRound,
+  onHome,
+}: {
+  results: VICAnswerResult[];
+  items: VICItem[];
+  onNewRound: () => void;
+  onHome: () => void;
+}) {
+  const correctCount = results.filter((result) => result.correct).length;
+  const incorrectResults = results.filter((result) => !result.correct);
+  const accuracy = results.length ? Math.round((correctCount / results.length) * 100) : 0;
+  const itemById = new Map(items.map((item) => [item.id, item]));
+
+  return (
+    <main className="page-shell results-page">
+      <header className="practice-header results-header">
+        <Brand />
+        <span className="results-label">VOCABULARY IN CONTEXT COMPLETE</span>
+      </header>
+      <section className="results-content" aria-labelledby="vic-results-heading">
+        <div className="results-intro">
+          <p className="eyebrow">Your practice, in view</p>
+          <h1 id="vic-results-heading">上下文词汇结果</h1>
+          <p>{incorrectResults.length === 0 ? '全部正确，非常好！' : '回顾本轮错题和正确答案。'}</p>
+        </div>
+        <div className="score-grid" aria-label="Vocabulary in Context round score">
+          <div className="score-card score-card-primary">
+            <span className="score-label">正确率</span>
+            <strong data-testid="text-vic-accuracy">{accuracy}%</strong>
+          </div>
+          <div className="score-card">
+            <span className="score-label">答对</span>
+            <strong data-testid="text-vic-correct-count">{correctCount}</strong>
+          </div>
+          <div className="score-card">
+            <span className="score-label">答错</span>
+            <strong data-testid="text-vic-incorrect-count">{incorrectResults.length}</strong>
+          </div>
+        </div>
+        <section className="mistakes-section" aria-labelledby="vic-mistakes-heading">
+          <div className="section-heading">
+            <h2 id="vic-mistakes-heading">本轮错题</h2>
+            <span>{incorrectResults.length}</span>
+          </div>
+          {incorrectResults.length > 0 ? (
+            <div className="mistake-review-list" data-testid="list-vic-mistakes">
+              {incorrectResults.map((result, index) => {
+                const item = itemById.get(result.itemId);
+                if (!item) return null;
+                return (
+                  <article className="mistake-review" key={`${result.itemId}-${index}`} data-testid={`text-vic-mistake-${index}`}>
+                    <div className="mistake-review-heading">
+                      <span className="mistake-number">{String(index + 1).padStart(2, '0')}</span>
+                      <h3>{item.answer}</h3>
+                      <span className="missed-label">Missed</span>
+                    </div>
+                    <div className="learning-feedback real-feedback">
+                      <p className="vic-sentence-review">{item.sentence.replace('_____', item.answer)}</p>
+                      <p className="vic-explanation">{item.explanation}</p>
+                    </div>
+                  </article>
+                );
+              })}
+            </div>
+          ) : (
+            <p className="empty-mistakes" data-testid="text-no-vic-mistakes">本轮没有错题。</p>
+          )}
+        </section>
+        <div className="results-actions">
+          <button className="primary-button" type="button" onClick={onNewRound} data-testid="button-vic-new-round">再来一轮</button>
+          <button className="secondary-button" type="button" onClick={onHome} data-testid="button-vic-home">返回主页</button>
+        </div>
+        <p className="material-note results-note">Original practice material, not official DET questions.</p>
+      </section>
+    </main>
+  );
+}
+
 function HomeRoute() {
   const [screen, setScreen] = useState<Screen>('home');
   const [round, setRound] = useState<VocabularyItem[]>([]);
@@ -695,6 +897,9 @@ function HomeRoute() {
   const [ctestRound, setCtestRound] = useState<CTestItem[]>([]);
   const [ctestIndex, setCtestIndex] = useState(0);
   const [ctestResults, setCtestResults] = useState<CTestBlankResult[]>([]);
+  const [vicRound, setVicRound] = useState<VICItem[]>([]);
+  const [vicIndex, setVicIndex] = useState(0);
+  const [vicResults, setVicResults] = useState<VICAnswerResult[]>([]);
 
   const beginRound = (questions: VocabularyItem[], mode: RoundMode) => {
     setRound(questions);
@@ -785,6 +990,25 @@ function HomeRoute() {
     setCtestIndex((previous) => previous + 1);
   };
 
+  const startVICRound = () => {
+    setVicRound(shuffle(VIC_BANK).slice(0, VIC_ROUND_SIZE));
+    setVicIndex(0);
+    setVicResults([]);
+    setScreen('vicPractice');
+  };
+
+  const handleVICAnswerSubmit = (result: VICAnswerResult) => {
+    setVicResults((previous) => [...previous, result]);
+  };
+
+  const handleVICNext = () => {
+    if (vicIndex === vicRound.length - 1) {
+      setScreen('vicResults');
+      return;
+    }
+    setVicIndex((previous) => previous + 1);
+  };
+
   if (screen === 'practice') {
     return <Practice round={round} currentIndex={currentIndex} selectedAnswer={selectedAnswer} onAnswer={handleAnswer} onNext={handleNext} onExit={exitToHome} mode={roundMode} />;
   }
@@ -811,10 +1035,28 @@ function HomeRoute() {
   if (screen === 'ctestResults') {
     return <CTestResults results={ctestResults} onNewRound={startCTestRound} onHome={goHome} />;
   }
+  if (screen === 'vicPractice') {
+    const currentItem = vicRound[vicIndex];
+    return (
+      <VICPractice
+        key={currentItem.id}
+        item={currentItem}
+        questionNumber={vicIndex + 1}
+        totalQuestions={vicRound.length}
+        onSubmit={handleVICAnswerSubmit}
+        onNext={handleVICNext}
+        onExit={exitToHome}
+      />
+    );
+  }
+  if (screen === 'vicResults') {
+    return <VICResults results={vicResults} items={vicRound} onNewRound={startVICRound} onHome={goHome} />;
+  }
   return (
     <Home
       onStart={startNewRound}
       onStartCTest={startCTestRound}
+      onStartVIC={startVICRound}
       onViewHistory={viewHistory}
       onPracticeMistakes={startHistoricalMistakesPractice}
       hasVerifiedQuestions={VERIFIED_VOCABULARY_BANK.length > 0}

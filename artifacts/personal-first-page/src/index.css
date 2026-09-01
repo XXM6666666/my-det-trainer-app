@@ -248,6 +248,17 @@ button:focus-visible {
 .ctest-mark-correct { color: var(--teal-deep); }
 .ctest-mark-incorrect { color: #914d41; }
 
+.vic-content { width: min(100% - 2.5rem, 42rem); }
+.vic-sentence-card { width: 100%; padding: 2rem 1.6rem 2.2rem; border: 1px solid var(--line); border-radius: 1.15rem; background: var(--card); box-shadow: var(--shadow-soft); }
+.vic-sentence-text { margin: 0; color: var(--ink); font-size: 1.15rem; line-height: 2.3; }
+.vic-input { min-width: 9rem; margin: 0 0.3rem; padding: 0.15rem 0.5rem; border: 0; border-bottom: 2px solid var(--line-dark); border-radius: 0.2rem; background: rgba(226, 169, 78, 0.12); color: var(--ink); font: inherit; font-weight: 700; text-align: center; }
+.vic-input:focus-visible { outline: none; border-bottom-color: var(--teal); background: var(--teal-pale); }
+.vic-input:disabled { color: var(--ink-soft); background: transparent; }
+.vic-input.is-correct { border-bottom-color: var(--teal); background: var(--teal-pale); color: var(--teal-deep); }
+.vic-input.is-incorrect { border-bottom-color: var(--coral); background: var(--coral-pale); color: #914d41; }
+.vic-explanation { margin: 0.6rem 0 0; color: var(--ink-soft); font-size: 0.82rem; line-height: 1.5; }
+.vic-sentence-review { margin: 0; color: var(--ink); font-size: 0.92rem; line-height: 1.55; }
+
 @keyframes rise-in { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes feedback-in { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
 

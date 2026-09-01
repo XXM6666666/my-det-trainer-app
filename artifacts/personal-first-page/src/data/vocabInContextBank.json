@@ -1,0 +1,902 @@
+[
+  {
+    "id": "V001",
+    "type": "vocabulary_in_context",
+    "difficulty": "Foundation",
+    "sentence": "Please _____ attention to the safety instructions before using the machine.",
+    "answer": "pay",
+    "acceptedAnswers": [
+      "pay"
+    ],
+    "chineseMeaning": "给予；付出",
+    "explanation": "“Pay attention to” is the fixed expression.",
+    "source": "Original practice item modeled on Duolingo English Test public Vocabulary in Context construct description.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v2_single_best_answer"
+  },
+  {
+    "id": "V002",
+    "type": "vocabulary_in_context",
+    "difficulty": "Foundation",
+    "sentence": "The new school rule will come into _____ at the beginning of next term.",
+    "answer": "effect",
+    "acceptedAnswers": [
+      "effect"
+    ],
+    "chineseMeaning": "生效；作用",
+    "explanation": "“Come into effect” is the fixed expression.",
+    "source": "Original practice item modeled on Duolingo English Test public Vocabulary in Context construct description.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v2_single_best_answer"
+  },
+  {
+    "id": "V003",
+    "type": "vocabulary_in_context",
+    "difficulty": "Foundation",
+    "sentence": "Students can use the gym free of _____ after showing their student card.",
+    "answer": "charge",
+    "acceptedAnswers": [
+      "charge"
+    ],
+    "chineseMeaning": "费用",
+    "explanation": "“Free of charge” is the fixed expression.",
+    "source": "Original practice item modeled on Duolingo English Test public Vocabulary in Context construct description.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v2_single_best_answer"
+  },
+  {
+    "id": "V004",
+    "type": "vocabulary_in_context",
+    "difficulty": "Foundation",
+    "sentence": "The hotel is within walking _____ of the station, so you do not need a taxi.",
+    "answer": "distance",
+    "acceptedAnswers": [
+      "distance"
+    ],
+    "chineseMeaning": "距离",
+    "explanation": "“Within walking distance” is the fixed expression.",
+    "source": "Original practice item modeled on Duolingo English Test public Vocabulary in Context construct description.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v2_single_best_answer"
+  },
+  {
+    "id": "V005",
+    "type": "vocabulary_in_context",
+    "difficulty": "Foundation",
+    "sentence": "He had no _____ but to cancel the trip after his passport was lost.",
+    "answer": "choice",
+    "acceptedAnswers": [
+      "choice"
+    ],
+    "chineseMeaning": "选择",
+    "explanation": "“Have no choice but to” is the fixed expression.",
+    "source": "Original practice item modeled on Duolingo English Test public Vocabulary in Context construct description.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v2_single_best_answer"
+  },
+  {
+    "id": "V006",
+    "type": "vocabulary_in_context",
+    "difficulty": "Foundation",
+    "sentence": "Before submitting the form, make sure you have _____ in every required box.",
+    "answer": "filled",
+    "acceptedAnswers": [
+      "filled"
+    ],
+    "chineseMeaning": "填写",
+    "explanation": "“Fill in” is the standard expression for completing a form.",
+    "source": "Original practice item modeled on Duolingo English Test public Vocabulary in Context construct description.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v2_single_best_answer"
+  },
+  {
+    "id": "V007",
+    "type": "vocabulary_in_context",
+    "difficulty": "Foundation",
+    "sentence": "The teacher asked us to _____ notes while we listened to the lecture.",
+    "answer": "take",
+    "acceptedAnswers": [
+      "take"
+    ],
+    "chineseMeaning": "做；拿",
+    "explanation": "“Take notes” is the fixed expression.",
+    "source": "Original practice item modeled on Duolingo English Test public Vocabulary in Context construct description.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v2_single_best_answer"
+  },
+  {
+    "id": "V008",
+    "type": "vocabulary_in_context",
+    "difficulty": "Foundation",
+    "sentence": "Because the bus was late, we arrived just in _____ for the meeting.",
+    "answer": "time",
+    "acceptedAnswers": [
+      "time"
+    ],
+    "chineseMeaning": "时间",
+    "explanation": "“In time for” means early enough for something.",
+    "source": "Original practice item modeled on Duolingo English Test public Vocabulary in Context construct description.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v2_single_best_answer"
+  },
+  {
+    "id": "V009",
+    "type": "vocabulary_in_context",
+    "difficulty": "Foundation",
+    "sentence": "The museum is closed to the _____ on Mondays.",
+    "answer": "public",
+    "acceptedAnswers": [
+      "public"
+    ],
+    "chineseMeaning": "公众",
+    "explanation": "“Closed to the public” is the standard expression.",
+    "source": "Original practice item modeled on Duolingo English Test public Vocabulary in Context construct description.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v2_single_best_answer"
+  },
+  {
+    "id": "V010",
+    "type": "vocabulary_in_context",
+    "difficulty": "Foundation",
+    "sentence": "Please keep this medicine out of _____ of small children.",
+    "answer": "reach",
+    "acceptedAnswers": [
+      "reach"
+    ],
+    "chineseMeaning": "触及范围",
+    "explanation": "“Out of reach of” is the fixed expression.",
+    "source": "Original practice item modeled on Duolingo English Test public Vocabulary in Context construct description.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v2_single_best_answer"
+  },
+  {
+    "id": "V011",
+    "type": "vocabulary_in_context",
+    "difficulty": "Foundation",
+    "sentence": "She took full _____ for the mistake and apologized to the team.",
+    "answer": "responsibility",
+    "acceptedAnswers": [
+      "responsibility"
+    ],
+    "chineseMeaning": "责任",
+    "explanation": "“Take responsibility for” is the fixed expression.",
+    "source": "Original practice item modeled on Duolingo English Test public Vocabulary in Context construct description.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v2_single_best_answer"
+  },
+  {
+    "id": "V012",
+    "type": "vocabulary_in_context",
+    "difficulty": "Foundation",
+    "sentence": "The university provides financial _____ to students who cannot afford the full tuition fee.",
+    "answer": "aid",
+    "acceptedAnswers": [
+      "aid"
+    ],
+    "chineseMeaning": "援助",
+    "explanation": "“Financial aid” is the standard term for money provided to help with study costs.",
+    "source": "Original practice item modeled on Duolingo English Test public Vocabulary in Context construct description.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v2_single_best_answer"
+  },
+  {
+    "id": "V013",
+    "type": "vocabulary_in_context",
+    "difficulty": "Current",
+    "sentence": "Before making a final decision, the committee must take the possible risks into _____.",
+    "answer": "account",
+    "acceptedAnswers": [
+      "account"
+    ],
+    "chineseMeaning": "考虑",
+    "explanation": "“Take into account” is a standard academic collocation.",
+    "source": "Original practice item modeled on Duolingo English Test public Vocabulary in Context construct description.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v2_single_best_answer"
+  },
+  {
+    "id": "V014",
+    "type": "vocabulary_in_context",
+    "difficulty": "Current",
+    "sentence": "The researchers could not draw a firm _____ because the sample size was too small.",
+    "answer": "conclusion",
+    "acceptedAnswers": [
+      "conclusion"
+    ],
+    "chineseMeaning": "结论",
+    "explanation": "“Draw a conclusion” is the standard collocation.",
+    "source": "Original practice item modeled on Duolingo English Test public Vocabulary in Context construct description.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v2_single_best_answer"
+  },
+  {
+    "id": "V015",
+    "type": "vocabulary_in_context",
+    "difficulty": "Current",
+    "sentence": "The report raises serious _____ about whether the system can protect users' personal data.",
+    "answer": "concerns",
+    "acceptedAnswers": [
+      "concerns"
+    ],
+    "chineseMeaning": "担忧",
+    "explanation": "“Raise concerns about” is a standard collocation.",
+    "source": "Original practice item modeled on Duolingo English Test public Vocabulary in Context construct description.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v2_single_best_answer"
+  },
+  {
+    "id": "V016",
+    "type": "vocabulary_in_context",
+    "difficulty": "Current",
+    "sentence": "Applicants who do not meet the minimum _____ will not be invited to an interview.",
+    "answer": "requirements",
+    "acceptedAnswers": [
+      "requirements"
+    ],
+    "chineseMeaning": "要求；条件",
+    "explanation": "“Meet the requirements” is the standard collocation.",
+    "source": "Original practice item modeled on Duolingo English Test public Vocabulary in Context construct description.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v2_single_best_answer"
+  },
+  {
+    "id": "V017",
+    "type": "vocabulary_in_context",
+    "difficulty": "Current",
+    "sentence": "The company agreed to _____ the passenger for the cost of the cancelled flight.",
+    "answer": "compensate",
+    "acceptedAnswers": [
+      "compensate"
+    ],
+    "chineseMeaning": "补偿",
+    "explanation": "“Compensate someone for a cost/loss” is the required verb pattern.",
+    "source": "Original practice item modeled on Duolingo English Test public Vocabulary in Context construct description.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v2_single_best_answer"
+  },
+  {
+    "id": "V018",
+    "type": "vocabulary_in_context",
+    "difficulty": "Current",
+    "sentence": "Her argument was logically _____ from beginning to end, with each point leading naturally to the next.",
+    "answer": "coherent",
+    "acceptedAnswers": [
+      "coherent"
+    ],
+    "chineseMeaning": "连贯的",
+    "explanation": "The clue describes a logically connected argument.",
+    "source": "Original practice item modeled on Duolingo English Test public Vocabulary in Context construct description.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v2_single_best_answer"
+  },
+  {
+    "id": "V019",
+    "type": "vocabulary_in_context",
+    "difficulty": "Current",
+    "sentence": "The two witnesses gave _____ accounts of the same event, so investigators could not determine what happened.",
+    "answer": "conflicting",
+    "acceptedAnswers": [
+      "conflicting"
+    ],
+    "chineseMeaning": "相互矛盾的",
+    "explanation": "“Conflicting accounts” is the natural collocation when two descriptions disagree.",
+    "source": "Original practice item modeled on Duolingo English Test public Vocabulary in Context construct description.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v2_single_best_answer"
+  },
+  {
+    "id": "V020",
+    "type": "vocabulary_in_context",
+    "difficulty": "Current",
+    "sentence": "The new evidence directly _____ the claim that no one entered the building that night.",
+    "answer": "contradicts",
+    "acceptedAnswers": [
+      "contradicts"
+    ],
+    "chineseMeaning": "反驳；与……矛盾",
+    "explanation": "The clue says the evidence is directly opposite to the claim.",
+    "source": "Original practice item modeled on Duolingo English Test public Vocabulary in Context construct description.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v2_single_best_answer"
+  },
+  {
+    "id": "V021",
+    "type": "vocabulary_in_context",
+    "difficulty": "Current",
+    "sentence": "The university will _____ 20 percent of the new budget specifically to student mental-health services.",
+    "answer": "allocate",
+    "acceptedAnswers": [
+      "allocate"
+    ],
+    "chineseMeaning": "分配",
+    "explanation": "“Allocate X percent of a budget to” is the precise verb pattern.",
+    "source": "Original practice item modeled on Duolingo English Test public Vocabulary in Context construct description.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v2_single_best_answer"
+  },
+  {
+    "id": "V022",
+    "type": "vocabulary_in_context",
+    "difficulty": "Current",
+    "sentence": "We should not _____ that every student has reliable internet access at home.",
+    "answer": "assume",
+    "acceptedAnswers": [
+      "assume"
+    ],
+    "chineseMeaning": "假设；想当然地认为",
+    "explanation": "The sentence warns against accepting something without evidence.",
+    "source": "Original practice item modeled on Duolingo English Test public Vocabulary in Context construct description.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v2_single_best_answer"
+  },
+  {
+    "id": "V023",
+    "type": "vocabulary_in_context",
+    "difficulty": "Current",
+    "sentence": "The experiment was designed to _____ whether sleep deprivation affects short-term memory.",
+    "answer": "determine",
+    "acceptedAnswers": [
+      "determine"
+    ],
+    "chineseMeaning": "确定；查明",
+    "explanation": "The experiment is intended to find out whether the relationship exists.",
+    "source": "Original practice item modeled on Duolingo English Test public Vocabulary in Context construct description.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v2_single_best_answer"
+  },
+  {
+    "id": "V024",
+    "type": "vocabulary_in_context",
+    "difficulty": "Current",
+    "sentence": "The diagram is included to _____ how the two processes differ from each other.",
+    "answer": "illustrate",
+    "acceptedAnswers": [
+      "illustrate"
+    ],
+    "chineseMeaning": "说明；阐明",
+    "explanation": "The diagram gives a visual explanation of the difference.",
+    "source": "Original practice item modeled on Duolingo English Test public Vocabulary in Context construct description.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v2_single_best_answer"
+  },
+  {
+    "id": "V025",
+    "type": "vocabulary_in_context",
+    "difficulty": "Current",
+    "sentence": "Housing costs _____ considerably from one region to another.",
+    "answer": "vary",
+    "acceptedAnswers": [
+      "vary"
+    ],
+    "chineseMeaning": "变化；不同",
+    "explanation": "“Vary from X to Y” is the standard pattern.",
+    "source": "Original practice item modeled on Duolingo English Test public Vocabulary in Context construct description.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v2_single_best_answer"
+  },
+  {
+    "id": "V026",
+    "type": "vocabulary_in_context",
+    "difficulty": "Current",
+    "sentence": "The campaign aims to _____ the amount of single-use plastic thrown away each year.",
+    "answer": "reduce",
+    "acceptedAnswers": [
+      "reduce"
+    ],
+    "chineseMeaning": "减少",
+    "explanation": "The goal is to make the amount smaller.",
+    "source": "Original practice item modeled on Duolingo English Test public Vocabulary in Context construct description.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v2_single_best_answer"
+  },
+  {
+    "id": "V027",
+    "type": "vocabulary_in_context",
+    "difficulty": "Current",
+    "sentence": "Students must _____ every major claim in the essay with evidence from reliable sources.",
+    "answer": "support",
+    "acceptedAnswers": [
+      "support"
+    ],
+    "chineseMeaning": "支持；支撑",
+    "explanation": "“Support a claim with evidence” is the standard academic collocation.",
+    "source": "Original practice item modeled on Duolingo English Test public Vocabulary in Context construct description.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v2_single_best_answer"
+  },
+  {
+    "id": "V028",
+    "type": "vocabulary_in_context",
+    "difficulty": "Current",
+    "sentence": "The instructions were deliberately _____, allowing each department to interpret the rule differently.",
+    "answer": "ambiguous",
+    "acceptedAnswers": [
+      "ambiguous"
+    ],
+    "chineseMeaning": "含糊的；有歧义的",
+    "explanation": "The clue is that the wording permits more than one interpretation.",
+    "source": "Original practice item modeled on Duolingo English Test public Vocabulary in Context construct description.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v2_single_best_answer"
+  },
+  {
+    "id": "V029",
+    "type": "vocabulary_in_context",
+    "difficulty": "Current",
+    "sentence": "After reviewing the budget and schedule, the team concluded that the plan was financially and technically _____.",
+    "answer": "feasible",
+    "acceptedAnswers": [
+      "feasible"
+    ],
+    "chineseMeaning": "可行的",
+    "explanation": "“Financially and technically feasible” is a standard collocation.",
+    "source": "Original practice item modeled on Duolingo English Test public Vocabulary in Context construct description.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v2_single_best_answer"
+  },
+  {
+    "id": "V030",
+    "type": "vocabulary_in_context",
+    "difficulty": "Current",
+    "sentence": "There is a _____ difference between the two terms that is easy to miss on a first reading.",
+    "answer": "subtle",
+    "acceptedAnswers": [
+      "subtle"
+    ],
+    "chineseMeaning": "细微的",
+    "explanation": "The clue says the difference exists but is difficult to notice.",
+    "source": "Original practice item modeled on Duolingo English Test public Vocabulary in Context construct description.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v2_single_best_answer"
+  },
+  {
+    "id": "V031",
+    "type": "vocabulary_in_context",
+    "difficulty": "Current",
+    "sentence": "Spaced review helps learners _____ information in long-term memory.",
+    "answer": "retain",
+    "acceptedAnswers": [
+      "retain"
+    ],
+    "chineseMeaning": "记住；保留",
+    "explanation": "“Retain information in memory” is the natural academic phrasing.",
+    "source": "Original practice item modeled on Duolingo English Test public Vocabulary in Context construct description.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v2_single_best_answer"
+  },
+  {
+    "id": "V032",
+    "type": "vocabulary_in_context",
+    "difficulty": "Current",
+    "sentence": "The first step is to _____ the exact source of the error before trying to fix it.",
+    "answer": "identify",
+    "acceptedAnswers": [
+      "identify"
+    ],
+    "chineseMeaning": "识别；确定",
+    "explanation": "The task is to find precisely what the source is.",
+    "source": "Original practice item modeled on Duolingo English Test public Vocabulary in Context construct description.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v2_single_best_answer"
+  },
+  {
+    "id": "V033",
+    "type": "vocabulary_in_context",
+    "difficulty": "Current",
+    "sentence": "These are only _____ findings; the research team has not yet completed the full analysis.",
+    "answer": "preliminary",
+    "acceptedAnswers": [
+      "preliminary"
+    ],
+    "chineseMeaning": "初步的",
+    "explanation": "The clue explicitly says the work is not yet complete.",
+    "source": "Original practice item modeled on Duolingo English Test public Vocabulary in Context construct description.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v2_single_best_answer"
+  },
+  {
+    "id": "V034",
+    "type": "vocabulary_in_context",
+    "difficulty": "Current",
+    "sentence": "The high cancellation fee is intended to _____ customers from changing bookings at the last minute.",
+    "answer": "deter",
+    "acceptedAnswers": [
+      "deter"
+    ],
+    "chineseMeaning": "阻止；威慑",
+    "explanation": "“Deter someone from doing something” is the precise verb pattern.",
+    "source": "Original practice item modeled on Duolingo English Test public Vocabulary in Context construct description.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v2_single_best_answer"
+  },
+  {
+    "id": "V035",
+    "type": "vocabulary_in_context",
+    "difficulty": "Current",
+    "sentence": "The article provides little empirical _____ to support its central argument.",
+    "answer": "evidence",
+    "acceptedAnswers": [
+      "evidence"
+    ],
+    "chineseMeaning": "证据",
+    "explanation": "“Empirical evidence” is the standard academic phrase.",
+    "source": "Original practice item modeled on Duolingo English Test public Vocabulary in Context construct description.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v2_single_best_answer"
+  },
+  {
+    "id": "V036",
+    "type": "vocabulary_in_context",
+    "difficulty": "Current",
+    "sentence": "The course is designed to _____ students with the practical skills needed for academic research.",
+    "answer": "equip",
+    "acceptedAnswers": [
+      "equip"
+    ],
+    "chineseMeaning": "使具备",
+    "explanation": "“Equip someone with skills” is the fixed verb pattern.",
+    "source": "Original practice item modeled on Duolingo English Test public Vocabulary in Context construct description.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v2_single_best_answer"
+  },
+  {
+    "id": "V037",
+    "type": "vocabulary_in_context",
+    "difficulty": "Target",
+    "sentence": "The author fails to _____ clearly between correlation and causation.",
+    "answer": "distinguish",
+    "acceptedAnswers": [
+      "distinguish"
+    ],
+    "chineseMeaning": "区分",
+    "explanation": "“Distinguish between A and B” is the standard verb pattern.",
+    "source": "Original practice item modeled on Duolingo English Test public Vocabulary in Context construct description.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v2_single_best_answer"
+  },
+  {
+    "id": "V038",
+    "type": "vocabulary_in_context",
+    "difficulty": "Target",
+    "sentence": "The newspaper article makes a serious accusation but provides no evidence to _____ it.",
+    "answer": "substantiate",
+    "acceptedAnswers": [
+      "substantiate"
+    ],
+    "chineseMeaning": "证实；用证据支持",
+    "explanation": "“Substantiate an accusation/claim” means provide evidence proving it.",
+    "source": "Original practice item modeled on Duolingo English Test public Vocabulary in Context construct description.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v2_single_best_answer"
+  },
+  {
+    "id": "V039",
+    "type": "vocabulary_in_context",
+    "difficulty": "Target",
+    "sentence": "For the survey results to be generalized, the sample must be _____ of the wider population.",
+    "answer": "representative",
+    "acceptedAnswers": [
+      "representative"
+    ],
+    "chineseMeaning": "有代表性的",
+    "explanation": "“Representative of the population” is the standard research phrase.",
+    "source": "Original practice item modeled on Duolingo English Test public Vocabulary in Context construct description.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v2_single_best_answer"
+  },
+  {
+    "id": "V040",
+    "type": "vocabulary_in_context",
+    "difficulty": "Target",
+    "sentence": "The policy had an _____ consequence: instead of reducing traffic, it increased congestion on nearby streets.",
+    "answer": "unintended",
+    "acceptedAnswers": [
+      "unintended"
+    ],
+    "chineseMeaning": "非预期的",
+    "explanation": "“Unintended consequence” is the standard policy phrase.",
+    "source": "Original practice item modeled on Duolingo English Test public Vocabulary in Context construct description.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v2_single_best_answer"
+  },
+  {
+    "id": "V041",
+    "type": "vocabulary_in_context",
+    "difficulty": "Target",
+    "sentence": "The two explanations are not mutually _____; both could be true at the same time.",
+    "answer": "exclusive",
+    "acceptedAnswers": [
+      "exclusive"
+    ],
+    "chineseMeaning": "互斥的",
+    "explanation": "“Mutually exclusive” is the fixed expression.",
+    "source": "Original practice item modeled on Duolingo English Test public Vocabulary in Context construct description.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v2_single_best_answer"
+  },
+  {
+    "id": "V042",
+    "type": "vocabulary_in_context",
+    "difficulty": "Target",
+    "sentence": "The researchers repeated the measurement three times to _____ the reliability of the result.",
+    "answer": "enhance",
+    "acceptedAnswers": [
+      "enhance"
+    ],
+    "chineseMeaning": "提高；增强",
+    "explanation": "The repeated measurements are intended to make reliability stronger.",
+    "source": "Original practice item modeled on Duolingo English Test public Vocabulary in Context construct description.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v2_single_best_answer"
+  },
+  {
+    "id": "V043",
+    "type": "vocabulary_in_context",
+    "difficulty": "Target",
+    "sentence": "One unusual case is not enough to _____ a general rule that applies to everyone.",
+    "answer": "establish",
+    "acceptedAnswers": [
+      "establish"
+    ],
+    "chineseMeaning": "确立；证明",
+    "explanation": "“Establish a rule” means provide enough evidence for it to be accepted.",
+    "source": "Original practice item modeled on Duolingo English Test public Vocabulary in Context construct description.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v2_single_best_answer"
+  },
+  {
+    "id": "V044",
+    "type": "vocabulary_in_context",
+    "difficulty": "Target",
+    "sentence": "After three hours of discussion, the committee finally reached a _____ acceptable to all members.",
+    "answer": "consensus",
+    "acceptedAnswers": [
+      "consensus"
+    ],
+    "chineseMeaning": "共识",
+    "explanation": "“Reach a consensus” is the fixed expression.",
+    "source": "Original practice item modeled on Duolingo English Test public Vocabulary in Context construct description.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v2_single_best_answer"
+  },
+  {
+    "id": "V045",
+    "type": "vocabulary_in_context",
+    "difficulty": "Target",
+    "sentence": "The experiment found a statistically _____ difference between the treatment and control groups.",
+    "answer": "significant",
+    "acceptedAnswers": [
+      "significant"
+    ],
+    "chineseMeaning": "显著的",
+    "explanation": "“Statistically significant” is the fixed research expression.",
+    "source": "Original practice item modeled on Duolingo English Test public Vocabulary in Context construct description.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v2_single_best_answer"
+  },
+  {
+    "id": "V046",
+    "type": "vocabulary_in_context",
+    "difficulty": "Target",
+    "sentence": "Before investing further, the company commissioned a study to assess the commercial _____ of the product.",
+    "answer": "viability",
+    "acceptedAnswers": [
+      "viability"
+    ],
+    "chineseMeaning": "可行性；生存能力",
+    "explanation": "“Commercial viability” is a standard business collocation.",
+    "source": "Original practice item modeled on Duolingo English Test public Vocabulary in Context construct description.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v2_single_best_answer"
+  },
+  {
+    "id": "V047",
+    "type": "vocabulary_in_context",
+    "difficulty": "Target",
+    "sentence": "The analysis attempts to _____ the effect of income from the effects of age and education.",
+    "answer": "isolate",
+    "acceptedAnswers": [
+      "isolate"
+    ],
+    "chineseMeaning": "分离；单独考察",
+    "explanation": "“Isolate the effect of X from Y” is the standard research phrasing.",
+    "source": "Original practice item modeled on Duolingo English Test public Vocabulary in Context construct description.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v2_single_best_answer"
+  },
+  {
+    "id": "V048",
+    "type": "vocabulary_in_context",
+    "difficulty": "Target",
+    "sentence": "The new findings are broadly _____ with the predictions made by the original theory.",
+    "answer": "consistent",
+    "acceptedAnswers": [
+      "consistent"
+    ],
+    "chineseMeaning": "一致的；相符的",
+    "explanation": "“Consistent with” is the fixed academic expression.",
+    "source": "Original practice item modeled on Duolingo English Test public Vocabulary in Context construct description.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v2_single_best_answer"
+  },
+  {
+    "id": "V049",
+    "type": "vocabulary_in_context",
+    "difficulty": "Target",
+    "sentence": "Because only 18 percent of participants responded, the results should be interpreted with _____.",
+    "answer": "caution",
+    "acceptedAnswers": [
+      "caution"
+    ],
+    "chineseMeaning": "谨慎",
+    "explanation": "“Interpret with caution” is the fixed academic expression.",
+    "source": "Original practice item modeled on Duolingo English Test public Vocabulary in Context construct description.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v2_single_best_answer"
+  },
+  {
+    "id": "V050",
+    "type": "vocabulary_in_context",
+    "difficulty": "Target",
+    "sentence": "The discovery could fundamentally _____ our understanding of how the disease develops.",
+    "answer": "reshape",
+    "acceptedAnswers": [
+      "reshape"
+    ],
+    "chineseMeaning": "重塑；改变",
+    "explanation": "“Fundamentally reshape our understanding” is a natural academic collocation.",
+    "source": "Original practice item modeled on Duolingo English Test public Vocabulary in Context construct description.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v2_single_best_answer"
+  },
+  {
+    "id": "V051",
+    "type": "vocabulary_in_context",
+    "difficulty": "Target",
+    "sentence": "The review gives a _____ account of the issue, covering the historical, economic, and social dimensions.",
+    "answer": "comprehensive",
+    "acceptedAnswers": [
+      "comprehensive"
+    ],
+    "chineseMeaning": "全面的",
+    "explanation": "The clue explicitly says multiple major dimensions are covered.",
+    "source": "Original practice item modeled on Duolingo English Test public Vocabulary in Context construct description.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v2_single_best_answer"
+  },
+  {
+    "id": "V052",
+    "type": "vocabulary_in_context",
+    "difficulty": "Target",
+    "sentence": "The panel was asked to _____ the quality of each proposal against the same set of criteria.",
+    "answer": "evaluate",
+    "acceptedAnswers": [
+      "evaluate"
+    ],
+    "chineseMeaning": "评估",
+    "explanation": "“Evaluate X against criteria” is the standard assessment phrasing.",
+    "source": "Original practice item modeled on Duolingo English Test public Vocabulary in Context construct description.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v2_single_best_answer"
+  },
+  {
+    "id": "V053",
+    "type": "vocabulary_in_context",
+    "difficulty": "Target",
+    "sentence": "The apparent relationship may be _____ by an unmeasured third variable.",
+    "answer": "confounded",
+    "acceptedAnswers": [
+      "confounded"
+    ],
+    "chineseMeaning": "受混杂因素影响的",
+    "explanation": "“Confounded by a third variable” is the precise research term.",
+    "source": "Original practice item modeled on Duolingo English Test public Vocabulary in Context construct description.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v2_single_best_answer"
+  },
+  {
+    "id": "V054",
+    "type": "vocabulary_in_context",
+    "difficulty": "Target",
+    "sentence": "The witness's account became more _____ after investigators found independent video evidence supporting it.",
+    "answer": "credible",
+    "acceptedAnswers": [
+      "credible"
+    ],
+    "chineseMeaning": "可信的",
+    "explanation": "Independent supporting evidence makes an account more believable.",
+    "source": "Original practice item modeled on Duolingo English Test public Vocabulary in Context construct description.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v2_single_best_answer"
+  },
+  {
+    "id": "V055",
+    "type": "vocabulary_in_context",
+    "difficulty": "Challenge",
+    "sentence": "The second independent study was conducted specifically to _____ the original findings.",
+    "answer": "corroborate",
+    "acceptedAnswers": [
+      "corroborate"
+    ],
+    "chineseMeaning": "证实；佐证",
+    "explanation": "“Corroborate findings” means support them with independent evidence.",
+    "source": "Original practice item modeled on Duolingo English Test public Vocabulary in Context construct description.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v2_single_best_answer"
+  },
+  {
+    "id": "V056",
+    "type": "vocabulary_in_context",
+    "difficulty": "Challenge",
+    "sentence": "Despite the strong correlation, the evidence for a direct causal mechanism remains _____.",
+    "answer": "tenuous",
+    "acceptedAnswers": [
+      "tenuous"
+    ],
+    "chineseMeaning": "薄弱的；牵强的",
+    "explanation": "The contrast says the causal evidence is weak despite correlation.",
+    "source": "Original practice item modeled on Duolingo English Test public Vocabulary in Context construct description.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v2_single_best_answer"
+  },
+  {
+    "id": "V057",
+    "type": "vocabulary_in_context",
+    "difficulty": "Challenge",
+    "sentence": "The distinction is especially _____ because the legal outcome depends on how the term is interpreted.",
+    "answer": "salient",
+    "acceptedAnswers": [
+      "salient"
+    ],
+    "chineseMeaning": "突出的；重要的",
+    "explanation": "The clue says this particular distinction is especially important.",
+    "source": "Original practice item modeled on Duolingo English Test public Vocabulary in Context construct description.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v2_single_best_answer"
+  },
+  {
+    "id": "V058",
+    "type": "vocabulary_in_context",
+    "difficulty": "Challenge",
+    "sentence": "Internet access has become so _____ in many countries that daily life increasingly assumes people are connected.",
+    "answer": "ubiquitous",
+    "acceptedAnswers": [
+      "ubiquitous"
+    ],
+    "chineseMeaning": "无处不在的",
+    "explanation": "The clue means it is present almost everywhere.",
+    "source": "Original practice item modeled on Duolingo English Test public Vocabulary in Context construct description.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v2_single_best_answer"
+  },
+  {
+    "id": "V059",
+    "type": "vocabulary_in_context",
+    "difficulty": "Challenge",
+    "sentence": "When asked whether the policy had failed, the minister gave an _____ answer that avoided saying either yes or no.",
+    "answer": "equivocal",
+    "acceptedAnswers": [
+      "equivocal"
+    ],
+    "chineseMeaning": "模棱两可的",
+    "explanation": "The clue describes an intentionally noncommittal answer.",
+    "source": "Original practice item modeled on Duolingo English Test public Vocabulary in Context construct description.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v2_single_best_answer"
+  },
+  {
+    "id": "V060",
+    "type": "vocabulary_in_context",
+    "difficulty": "Challenge",
+    "sentence": "The laboratory follows a highly _____ protocol in which every measurement and procedure is documented in detail.",
+    "answer": "rigorous",
+    "acceptedAnswers": [
+      "rigorous"
+    ],
+    "chineseMeaning": "严谨的；严格的",
+    "explanation": "The clue describes a strict, systematic protocol.",
+    "source": "Original practice item modeled on Duolingo English Test public Vocabulary in Context construct description.",
+    "officialItem": false,
+    "reviewStatus": "reviewed_v2_single_best_answer"
+  }
+]
