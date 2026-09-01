@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "我的第一个网页"
+description = "A tiny personal webpage for a complete coding beginner, centered around a friendly greeting and one playful button interaction."
+version = "1.0.0"
+id = "artifacts/personal-first-page"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 21170
+
+[services.development]
+run = "pnpm --filter @workspace/personal-first-page run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/personal-first-page", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/personal-first-page/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "21170"
+BASE_PATH = "/"
