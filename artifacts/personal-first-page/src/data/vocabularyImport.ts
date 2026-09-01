@@ -15,7 +15,7 @@ export type ImportVocabularyItem = {
   simpleDefinition?: string;
   partOfSpeech?: string;
   exampleSentence?: string;
-  confusedWith?: {
+  confusedWith?: string | {
     word: string;
     chineseMeaning: string;
   };
@@ -78,14 +78,17 @@ function validateItem(value: unknown, index: number): VocabularyValidationIssue 
   }
 
   if (item.real === false && item.confusedWith !== undefined) {
-    const confusedWith = item.confusedWith as Record<string, unknown> | null;
-    if (
-      !confusedWith ||
-      typeof confusedWith !== 'object' ||
-      Array.isArray(confusedWith) ||
-      !isNonEmptyString(confusedWith.word) ||
-      !isNonEmptyString(confusedWith.chineseMeaning)
-    ) {
+    const confusedWith = item.confusedWith;
+    const validString = isNonEmptyString(confusedWith);
+    const objectValue = confusedWith as Record<string, unknown> | null;
+    const validObject =
+      objectValue &&
+      typeof objectValue === 'object' &&
+      !Array.isArray(objectValue) &&
+      isNonEmptyString(objectValue.word) &&
+      isNonEmptyString(objectValue.chineseMeaning);
+
+    if (!validString && !validObject) {
       errors.push('confusedWith must contain word and chineseMeaning when provided');
     }
   }

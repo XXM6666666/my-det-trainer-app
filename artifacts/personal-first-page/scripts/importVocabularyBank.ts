@@ -7,7 +7,7 @@ import {
   type ImportVocabularyItem,
 } from '../src/data/vocabularyImport';
 
-const inputPath = process.argv[2];
+const inputPath = process.argv.slice(2).find((argument) => argument !== '--');
 const bankPath = resolve(process.cwd(), 'src/data/vocabularyBank.json');
 
 if (!inputPath) {

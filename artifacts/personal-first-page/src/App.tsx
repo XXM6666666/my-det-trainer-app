@@ -12,7 +12,7 @@ type VocabularyItem = {
   partOfSpeech?: string;
   exampleSentence?: string;
   difficulty: Difficulty;
-  confusedWith?: {
+  confusedWith?: string | {
     word: string;
     chineseMeaning: string;
   };
@@ -151,14 +151,21 @@ function Home({ onStart, hasVerifiedQuestions }: { onStart: () => void; hasVerif
 
 function LearningFeedback({ item }: { item: VocabularyItem }) {
   if (!item.real) {
+    const confusedWord = typeof item.confusedWith === 'string'
+      ? item.confusedWith
+      : item.confusedWith?.word;
+    const confusedMeaning = typeof item.confusedWith === 'string'
+      ? undefined
+      : item.confusedWith?.chineseMeaning;
+
     return (
       <div className="learning-feedback fake-feedback" data-testid={`feedback-learning-${item.word}`}>
         <p className="feedback-fake-title">Not a real English word</p>
         {item.confusedWith && (
           <div className="confusion-note">
-            <p><span className="detail-label">Real word</span><strong>{item.confusedWith.word}</strong></p>
-            <p><span className="detail-label">Meaning</span>{item.confusedWith.chineseMeaning}</p>
-            <p><span className="detail-label">Correct spelling</span>{item.confusedWith.word}</p>
+            <p><span className="detail-label">Real word</span><strong>{confusedWord}</strong></p>
+            {confusedMeaning && <p><span className="detail-label">Meaning</span>{confusedMeaning}</p>}
+            <p><span className="detail-label">Correct spelling</span>{confusedWord}</p>
           </div>
         )}
       </div>
