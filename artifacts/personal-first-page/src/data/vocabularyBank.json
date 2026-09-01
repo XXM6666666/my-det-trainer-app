@@ -8,7 +8,7 @@
     "partOfSpeech": "adjective",
     "exampleSentence": "Her adaptable approach helped the team work through the change.",
     "source": "Merriam-Webster Dictionary",
-    "verified": true
+    "verified": false
   },
   {
     "word": "adjacent",
@@ -19,7 +19,7 @@
     "partOfSpeech": "adjective",
     "exampleSentence": "The library is in the adjacent building.",
     "source": "Merriam-Webster Dictionary",
-    "verified": true
+    "verified": false
   },
   {
     "word": "beneficial",
@@ -30,7 +30,7 @@
     "partOfSpeech": "adjective",
     "exampleSentence": "A short walk can be beneficial for your concentration.",
     "source": "Merriam-Webster Dictionary",
-    "verified": true
+    "verified": false
   },
   {
     "word": "coherent",
@@ -41,7 +41,7 @@
     "partOfSpeech": "adjective",
     "exampleSentence": "She gave a coherent explanation of the experiment.",
     "source": "Merriam-Webster Dictionary",
-    "verified": true
+    "verified": false
   },
   {
     "word": "appraize",
@@ -52,7 +52,7 @@
       "chineseMeaning": "评估；评价价值或质量"
     },
     "source": "Manual spelling review against standard English dictionaries",
-    "verified": true
+    "verified": false
   },
   {
     "word": "hinderance",
@@ -63,7 +63,7 @@
       "chineseMeaning": "妨碍进步的事物；障碍"
     },
     "source": "Manual spelling review against standard English dictionaries",
-    "verified": true
+    "verified": false
   },
   {
     "word": "reliable",
@@ -74,7 +74,7 @@
     "partOfSpeech": "adjective",
     "exampleSentence": "We need a reliable source before making a decision.",
     "source": "Merriam-Webster Dictionary",
-    "verified": true
+    "verified": false
   },
   {
     "word": "convenient",
@@ -85,7 +85,7 @@
     "partOfSpeech": "adjective",
     "exampleSentence": "The evening class is convenient for my schedule.",
     "source": "Merriam-Webster Dictionary",
-    "verified": true
+    "verified": false
   },
   {
     "word": "benefitial",
@@ -96,7 +96,7 @@
       "chineseMeaning": "有益的；有帮助的"
     },
     "source": "Manual spelling review against standard English dictionaries",
-    "verified": true
+    "verified": false
   },
   {
     "word": "alleviate",
@@ -107,7 +107,7 @@
     "partOfSpeech": "verb",
     "exampleSentence": "The new schedule may alleviate some pressure on staff.",
     "source": "Merriam-Webster Dictionary",
-    "verified": true
+    "verified": false
   },
   {
     "word": "ambiguous",
@@ -118,7 +118,7 @@
     "partOfSpeech": "adjective",
     "exampleSentence": "The ambiguous instruction confused the new students.",
     "source": "Merriam-Webster Dictionary",
-    "verified": true
+    "verified": false
   },
   {
     "word": "anticipate",
@@ -129,7 +129,7 @@
     "partOfSpeech": "verb",
     "exampleSentence": "We anticipate a busy week before the holiday.",
     "source": "Merriam-Webster Dictionary",
-    "verified": true
+    "verified": false
   },
   {
     "word": "articulate",
@@ -140,7 +140,7 @@
     "partOfSpeech": "verb",
     "exampleSentence": "He can articulate complex ideas in a simple way.",
     "source": "Merriam-Webster Dictionary",
-    "verified": true
+    "verified": false
   },
   {
     "word": "circumvent",
@@ -151,7 +151,7 @@
     "partOfSpeech": "verb",
     "exampleSentence": "The team found a legal way to circumvent the delay.",
     "source": "Merriam-Webster Dictionary",
-    "verified": true
+    "verified": false
   },
   {
     "word": "comprehend",
@@ -162,7 +162,7 @@
     "partOfSpeech": "verb",
     "exampleSentence": "It took time to comprehend the full report.",
     "source": "Merriam-Webster Dictionary",
-    "verified": true
+    "verified": false
   },
   {
     "word": "constrain",
@@ -173,7 +173,7 @@
     "partOfSpeech": "verb",
     "exampleSentence": "A small budget can constrain the project.",
     "source": "Merriam-Webster Dictionary",
-    "verified": true
+    "verified": false
   },
   {
     "word": "discrepancy",
@@ -184,7 +184,7 @@
     "partOfSpeech": "noun",
     "exampleSentence": "The accountant noticed a discrepancy in the totals.",
     "source": "Merriam-Webster Dictionary",
-    "verified": true
+    "verified": false
   },
   {
     "word": "equatible",
@@ -195,7 +195,7 @@
       "chineseMeaning": "公平的；公正合理的"
     },
     "source": "Manual spelling review against standard English dictionaries",
-    "verified": true
+    "verified": false
   },
   {
     "word": "feasible",
@@ -206,7 +206,7 @@
     "partOfSpeech": "adjective",
     "exampleSentence": "The group discussed a feasible way to reduce waste.",
     "source": "Merriam-Webster Dictionary",
-    "verified": true
+    "verified": false
   },
   {
     "word": "inadvertent",
@@ -217,7 +217,7 @@
     "partOfSpeech": "adjective",
     "exampleSentence": "The email caused an inadvertent misunderstanding.",
     "source": "Merriam-Webster Dictionary",
-    "verified": true
+    "verified": false
   },
   {
     "word": "mitigate",
@@ -228,7 +228,7 @@
     "partOfSpeech": "verb",
     "exampleSentence": "Trees can help mitigate the effects of extreme heat.",
     "source": "Merriam-Webster Dictionary",
-    "verified": true
+    "verified": false
   },
   {
     "word": "plausible",
@@ -239,7 +239,7 @@
     "partOfSpeech": "adjective",
     "exampleSentence": "Her explanation was plausible but needed more evidence.",
     "source": "Merriam-Webster Dictionary",
-    "verified": true
+    "verified": false
   },
   {
     "word": "proficient",
@@ -250,7 +250,7 @@
     "partOfSpeech": "adjective",
     "exampleSentence": "After practice, he became proficient at presenting data.",
     "source": "Merriam-Webster Dictionary",
-    "verified": true
+    "verified": false
   },
   {
     "word": "subtle",
@@ -261,14 +261,14 @@
     "partOfSpeech": "adjective",
     "exampleSentence": "There was a subtle change in her tone.",
     "source": "Merriam-Webster Dictionary",
-    "verified": true
+    "verified": false
   },
   {
     "word": "sufficive",
     "real": false,
     "difficulty": "Current",
     "source": "Manual spelling review against standard English dictionaries",
-    "verified": true
+    "verified": false
   },
   {
     "word": "versatile",
@@ -279,7 +279,7 @@
     "partOfSpeech": "adjective",
     "exampleSentence": "A versatile notebook works for planning and sketching.",
     "source": "Merriam-Webster Dictionary",
-    "verified": true
+    "verified": false
   },
   {
     "word": "seperated",
@@ -290,7 +290,7 @@
       "chineseMeaning": "分开的；分离的"
     },
     "source": "Manual spelling review against standard English dictionaries",
-    "verified": true
+    "verified": false
   },
   {
     "word": "occurrance",
@@ -301,7 +301,7 @@
       "chineseMeaning": "发生的事情；事件"
     },
     "source": "Manual spelling review against standard English dictionaries",
-    "verified": true
+    "verified": false
   },
   {
     "word": "competative",
@@ -312,7 +312,7 @@
       "chineseMeaning": "有竞争力的；竞争性的"
     },
     "source": "Manual spelling review against standard English dictionaries",
-    "verified": true
+    "verified": false
   },
   {
     "word": "consistant",
@@ -323,7 +323,7 @@
       "chineseMeaning": "一致的；始终如一的"
     },
     "source": "Manual spelling review against standard English dictionaries",
-    "verified": true
+    "verified": false
   },
   {
     "word": "conclusive",
@@ -334,7 +334,7 @@
     "partOfSpeech": "adjective",
     "exampleSentence": "The test did not provide conclusive evidence.",
     "source": "Merriam-Webster Dictionary",
-    "verified": true
+    "verified": false
   },
   {
     "word": "empirical",
@@ -345,7 +345,7 @@
     "partOfSpeech": "adjective",
     "exampleSentence": "The paper presents empirical evidence from three studies.",
     "source": "Merriam-Webster Dictionary",
-    "verified": true
+    "verified": false
   },
   {
     "word": "exacerbate",
@@ -356,7 +356,7 @@
     "partOfSpeech": "verb",
     "exampleSentence": "Poor communication can exacerbate a small disagreement.",
     "source": "Merriam-Webster Dictionary",
-    "verified": true
+    "verified": false
   },
   {
     "word": "juxtapose",
@@ -367,7 +367,7 @@
     "partOfSpeech": "verb",
     "exampleSentence": "The exhibit juxtaposes old photographs with new ones.",
     "source": "Merriam-Webster Dictionary",
-    "verified": true
+    "verified": false
   },
   {
     "word": "meticulous",
@@ -378,7 +378,7 @@
     "partOfSpeech": "adjective",
     "exampleSentence": "Her meticulous notes made the research easy to review.",
     "source": "Merriam-Webster Dictionary",
-    "verified": true
+    "verified": false
   },
   {
     "word": "pervasive",
@@ -389,7 +389,7 @@
     "partOfSpeech": "adjective",
     "exampleSentence": "Digital tools have a pervasive role in modern work.",
     "source": "Merriam-Webster Dictionary",
-    "verified": true
+    "verified": false
   },
   {
     "word": "substantiate",
@@ -400,14 +400,14 @@
     "partOfSpeech": "verb",
     "exampleSentence": "The researcher used records to substantiate the claim.",
     "source": "Merriam-Webster Dictionary",
-    "verified": true
+    "verified": false
   },
   {
     "word": "obscurative",
     "real": false,
     "difficulty": "Target",
     "source": "Manual spelling review against standard English dictionaries",
-    "verified": true
+    "verified": false
   },
   {
     "word": "proliferate",
@@ -418,7 +418,7 @@
     "partOfSpeech": "verb",
     "exampleSentence": "Small cafés began to proliferate across the neighborhood.",
     "source": "Merriam-Webster Dictionary",
-    "verified": true
+    "verified": false
   },
   {
     "word": "comprehencive",
@@ -429,7 +429,7 @@
       "chineseMeaning": "全面的；综合的"
     },
     "source": "Manual spelling review against standard English dictionaries",
-    "verified": true
+    "verified": false
   },
   {
     "word": "intransigent",
@@ -440,7 +440,7 @@
     "partOfSpeech": "adjective",
     "exampleSentence": "The intransigent negotiator rejected every revision.",
     "source": "Merriam-Webster Dictionary",
-    "verified": true
+    "verified": false
   },
   {
     "word": "ephemeral",
@@ -451,7 +451,7 @@
     "partOfSpeech": "adjective",
     "exampleSentence": "The artist captured the ephemeral colors of the sunset.",
     "source": "Merriam-Webster Dictionary",
-    "verified": true
+    "verified": false
   },
   {
     "word": "anachronistic",
@@ -462,7 +462,7 @@
     "partOfSpeech": "adjective",
     "exampleSentence": "The modern phrase sounded anachronistic in the historical novel.",
     "source": "Merriam-Webster Dictionary",
-    "verified": true
+    "verified": false
   },
   {
     "word": "contentious",
@@ -473,14 +473,14 @@
     "partOfSpeech": "adjective",
     "exampleSentence": "The committee postponed the contentious discussion.",
     "source": "Merriam-Webster Dictionary",
-    "verified": true
+    "verified": false
   },
   {
     "word": "circumscriptive",
     "real": false,
     "difficulty": "Challenge",
     "source": "Manual spelling review against standard English dictionaries",
-    "verified": true
+    "verified": false
   },
   {
     "word": "prevaricate",
@@ -491,6 +491,6 @@
     "partOfSpeech": "verb",
     "exampleSentence": "When asked about the error, the spokesperson began to prevaricate.",
     "source": "Merriam-Webster Dictionary",
-    "verified": true
+    "verified": false
   }
 ]

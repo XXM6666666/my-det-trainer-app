@@ -135,7 +135,9 @@ button:focus-visible {
 
 .primary-button:hover { background: var(--teal-deep); transform: translateY(-2px); }
 .primary-button:active { box-shadow: 0 1px 0 var(--teal-deep); transform: translateY(2px); }
+.primary-button:disabled { cursor: not-allowed; opacity: 0.62; transform: none; }
 .start-button { width: 100%; margin-top: 2.45rem; }
+.bank-status { margin: 1rem 0 0; color: var(--teal-deep); font-size: 0.8rem; font-weight: 700; }
 .material-note { margin: 2.2rem 0 0; color: var(--muted); font-size: 0.68rem; letter-spacing: 0.01em; }
 .home-footer { position: relative; z-index: 1; margin: 1.75rem 0 0; color: var(--ink-soft); font-size: 0.74rem; letter-spacing: 0.08em; }
 

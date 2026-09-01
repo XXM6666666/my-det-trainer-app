@@ -124,7 +124,7 @@ function Brand() {
   );
 }
 
-function Home({ onStart }: { onStart: () => void }) {
+function Home({ onStart, hasVerifiedQuestions }: { onStart: () => void; hasVerifiedQuestions: boolean }) {
   return (
     <main className="page-shell home-page">
       <div className="ambient-mark ambient-mark-left" aria-hidden="true" />
@@ -139,6 +139,9 @@ function Home({ onStart }: { onStart: () => void }) {
         <button className="primary-button start-button" type="button" onClick={onStart} data-testid="button-start-training">
           开始单词训练
         </button>
+        {!hasVerifiedQuestions && (
+          <p className="bank-status" role="status">正式题库正在建设中</p>
+        )}
         <p className="material-note">Original practice material, not official DET questions.</p>
       </section>
       <p className="home-footer">One round at a time.</p>
@@ -380,7 +383,7 @@ function HomeRoute() {
   if (screen === 'results') {
     return <Results answers={answers} onMistakes={startMistakes} onNewRound={startNewRound} />;
   }
-  return <Home onStart={startNewRound} />;
+  return <Home onStart={startNewRound} hasVerifiedQuestions={VERIFIED_VOCABULARY_BANK.length > 0} />;
 }
 
 function Router() {
