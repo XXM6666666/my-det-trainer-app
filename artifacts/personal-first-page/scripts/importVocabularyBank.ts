@@ -19,6 +19,7 @@ const incoming = JSON.parse(await readFile(resolve(process.cwd(), inputPath), 'u
 const preparation = prepareVocabularyImport(currentBank as ImportVocabularyItem[], incoming);
 
 console.log(`新增候选题目: ${preparation.newItems.length}`);
+console.log(`替换旧未审核题目: ${preparation.replacements.length}`);
 console.log(`跳过重复题目: ${preparation.duplicateWords.length}`);
 console.log(`格式错误题目: ${preparation.issues.length}`);
 
@@ -35,7 +36,15 @@ if (preparation.issues.length > 0) {
   process.exit(1);
 }
 
-const nextBank = [...(currentBank as ImportVocabularyItem[]), ...preparation.newItems];
+const replacementsByWord = new Map(
+  preparation.replacements.map((item) => [item.word.trim().toLocaleLowerCase(), item]),
+);
+const nextBank = [
+  ...(currentBank as ImportVocabularyItem[]).map(
+    (item) => replacementsByWord.get(item.word.trim().toLocaleLowerCase()) ?? item,
+  ),
+  ...preparation.newItems,
+];
 await writeFile(bankPath, `${JSON.stringify(nextBank, null, 2)}\n`, 'utf8');
 
 const summary = summarizeVocabularyBank(nextBank);

@@ -41,6 +41,7 @@ export type VocabularyBankSummary = {
 export type VocabularyImportPreparation = {
   validItems: ImportVocabularyItem[];
   newItems: ImportVocabularyItem[];
+  replacements: ImportVocabularyItem[];
   duplicateWords: string[];
   issues: VocabularyValidationIssue[];
 };
@@ -110,6 +111,7 @@ export function prepareVocabularyImport(
     return {
       validItems: [],
       newItems: [],
+      replacements: [],
       duplicateWords: [],
       issues: [{ index: -1, errors: ['the import file must contain a JSON array'] }],
     };
@@ -123,18 +125,30 @@ export function prepareVocabularyImport(
 
   const knownWords = new Set(currentBank.map((item) => normalizeWord(item.word)));
   const batchWords = new Set<string>();
+  const currentByWord = new Map(currentBank.map((item) => [normalizeWord(item.word), item]));
+  const replacements: ImportVocabularyItem[] = [];
   const duplicateWords: string[] = [];
-  const newItems = validItems.filter((item) => {
+  const newItems: ImportVocabularyItem[] = [];
+
+  for (const item of validItems) {
     const normalizedWord = normalizeWord(item.word);
-    if (knownWords.has(normalizedWord) || batchWords.has(normalizedWord)) {
+    if (batchWords.has(normalizedWord)) {
       duplicateWords.push(item.word);
-      return false;
+      continue;
     }
     batchWords.add(normalizedWord);
-    return true;
-  });
 
-  return { validItems, newItems, duplicateWords, issues };
+    const existing = currentByWord.get(normalizedWord);
+    if (existing?.verified === false && item.verified === true) {
+      replacements.push(item);
+    } else if (knownWords.has(normalizedWord)) {
+      duplicateWords.push(item.word);
+    } else {
+      newItems.push(item);
+    }
+  }
+
+  return { validItems, newItems, replacements, duplicateWords, issues };
 }
 
 export function summarizeVocabularyBank(items: readonly ImportVocabularyItem[]): VocabularyBankSummary {
